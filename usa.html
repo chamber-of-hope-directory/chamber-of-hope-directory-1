@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Chamber of Hope – Worldwide HELPS Ministry Directory</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Chamber of Hope is a Worldwide HELPS Ministry Directory with free, clickable resources organized by Global, USA National, State, City Hub, and help categories (housing, food, utilities, legal, health, jobs, crisis support, and more)." name="description"/>
+<meta content="index,follow" name="robots"/>
+<meta content="Chamber of Hope – Worldwide HELPS Ministry Directory" property="og:title"/>
+<meta content="Free, clickable help resources organized by Global, USA National, State, City Hub, and help categories (housing, food, utilities, legal, health, jobs, crisis support, and more)." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Chamber of Hope – Worldwide HELPS Ministry Directory" name="twitter:title"/>
+<meta content="Free, clickable help resources organized by Global, USA National, State, City Hub, and help categories." name="twitter:description"/>
+<meta content="#4b2c63" name="theme-color"/>
+<style>
+ /* Accessibility: skip link */
+.skip-link{
+ position:absolute; left:-999px; top:10px;
+ background:#ffffff; color:#2a1e16;
+ border:2px solid var(--deep-gold);
+ padding:0.4rem 0.7rem; border-radius:0.6rem;
+ z-index:9999;
+}
+.skip-link:focus{ left:10px; }
+
+:root {
+ --cream: #f9f3e8;
+ --gold: #d1a94a;
+ --soft-gold: #f3e0b6;
+ --deep-gold: #b5852c;
+ --purple: #4b2c63;
+ --teal: #138a8a;
+ --turquoise: #2aa6b8;
+ --soft-gray: #f1f1f5;
+ --border-soft: #e1d5c5;
+ --danger: #b3261e;
+ --link: #0b63a7;
+ }
+
+ * {
+ box-sizing: border-box;
+ }
+
+ body {
+ margin: 0;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+ background: radial-gradient(circle at top left, #fffaf3 0, #f9f3e8 40%, #f5eee0 100%);
+ color: #2a1e16;
+ line-height: 1.55;
+ }
+
+ a {
+ color: var(--link);
+ text-decoration: none;
+ }
+ a:hover {
+ text-decoration: underline;
+ }
+
+ .page {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 1.5rem 1rem 3rem;
+ }
+
+ header.hero {
+ background: linear-gradient(135deg, #fffaf3, #f5e6c8);
+ border-radius: 1.75rem;
+ padding: 1.75rem 1.75rem 1.5rem;
+ border: 1px solid var(--border-soft);
+ box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+ display: grid;
+ grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+ gap: 1.25rem;
+ align-items: center;
+ }
+
+ @media (max-width: 900px) {
+ header.hero {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .hero-title {
+ font-size: 1.9rem;
+ font-weight: 800;
+ color: var(--purple);
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ margin-bottom: 0.4rem;
+ }
+
+ .hero-sub {
+ font-size: 0.98rem;
+ color: #5b4630;
+ margin-bottom: 0.4rem;
+ }
+
+ .hero-sub strong {
+ color: var(--deep-gold);
+ }
+
+ .hero-tags {
+ font-size: 0.9rem;
+ color: #6b563e;
+ margin-bottom: 0.5rem;
+ }
+
+ .hero-badges {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.4rem;
+ margin: 0.4rem 0 0.7rem;
+ }
+
+ .badge {
+ font-size: 0.78rem;
+ padding: 0.18rem 0.55rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.06);
+ background: rgba(255,255,255,0.75);
+ backdrop-filter: blur(4px);
+ display: inline-flex;
+ align-items: center;
+ gap: 0.25rem;
+ white-space: nowrap;
+ }
+
+ .badge.peacock { border-color: var(--teal); color: var(--teal); }
+ .badge.elephant { border-color: var(--purple); color: var(--purple); }
+ .badge.panther { border-color: var(--deep-gold); color: var(--deep-gold); }
+
+ .hero-logo-wrap {
+ text-align: center;
+ }
+
+ .hero-logo {
+ display: inline-flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 0.5rem;
+ padding: 1rem;
+ border-radius: 1.5rem;
+ background: radial-gradient(circle at top, #ffffff, #f3e1bd);
+ box-shadow:
+ 0 12px 30px rgba(0,0,0,0.12),
+ 0 0 0 1px rgba(255,255,255,0.8) inset;
+ }
+
+ .hero-logo img {
+ max-width: 460px;
+ max-height: 375px;
+ object-fit: contain;
+ display: block;
+ filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
+ }
+
+ .hero-logo-caption {
+ font-size: 0.8rem;
+ color: #6b563e;
+ }
+
+ .hero-cta-row {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+ margin-top: 0.4rem;
+ }
+
+ .btn {
+ border-radius: 999px;
+ padding: 0.45rem 0.9rem;
+ font-size: 0.86rem;
+ font-weight: 600;
+ border: 1px solid transparent;
+ display: inline-flex;
+ align-items: center;
+ gap: 0.3rem;
+ cursor: pointer;
+ text-decoration: none;
+ }
+
+ .btn-primary {
+ background: radial-gradient(circle at top left, #fef6e7, #d1a94a);
+ border-color: var(--deep-gold);
+ color: #3b260e;
+ box-shadow: 0 8px 18px rgba(134, 88, 19, 0.35);
+ }
+
+ .btn-outline {
+ background: rgba(255,255,255,0.7);
+ border-color: rgba(0,0,0,0.08);
+ color: #4b341a;
+ }
+
+ .layout {
+ margin-top: 1.5rem;
+ display: grid;
+ grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+ gap: 1.5rem;
+ }
+
+ @media (max-width: 1000px) {
+ .layout {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ section {
+ margin-bottom: 1.25rem;
+ }
+
+ .card {
+ background: #fffdf9;
+ border-radius: 1.3rem;
+ border: 1px solid var(--border-soft);
+ box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+ padding: 1.1rem 1.2rem;
+ margin-bottom: 0.95rem;
+ }
+
+ .card-gold {
+ background: linear-gradient(135deg, #fffaf1, #f3e0b6);
+ }
+
+ .card-soft {
+ background: var(--soft-gray);
+ }
+
+ .card h2, .card h3, .card h4 {
+ margin-top: 0;
+ margin-bottom: 0.55rem;
+ color: var(--purple);
+ letter-spacing: 0.02em;
+ }
+
+ .card h2 { font-size: 1.15rem; }
+ .card h3 { font-size: 1.05rem; }
+ .card h4 { font-size: 0.95rem; }
+
+ .tagline {
+ font-style: italic;
+ font-size: 0.9rem;
+ color: #5a4632;
+ margin-top: 0.2rem;
+ margin-bottom: 0.3rem;
+ }
+
+ .mini-pill {
+ display: inline-block;
+ background: rgba(255,255,255,0.8);
+ border-radius: 999px;
+ padding: 0.15rem 0.6rem;
+ font-size: 0.75rem;
+ color: #6b5640;
+ border: 1px solid rgba(0,0,0,0.06);
+ margin-right: 0.3rem;
+ margin-top: 0.25rem;
+ }
+
+ .pill-urgent {
+ background: #fff5f4;
+ border-color: #f2bfbb;
+ color: var(--danger);
+ }
+
+ .pill-scripture {
+ background: #efe8ff;
+ border-color: #d3c4ff;
+ color: var(--purple);
+ }
+
+ ul, ol {
+ padding-left: 1.1rem;
+ margin-top: 0.25rem;
+ margin-bottom: 0.55rem;
+ }
+
+ li {
+ margin-bottom: 0.28rem;
+ }
+
+ .two-col {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0,1fr));
+ gap: 0.6rem 1.2rem;
+ }
+
+ @media (max-width: 800px) {
+ .two-col {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .small {
+ font-size: 0.85rem;
+ }
+
+ .disclaimer {
+ font-size: 0.78rem;
+ color: #6b5b47;
+ }
+
+ .footer {
+ margin-top: 1.5rem;
+ padding-top: 1rem;
+ border-top: 1px dashed #d9c7aa;
+ font-size: 0.82rem;
+ color: #6b5b47;
+ text-align: center;
+ }
+
+ .highlight-bar {
+ font-size: 0.82rem;
+ padding: 0.4rem 0.7rem;
+ border-radius: 999px;
+ background: linear-gradient(90deg, rgba(209,169,74,0.13), rgba(75,44,99,0.07));
+ display: inline-flex;
+ align-items: center;
+ gap: 0.4rem;
+ color: #4b2c63;
+ margin-top: 0.2rem;
+ }
+
+ .category-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+ gap: 0.35rem 1.4rem;
+ font-size: 0.88rem;
+ }
+
+ .category-grid div {
+ padding-left: 0.2rem;
+ }
+
+ .section-label {
+ text-transform: uppercase;
+ font-size: 0.78rem;
+ letter-spacing: 0.08em;
+ color: #8c6f47;
+ margin-bottom: 0.25rem;
+ }
+
+ .strong-label {
+ font-weight: 600;
+ color: #3b2916;
+ }
+
+ .inset {
+ border-left: 3px solid var(--gold);
+ padding-left: 0.7rem;
+ margin-top: 0.4rem;
+ margin-bottom: 0.4rem;
+ font-size: 0.9rem;
+ }
+
+ .pill-animals {
+ background: #f1e6ff;
+ border-color: #d4bfff;
+ color: var(--purple);
+ }
+
+ .pill-african {
+ background: #e8f4f1;
+ border-color: #b4ddd0;
+ color: #20574b;
+ }
+ 
+
+/* Highlighted spiritual/identity/celestial sections */
+.card.highlight-celestial {
+ border: 2px solid #c9a7ff;
+ box-shadow: 0 0 18px rgba(137, 88, 255, 0.25);
+ background: radial-gradient(circle at top left, #fff7ff, #fdfbff);
+}
+.card.highlight-lgbtq {
+ border: 2px solid #ffb3d9;
+ box-shadow: 0 0 18px rgba(255, 140, 199, 0.25);
+ background: radial-gradient(circle at top left, #fff5fa, #fff9ff);
+}
+.card.highlight-spiritual {
+ border: 2px solid #f7d58a;
+ box-shadow: 0 0 18px rgba(247, 191, 104, 0.28);
+ background: radial-gradient(circle at top left, #fff9f0, #fffdf7);
+}
+
+/* Quick ribbon at very top */
+.quick-ribbon {
+ position: sticky;
+ top: 0;
+ z-index: 999;
+ background: linear-gradient(90deg, #fff7e0, #fdf3ff);
+ border-bottom: 1px solid rgba(0,0,0,0.05);
+ padding: 8px 14px;
+ font-size: 0.9rem;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ align-items: center;
+}
+.quick-ribbon span.label {
+ font-weight: 600;
+ margin-right: 6px;
+}
+.quick-ribbon a {
+ text-decoration: none;
+ padding: 4px 9px;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.06);
+ background: rgba(255,255,255,0.8);
+ box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.quick-ribbon a:hover {
+ background: #fff;
+}
+
+/* Back-to-top link */
+.back-to-top {
+ margin-top: 8px;
+ font-size: 0.8rem;
+ text-align: right;
+}
+.back-to-top a {
+ text-decoration: none;
+ opacity: 0.75;
+}
+.back-to-top a:hover {
+ opacity: 1;
+ text-decoration: underline;
+}
+
+/* Emergency bar & safety tools */
+.emergency-bar {
+ position: sticky;
+ top: 0;
+ z-index: 999;
+ background: linear-gradient(90deg, #b00020, #d32f2f);
+ color: #ffffff;
+ padding: 6px 14px;
+ font-size: 0.9rem;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 8px;
+}
+.emergency-bar a {
+ color: #ffffff;
+ text-decoration: underline;
+}
+.emergency-bar a:hover {
+ text-decoration: none;
+}
+.btn-exit {
+ background: #ffffff;
+ color: #b00020;
+ border-radius: 999px;
+ border: none;
+ padding: 4px 12px;
+ font-size: 0.8rem;
+ font-weight: 600;
+ cursor: pointer;
+ box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+}
+.btn-exit:hover {
+ background: #ffe5e5;
+}
+
+/* Top tools: accessibility, search, share */
+.top-tools {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 10px;
+ padding: 8px 14px 4px;
+ background: rgba(255, 255, 255, 0.8);
+ backdrop-filter: blur(4px);
+ border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+.accessibility-tools button {
+ margin-right: 4px;
+ padding: 2px 8px;
+ font-size: 0.75rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.15);
+ background: #ffffff;
+ cursor: pointer;
+}
+.accessibility-tools button:hover {
+ background: #f3f0ea;
+}
+.search-share-wrap {
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ flex: 1;
+ justify-content: flex-end;
+}
+#directory-search {
+ flex: 1;
+ min-width: 180px;
+ max-width: 280px;
+ padding: 4px 8px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.18);
+}
+.share-buttons button {
+ padding: 4px 10px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.15);
+ background: #ffffff;
+ cursor: pointer;
+}
+.share-buttons button:hover {
+ background: #f3f0ea;
+}
+@media (max-width: 720px) {
+ .search-share-wrap {
+ justify-content: flex-start;
+ }
+}
+
+/* High contrast mode */
+body.high-contrast {
+ background: #000000;
+ color: #ffffff;
+}
+body.high-contrast .card {
+ background: #101010;
+ color: #ffffff;
+ border-color: #ffffff;
+}
+body.high-contrast a {
+ color: #ffec80;
+}
+body.high-contrast .hero-inner {
+ background: #181818;
+}
+body.high-contrast .emergency-bar {
+ background: #000000;
+ border-bottom: 1px solid #ffffff;
+}
+body.high-contrast .btn-exit {
+ background: #ffffff;
+ color: #000000;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+ position: fixed;
+ right: 12px;
+ bottom: 12px;
+ padding: 6px 10px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: none;
+ background: rgba(75, 44, 99, 0.9);
+ color: #ffffff;
+ cursor: pointer;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+#scrollTopBtn:hover {
+ background: rgba(49, 27, 74, 0.95);
+}
+
+ .state-flag {
+ font-size: 0.8rem;
+ margin-left: 0.35rem;
+ vertical-align: middle;
+ }
+
+
+ /* === Global visual polish adjustments (Option 1: mix of B & C) === */
+
+ /* Make small text more readable and evenly spaced */
+ .small {
+ font-size: 0.86rem;
+ line-height: 1.5;
+ }
+
+ /* Give small lists consistent breathing room and bullets */
+ ul.small {
+ margin: 0.4rem 0 0.8rem 1.1rem;
+ padding-left: 0;
+ list-style: disc;
+ }
+
+ ul.small > li {
+ margin-bottom: 0.45rem;
+ }
+
+ /* Maryland hero heading: align visually with VA City header size */
+ #md-overview header.hero h1 {
+ font-size: 1.25rem;
+ line-height: 1.35;
+ letter-spacing: 0.01em;
+ font-weight: 800;
+ color: var(--purple);
+ margin-bottom: 0.35rem;
+ text-wrap: balance;
+ }
+
+ /* Ensure state flag inline span stays small and aligned */
+ .state-flag {
+ font-size: 0.9rem;
+ margin-left: 0.35rem;
+ vertical-align: middle;
+ }
+
+ /* Slightly increase spacing between major sections for flow */
+ section.section-block {
+ margin-top: 2.25rem;
+ margin-bottom: 2.25rem;
+ }
+
+ /* Optional: unify page title blocks (VA + MD overview cards) */
+ #va-overview .card h2,
+ #md-overview .card h2 {
+ font-size: 1.15rem;
+ letter-spacing: 0.02em;
+ }
+
+
+ .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+ @media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+
+ .medium{font-size:15px;line-height:1.55;}
+
+.state-hr{border:0;border-top:4px solid rgba(0,0,0,.12);margin:26px auto;max-width:1100px;}
+[id]{scroll-margin-top:90px;}
+
+/* Ministry-first tone (soft + strong) */
+.ministry-voice{margin:10px 0 14px 0;padding:10px 12px;border:1px solid rgba(0,0,0,.12);border-radius:14px;background:rgba(255,255,255,.35);}
+.ministry-voice p{margin:6px 0;}
+
+.details-body{margin-top:10px;}
+details.card-soft summary{cursor:pointer; padding:8px 0;}
+details.card-soft[open]{padding-bottom:10px;}
+
+
+/* Clear layer */
+.card-Clear{
+ border: 1px solid rgba(0,0,0,.08);
+ background: rgba(255,255,255,.65);
+ padding: 10px 12px;
+ border-radius: 14px;
+ margin: 10px 0 12px 0;
+}
+.card-Clear .small{ margin: 0 0 8px 0; }
+.card-Clear ul{ margin: 0; padding-left: 18px; }
+
+/* Anchor hardening: improves in-page jump reliability (esp. state/city links) */
+:target { scroll-margin-top: 90px; }
+section[id], div[id], a[id] { scroll-margin-top: 90px; }
+
+/* Search highlight */
+.search-hit{ outline: 3px solid #ffcc00; outline-offset: 4px; }
+</style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Chamber of Hope – Worldwide HELPS Ministry Directory",
+ "description":"Worldwide HELPS Ministry Directory with free, clickable resources organized by Global, USA National, State, City Hub, and help categories."
+}
+</script>
+<link href="site-enhancements-july13-final.css" rel="stylesheet"/><script defer="" src="site-enhancements-july13-final.js"></script></head>
+<body><div id="coh-global-tools"></div><div id="us-overview"></div><div id="us-national"></div>
+<div class="card card-soft">
+<h2>🇺🇸 United States — National HELPS Directory</h2>
+<div class="note"><strong>Start here:</strong> Use U.S. National Help for countrywide starting points, then open the state page for local and statewide resources.</div>
+<div class="card card-soft" id="usa-coverage-block">
+<h3>🇺🇸 USA Coverage — States, Territories, and International Expansion</h3>
+<p class="small"><strong>States:</strong> Open the state page that matches where help is needed. State pages point visitors toward statewide, local, and official starting points.</p>
+<div class="note">
+<p class="small"><strong>🏝 U.S. Territories are included</strong> (included one hub at a time so every category stays real and clickable).</p>
+<p class="small"><a class="btn" href="territories.html#territories-overview">Go to U.S. Territories</a> <a class="btn" href="us_territories_guidance.html">U.S. Territories Guidance</a></p>
+<p class="small muted">Territories included: Puerto Rico, U.S. Virgin Islands, Guam, Northern Mariana Islands (CNMI), American Samoa.</p>
+</div>
+<div class="note">
+<p class="small"><strong>🌍 International Countries</strong> are available in this directory with country-level starting points and resource links.</p>
+<p class="small"><a class="btn" href="international.html">Go to International</a></p>
+<p class="small muted">Current international run: 70 countries with fast country pages linked from the international section.</p>
+</div>
+</div>
+<p class="medium" data-donate-pointer="true">💝 Want to donate? Tap <a href="give_support.html">Give &amp; Support</a>.</p>
+<p class="medium"><em>If a direct app or website link is not listed here, neighbors can search for the resource name within this directory, use the state or city sections below, or look it up online (Google, App Store, or official websites) to find the most current and location-appropriate option.</em></p>
+<p class="tagline">
+ Use these resources from any state before you search your specific state or city.
+ </p>
+<p class="small">
+ This section is for neighbors living in the <strong>United States</strong>. It sits between the
+ <em>Global</em> section and each state-level directory (Virginia, Maryland, West Virginia, and more).
+ </p>
+<div class="card card-soft" id="us-section-switchboard">
+<h3>🧭 Start in the Right Section</h3>
+<p class="small"><strong>US National</strong> is for nationwide U.S. hotlines, federal tools, and benefit starters. Start here before a state page when you need help that works across the United States.</p>
+<p class="small"><a class="btn" href="usa.html#us-national">U.S. National</a> <a class="btn" href="global_helps.html#global-helps">Global HELPS</a> <a class="btn" href="misc.html#misc-shared">Misc Resources</a> <a class="btn secondary" href="index.html">Start Here</a></p>
+<p class="small muted">Use <strong>Global</strong> for any-country crisis tools and worldwide guidance. Use <strong>Misc</strong> for shared tools, apps, how-to help, and language learning.</p>
+</div>
+<div class="card card-gold" id="usa-national-help-center">
+<h3>🇺🇸 USA National Help Center</h3>
+<p class="small">Use this page once for nationwide U.S. starting points. After you find the right program or next step, choose your state for local offices, applications, and city resources.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.65rem;margin-top:.8rem;">
+<a class="btn" href="#us-benefits-start">Benefits &amp; Eligibility</a>
+<a class="btn" href="life_stages.html#start-here">Life Stages &amp; Benefits</a>
+<a class="btn" href="records_archives.html">Records &amp; Family History</a>
+<a class="btn" href="#us-housing">Housing &amp; Rent Help</a>
+<a class="btn" href="#us-scam-safety">Scams &amp; Identity Theft</a>
+<a class="btn" href="#us-seniors">Caregiver, Disability &amp; Respite</a>
+<a class="btn" href="#us-disaster-emergency">Disaster Recovery</a>
+<a class="btn" href="#us-replace-documents">Replace Lost Documents</a>
+<a class="btn" href="#us-denied-help">Denied or Waitlisted</a>
+<a class="btn" href="#usa-states">Choose a State</a>
+</div>
+<p class="small muted" style="margin-top:.75rem;">For a life-threatening emergency, call 911. For local referrals by ZIP code, call 211 or use 211.org.</p>
+</div>
+</div>
+<div class="card card-soft" id="us-life-stages-benefits-planning">
+<h3>🧭 U.S. Benefits, Insurance &amp; Life Planning Help</h3>
+<p class="small">For children, families, people with disabilities, caregivers, older adults, and anyone preparing for retirement, use the Life Stages guide for Social Security, SSI, SSDI, Medicare, Medicaid/CHIP, health/dental/life insurance, pensions, 401(k), IRA, Roth IRA, survivor benefits, scam protection, and future planning documents.</p>
+<p class="small"><a class="btn" href="life_stages.html#start-here">Open Life Stages, Benefits, Insurance &amp; Future Planning Help</a> <a class="btn" href="life_stages.html#children-family-benefits">Children &amp; Family</a> <a class="btn" href="life_stages.html#disability-benefits-planning">Disability</a> <a class="btn" href="life_stages.html#older-adults-retirement">Retirement</a></p>
+</div>
+<div class="card card-soft" id="us-records-archives-family-history">
+<h3>📚 U.S. Records, Archives &amp; Family History Help</h3>
+<p class="small">For birth, death, marriage, divorce, adoption, cemetery/burial, obituary, court, probate, military, immigration/naturalization, property/land, genealogy, archives, and tribal/Indigenous records, start with the official office connected to the place, court, archive, military branch, or agency that created the record.</p>
+<p class="small"><a class="btn" href="records_archives.html#official-us-links">Open U.S. Official Records Links</a> <a class="btn" href="records_archives.html#record-types">Choose Record Type</a> <a class="btn" href="records_archives.html#us-states-territories">State &amp; Territory Guidance</a></p>
+<p class="small muted">This section points to official starting places only and does not replace legal advice, genealogy certification, identity verification, immigration advice, or certified record retrieval.</p>
+</div>
+<div class="card card-gold" id="us-benefits-start">
+<h3>🧭 Benefits &amp; Eligibility — Start Here</h3>
+<p class="small">Begin with the official USAGov Benefit Finder, then move to the agency or state portal that handles the application. The finder suggests possible programs; it does not submit applications for you.</p>
+<ul class="small">
+<li><strong>Personalized federal benefit starting point:</strong> <a href="https://www.usa.gov/benefit-finder" rel="noopener" target="_blank">USAGov Benefit Finder</a></li>
+<li><strong>Browse benefits by need:</strong> <a href="https://www.usa.gov/benefits" rel="noopener" target="_blank">Food, housing, health, disability, unemployment, and other government benefits</a></li>
+<li><strong>Health coverage:</strong> <a href="https://www.healthcare.gov/get-coverage/" rel="noopener" target="_blank">HealthCare.gov</a> • <a href="https://www.medicaid.gov/about-us/where-can-people-get-help-medicaid-chip" rel="noopener" target="_blank">Medicaid / CHIP state contacts</a></li>
+<li><strong>Social Security / SSI:</strong> <a href="https://www.ssa.gov/apply" rel="noopener" target="_blank">SSA — Apply for benefits</a> • <a href="https://www.ssa.gov/apply/ssi" rel="noopener" target="_blank">Apply for SSI</a></li>
+<li><strong>Unemployment:</strong> <a href="https://www.careeronestop.org/LocalHelp/UnemploymentBenefits/Find-Unemployment-Benefits.aspx" rel="noopener" target="_blank">CareerOneStop state unemployment finder</a></li>
+<li><strong>Disaster recovery:</strong> <a href="https://www.disasterassistance.gov/" rel="noopener" target="_blank">DisasterAssistance.gov</a> • FEMA <a href="tel:18006213362">1-800-621-3362</a></li>
+</ul>
+</div>
+<div class="card" id="us-211">
+<h3>📱 What to Ask 211</h3>
+<p class="small">Call <a href="tel:211">211</a> or start at <a href="https://www.211.org/" rel="noopener" target="_blank">211.org</a>. Tell them your ZIP code first, then your most urgent need.</p>
+<ul class="small">
+<li><strong>Simple script:</strong> “Hi, I live in [ZIP / city]. I need help with housing, food, medical care, transportation, legal help, or bills. What can I apply for first?”</li>
+<li><strong>Ask next:</strong> “Do you have same-day help, shelter tonight, food today, or emergency utility help?”</li>
+<li><strong>If you are denied:</strong> “Is there a waitlist, alternate program, or partner agency I should call next?”</li>
+<li><strong>Good things to request:</strong> housing referrals, food pantries, utility help, transportation, clinics, legal aid, domestic violence resources, and local DSS / Human Services contacts.</li>
+</ul>
+</div>
+<div class="card" id="us-denied-help">
+<h3>🧭 If You Were Denied, Waitlisted, or Could Not Reach Anyone</h3>
+<ol class="small">
+<li>Ask for the reason, decision notice, deadline, and appeal instructions in writing.</li>
+<li>Ask whether funding is temporarily closed, whether a waitlist exists, and when to check again.</li>
+<li>Request an alternate program, partner agency, supervisor, interpreter, or disability accommodation when needed.</li>
+<li>Save names, dates, case numbers, screenshots, letters, and confirmation numbers.</li>
+<li>For civil legal help with benefits, housing, or another denial, use <a href="https://www.usa.gov/legal-aid" rel="noopener" target="_blank">USAGov legal-aid guidance</a> or <a href="https://www.lawhelp.org/find-help" rel="noopener" target="_blank">LawHelp.org</a>.</li>
+<li>For unresolved concerns involving a federal agency, review <a href="https://www.usa.gov/government-agency-complaints" rel="noopener" target="_blank">USAGov federal-agency complaint guidance</a>.</li>
+</ol>
+<p class="small muted">Appeal rules and deadlines vary by program. Follow the instructions on the official decision notice first.</p>
+</div>
+<div class="card" id="us-most-needed">
+<h3>🚦 Most Needed Help First</h3>
+<ul class="small">
+<li><strong>I need food today:</strong> Start with <a href="tel:211">211</a>, <a href="#us-benefits">Benefits, Cash Help &amp; Food</a>, and <a href="https://www.feedingamerica.org/find-your-local-foodbank" rel="noopener" target="_blank">Feeding America food bank finder</a>.</li>
+<li><strong>I need shelter tonight:</strong> Start with <a href="tel:211">211</a>, <a href="#us-housing">Housing Help</a>, and <a href="https://www.hud.gov/findshelter" rel="noopener" target="_blank">HUD Find Shelter</a>. If abuse is involved, use <a href="https://www.thehotline.org/get-help/" rel="noopener" target="_blank">The Hotline</a>.</li>
+<li><strong>I need medicine or care now:</strong> Start with <a href="#us-health">Health Care &amp; Clinics</a>, <a href="https://findahealthcenter.hrsa.gov/" rel="noopener" target="_blank">HRSA Find a Health Center</a>, and <a href="https://www.healthcare.gov/get-coverage/" rel="noopener" target="_blank">HealthCare.gov</a>.</li>
+<li><strong>I need legal help:</strong> Start with <a href="#us-legal">Legal Aid</a>, <a href="https://www.lsc.gov/about-lsc/what-legal-aid/i-need-legal-help" rel="noopener" target="_blank">LSC legal help</a>, and <a href="https://www.lawhelp.org/find-help" rel="noopener" target="_blank">LawHelp.org</a>.</li>
+<li><strong>I am unsafe or worried about someone:</strong> Use the hotline list below right away. Life-threatening emergencies: <a href="tel:911">911</a>.</li>
+</ul>
+</div>
+<div class="card" id="us-not-listed">
+<h3>🗺️ If Your City or State Is Not Listed Yet</h3>
+<ul class="small">
+<li>Start with <strong>US National</strong> first for federal tools, hotlines, and benefit finders.</li>
+<li>Then use <strong>your state page</strong> or official state agency links for local offices, addresses, and applications.</li>
+<li>For local referrals fast, call <a href="tel:211">211</a> or search by ZIP at <a href="https://www.211.org/" rel="noopener" target="_blank">211.org</a>.</li>
+<li>For civil legal help, search your city or ZIP through <a href="https://www.lsc.gov/about-lsc/what-legal-aid/i-need-legal-help" rel="noopener" target="_blank">LSC</a>.</li>
+<li>For health coverage or Medicaid / CHIP help, use <a href="https://www.healthcare.gov/get-coverage/" rel="noopener" target="_blank">HealthCare.gov</a> and your <a href="https://www.medicaid.gov/about-us/where-can-people-get-help-medicaid-chip" rel="noopener" target="_blank">state Medicaid agency</a>.</li>
+</ul>
+</div>
+<div class="card" id="us-benefits-checklist">
+<h3>✅ Federal Benefits Checklist</h3>
+<ul class="small">
+<li><strong>SNAP:</strong> food assistance • <a href="https://www.benefits.gov/benefit/361" rel="noopener" target="_blank">How to apply</a></li>
+<li><strong>WIC:</strong> food and nutrition support for eligible women, infants, and children • <a href="https://www.fns.usda.gov/wic" rel="noopener" target="_blank">USDA WIC</a></li>
+<li><strong>Medicaid / CHIP:</strong> health coverage • <a href="https://www.medicaid.gov/about-us/where-can-people-get-help-medicaid-chip" rel="noopener" target="_blank">State contacts</a></li>
+<li><strong>SSI / SSDI / Social Security:</strong> cash benefits and disability-related support • <a href="https://www.ssa.gov/apply" rel="noopener" target="_blank">SSA Apply</a></li>
+<li><strong>TANF:</strong> temporary cash help for eligible families • <a href="https://www.benefits.gov/benefit/1679" rel="noopener" target="_blank">TANF info</a></li>
+<li><strong>LIHEAP:</strong> heating / cooling bill help • <a href="https://www.benefits.gov/benefit/1397" rel="noopener" target="_blank">LIHEAP info</a></li>
+<li><strong>Unemployment Insurance:</strong> apply through your state • <a href="https://www.careeronestop.org/LocalHelp/UnemploymentBenefits/Find-Unemployment-Benefits.aspx" rel="noopener" target="_blank">Find your state UI page</a></li>
+<li><strong>Disaster help:</strong> FEMA / DisasterAssistance.gov if a declared disaster affected you • <a href="https://www.disasterassistance.gov/" rel="noopener" target="_blank">Apply here</a></li>
+</ul>
+</div>
+<div class="card" id="us-docs-gather">
+<h3>🧾 Documents to Gather First</h3>
+<ul class="small">
+<li>Photo ID or another form of identity</li>
+<li>Social Security numbers or benefit ID numbers if you have them</li>
+<li>Proof of address or where you are staying</li>
+<li>Income proof, pay stubs, unemployment papers, or benefits letters if you have them</li>
+<li>Lease, eviction notice, utility shutoff, or medical papers if they fit your need</li>
+<li>Children’s documents, school papers, or prescriptions if relevant</li>
+<li>Phone numbers, case numbers, and login information for any open applications</li>
+</ul>
+</div>
+<div class="card" id="us-replace-documents">
+<h3>🪪 Replace Lost or Stolen Documents</h3>
+<p class="small">Use official agencies to replace documents. Do not pay an unofficial company for forms that the government provides directly.</p>
+<ul class="small">
+<li><strong>All major document types:</strong> <a href="https://www.usa.gov/replace-vital-documents" rel="noopener" target="_blank">USAGov — replace lost or stolen ID and vital records</a></li>
+<li><strong>Social Security card:</strong> <a href="https://www.usa.gov/social-security-card" rel="noopener" target="_blank">Replacement and correction options</a></li>
+<li><strong>Birth, death, marriage, or divorce records:</strong> <a href="https://www.usa.gov/request-documents" rel="noopener" target="_blank">Find the correct state or local records office</a></li>
+<li><strong>Driver’s license or state ID:</strong> contact your state motor-vehicle agency through the state page below.</li>
+</ul>
+</div>
+<div class="card" id="us-phone-apply">
+<h3>📲 How to Apply Online From Your Phone</h3>
+<ul class="small">
+<li><strong>Email:</strong> Set up or use an email you can check daily.</li>
+<li><strong>Scan documents:</strong> <a href="https://www.adobe.com/acrobat/mobile/scanner-app.html" rel="noopener" target="_blank">Adobe Scan</a> or your phone camera.</li>
+<li><strong>Store copies:</strong> <a href="https://drive.google.com/" rel="noopener" target="_blank">Google Drive</a> or another secure cloud folder.</li>
+<li><strong>Apply from official sites:</strong> <a href="https://www.usa.gov/benefit-finder" rel="noopener" target="_blank">USAGov Benefit Finder</a>, <a href="https://www.healthcare.gov/get-coverage/" rel="noopener" target="_blank">HealthCare.gov</a>, <a href="https://www.ssa.gov/apply" rel="noopener" target="_blank">SSA</a>, and your state benefits portal.</li>
+<li><strong>Track next steps:</strong> save screenshots, confirmation numbers, emails, and callback times.</li>
+</ul>
+</div>
+<div class="card" id="us-scam-safety">
+<h3>🛡️ Scam &amp; Identity-Theft Recovery</h3>
+<ul class="small">
+<li>Use official <strong>.gov</strong> websites, trusted nonprofits, and established hotlines.</li>
+<li>Never pay upfront fees for “guaranteed” housing, faster benefits, waitlist placement, grants, or immigration forms.</li>
+<li><strong>Identity theft:</strong> use <a href="https://www.identitytheft.gov/" rel="noopener" target="_blank">IdentityTheft.gov</a> for a personal recovery plan, reporting steps, and sample letters.</li>
+<li><strong>Fraud or impersonation scam:</strong> report it at <a href="https://reportfraud.ftc.gov/" rel="noopener" target="_blank">ReportFraud.ftc.gov</a> and contact your bank or payment service immediately if money was sent.</li>
+<li><strong>Lost, stolen, or exposed information:</strong> change affected passwords, preserve messages and receipts, review accounts, and follow the steps at <a href="https://www.identitytheft.gov/Info-Lost-or-Stolen" rel="noopener" target="_blank">IdentityTheft.gov</a>.</li>
+<li><strong>Immigration legal help:</strong> use <a href="https://www.uscis.gov/scams-fraud-and-misconduct/avoid-scams/common-scams" rel="noopener" target="_blank">USCIS scam warnings</a> and official legal-help directories only.</li>
+</ul>
+</div>
+<div class="card" id="us-specific-groups">
+<h3>👨‍👩‍👧‍👦 Help for Specific Groups</h3>
+<ul class="small">
+<li><strong>Veterans:</strong> <a href="https://www.va.gov/" rel="noopener" target="_blank">VA.gov</a> • Veterans Crisis Line: call <a href="tel:988">988</a> then Press 1 • text <a href="sms:838255">838255</a></li>
+<li><strong>Older adults &amp; caregivers:</strong> <a href="https://eldercare.acl.gov/" rel="noopener" target="_blank">Eldercare Locator</a></li>
+<li><strong>Children / child safety:</strong> Childhelp — call or text <a href="tel:18004224453">1-800-422-4453</a> • <a href="https://childhelphotline.org/" rel="noopener" target="_blank">childhelphotline.org</a></li>
+<li><strong>Youth in crisis / runaway / family conflict:</strong> National Runaway Safeline — call or text <a href="tel:18007862929">1-800-786-2929</a> • <a href="https://www.1800runaway.org/" rel="noopener" target="_blank">1800runaway.org</a></li>
+<li><strong>Sexual assault:</strong> RAINN — call <a href="tel:18006564673">1-800-656-4673</a> • text HOPE to <a href="sms:64673">64673</a> • <a href="https://rainn.org/help-and-healing/hotline/" rel="noopener" target="_blank">RAINN hotline</a></li>
+</ul>
+</div>
+<div class="card" id="us-additional-life-support">
+<h3>🧩 Additional Life Support Categories (U.S.)</h3>
+<p class="small"><strong>Use this for:</strong> missing-person help, reentry and returning-citizen support, parenting and family stability, grief help, recovery support, digital basics, and U.S. life-transition support.</p>
+</div>
+<div class="card" id="us-life-missing-person">
+<h3>🧭 Missing Person / Missing Children Support (U.S.)</h3>
+<ul class="small">
+<li><strong>Website / Locator:</strong> <a href="https://www.missingkids.org/gethelpnow" rel="noopener" target="_blank">NCMEC Get Help Now</a> • <a href="https://www.missingkids.org/search" rel="noopener" target="_blank">Search Missing Children Posters</a> • <a href="https://namus.nij.ojp.gov/" rel="noopener" target="_blank">NamUs</a> • <a href="https://www.amberalert.gov/" rel="noopener" target="_blank">AMBER Alert</a></li>
+<li><strong>Phone / Text / Chat:</strong> If someone may be in danger, call <a href="tel:911">911</a> first. Then contact NCMEC’s 24-hour line at <a href="tel:18008435678">1-800-843-5678</a>. For runaway youth support, call or text the National Runaway Safeline at <a href="tel:18007862929">1-800-786-2929</a>.</li>
+<li><strong>Address / Office:</strong> National Center for Missing &amp; Exploited Children, 333 John Carlyle Street, Suite 125, Alexandria, VA 22314 • phone <a href="tel:17032242150">703-224-2150</a>. NamUs / U.S. DOJ, 999 N. Capitol St. NE, Washington, DC 20531 • DIAMD help <a href="tel:18338725176">833-872-5176</a>.</li>
+<li><strong>App / Tool:</strong> <a href="https://www.missingkids.org/search" rel="noopener" target="_blank">NCMEC poster map</a> • <a href="https://maps.google.com/" rel="noopener" target="_blank">Google Maps</a> search: “police department near me” • <a href="https://www.adobe.com/acrobat/mobile/scanner-app.html" rel="noopener" target="_blank">Adobe Scan</a> for flyers and records • <a href="https://drive.google.com/" rel="noopener" target="_blank">Google Drive</a> for case photos and documents</li>
+<li><strong>Use this for:</strong> missing children, missing adults, suspected abduction, runaway cases, unidentified-person leads, and sharing verified posters instead of unverified social-media claims.</li>
+</ul>
+</div>
+<div class="card" id="us-life-reentry">
+<h3>🔄 Reentry / Returning Citizens</h3>
+<ul class="small">
+<li><strong>National Reentry Resource Center:</strong> <a href="https://nationalreentryresourcecenter.org/" rel="noopener" target="_blank">nationalreentryresourcecenter.org</a></li>
+<li><strong>CareerOneStop ReEntry:</strong> <a href="https://www.careeronestop.org/ExOffender/default.aspx" rel="noopener" target="_blank">job search help after incarceration</a></li>
+<li><strong>U.S. Department of Labor — Reentry Employment Opportunities:</strong> <a href="https://www.dol.gov/agencies/eta/reentry" rel="noopener" target="_blank">dol.gov/agencies/eta/reentry</a></li>
+<li><strong>Start here for:</strong> job training, bonding / hiring support, housing restart, identification, and transition planning.</li>
+</ul>
+</div>
+<div class="card" id="us-life-recovery">
+<h3>🫶 Recovery / Addiction Support</h3>
+<ul class="small">
+<li><strong>SAMHSA National Helpline:</strong> call <a href="tel:18006624357">1-800-662-4357</a> • TTY <a href="tel:18004874889">1-800-487-4889</a></li>
+<li><strong>FindTreatment.gov:</strong> <a href="https://findtreatment.gov/" rel="noopener" target="_blank">findtreatment.gov</a></li>
+<li><strong>988 Suicide &amp; Crisis Lifeline:</strong> call or text <a href="tel:988">988</a> • <a href="https://988lifeline.org/" rel="noopener" target="_blank">988lifeline.org</a></li>
+<li><strong>Start here for:</strong> detox, treatment locators, mental health support, family help, and urgent crisis support.</li>
+</ul>
+</div>
+<div class="card" id="us-life-parenting">
+<h3>🤰 Pregnancy / Parenting / New Mothers</h3>
+<ul class="small">
+<li><strong>WIC:</strong> <a href="https://www.fns.usda.gov/wic/apply" rel="noopener" target="_blank">Apply for WIC</a></li>
+<li><strong>Insure Kids Now:</strong> <a href="https://www.insurekidsnow.gov/" rel="noopener" target="_blank">insurekidsnow.gov</a> • <a href="tel:18775437669">1-877-KIDS-NOW</a></li>
+<li><strong>National Diaper Bank Network:</strong> <a href="https://nationaldiaperbanknetwork.org/" rel="noopener" target="_blank">nationaldiaperbanknetwork.org</a></li>
+<li><strong>211:</strong> call <a href="tel:211">211</a> for local baby supplies, shelters, meals, and parenting support.</li>
+</ul>
+</div>
+<div class="card" id="us-life-grief">
+<h3>🕊️ Grief / Funeral / End-of-Life Help</h3>
+<ul class="small">
+<li><strong>Dougy Center:</strong> <a href="https://www.dougy.org/" rel="noopener" target="_blank">dougy.org</a> — grief resources and support for children, teens, young adults, and families.</li>
+<li><strong>Funeral Consumers Alliance:</strong> <a href="https://www.funerals.org/your-rights/" rel="noopener" target="_blank">your funeral rights</a> • call <a href="tel:18028658300">802-865-8300</a></li>
+<li><strong>211:</strong> call <a href="tel:211">211</a> to ask about local bereavement groups, emergency assistance, faith support, and burial help programs if available.</li>
+<li><strong>Start here for:</strong> grief support, end-of-life planning questions, affordable funeral guidance, and family support after loss.</li>
+</ul>
+</div>
+<div class="card" id="us-life-digital">
+<h3>💻 Digital Life Help</h3>
+<ul class="small">
+<li><strong>Everyone On:</strong> <a href="https://www.everyoneon.org/" rel="noopener" target="_blank">everyoneon.org</a></li>
+<li><strong>DigitalLearn:</strong> <a href="https://www.ala.org/pla/initiatives/digitalliteracy" rel="noopener" target="_blank">free digital literacy courses</a></li>
+<li><strong>Adobe Scan:</strong> <a href="https://www.adobe.com/acrobat/mobile/scanner-app.html" rel="noopener" target="_blank">Adobe Scan</a> • <strong>Google Drive:</strong> <a href="https://drive.google.com/" rel="noopener" target="_blank">drive.google.com</a></li>
+<li><strong>Start here for:</strong> low-cost internet, computer basics, email, scanning documents, and online applications.</li>
+</ul>
+</div>
+<div class="card" id="us-life-groups-intro">
+<h3>🤝 Women, Teen, Senior &amp; LGBTQ+ Group Support (U.S.)</h3>
+<p class="small">These are extra group-support starters that sit outside the main help categories. Use them when someone needs community, belonging, safer support, identity-affirming resources, peer groups, or local chapter finders in the United States.</p>
+</div>
+<div class="card" id="us-life-women-groups">
+<h3>👩 Women’s Groups &amp; Women’s Support (U.S.)</h3>
+<ul class="small">
+<li><strong>Website / Locator:</strong> <a href="https://www.ywca.org/find-your-ywca/" rel="noopener" target="_blank">Find Your YWCA</a> • <a href="https://www.girlsinc.org/find-a-location" rel="noopener" target="_blank">Girls Inc. location finder</a></li>
+<li><strong>Phone / Text / Chat:</strong> National Domestic Violence Hotline — call <a href="tel:18007997233">1-800-799-7233</a> • text <a href="sms:88788">START to 88788</a> • <a href="https://www.thehotline.org/get-help/" rel="noopener" target="_blank">thehotline.org</a></li>
+<li><strong>Address / Office:</strong> YWCA USA, 1400 I Street NW, Suite 540, Washington, DC 20005 • phone <a href="tel:12024670801">(202) 467-0801</a> • <a href="https://www.ywca.org/" rel="noopener" target="_blank">ywca.org</a></li>
+<li><strong>App / Tool:</strong> <a href="https://www.meetup.com/" rel="noopener" target="_blank">Meetup</a> for women’s networking, healing, and community circles • <a href="https://maps.google.com/" rel="noopener" target="_blank">Google Maps</a> search: “women’s center near me”</li>
+</ul>
+</div>
+<div class="card" id="us-life-teen-groups">
+<h3>🧒 Teen &amp; Youth Groups (U.S.)</h3>
+<ul class="small">
+<li><strong>Website / Locator:</strong> <a href="https://www.ymca.org/find-your-y" rel="noopener" target="_blank">Find Your Y</a> • <a href="https://www.jobcorps.gov/" rel="noopener" target="_blank">Job Corps</a> • <a href="https://www.1800runaway.org/" rel="noopener" target="_blank">National Runaway Safeline</a></li>
+<li><strong>Phone / Text / Chat:</strong> National Runaway Safeline — call or text <a href="tel:18007862929">1-800-786-2929</a> • love is respect — call <a href="tel:18663319474">866-331-9474</a> • text <a href="sms:22522">LOVEIS to 22522</a></li>
+<li><strong>Address / Office:</strong> love is respect, PO Box 90249, Austin, TX 78709 • administrative line <a href="tel:17372253150">737-225-3150</a> • <a href="https://www.loveisrespect.org/" rel="noopener" target="_blank">loveisrespect.org</a></li>
+<li><strong>App / Tool:</strong> <a href="https://www.u-report.org/how-to-join-u-report" rel="noopener" target="_blank">U-Report</a> • <a href="https://www.whatsapp.com/" rel="noopener" target="_blank">WhatsApp</a> for supervised group updates and check-ins</li>
+</ul>
+</div>
+<div class="card" id="us-life-senior-groups">
+<h3>👵 Elderly / Seniors / Caregiver Groups (U.S.)</h3>
+<ul class="small">
+<li><strong>Website / Locator:</strong> <a href="https://eldercare.acl.gov/home" rel="noopener" target="_blank">Eldercare Locator</a> • <a href="https://www.aarp.org/volunteer/aarp-chapters/locator/" rel="noopener" target="_blank">AARP Chapter Locator</a> • <a href="https://benefitscheckup.org/" rel="noopener" target="_blank">BenefitsCheckUp</a></li>
+<li><strong>Phone / Text / Chat:</strong> Eldercare Locator — call or text <a href="tel:18006771116">1-800-677-1116</a> • BenefitsCheckUp HelpLine <a href="tel:18007946559">1-800-794-6559</a></li>
+<li><strong>Address / Office:</strong> AARP national office, 601 E Street NW, Washington, DC 20049 • Volunteer Helpline <a href="tel:18667407719">1-866-740-7719</a> • <a href="https://www.aarp.org/states/" rel="noopener" target="_blank">AARP in your state</a></li>
+<li><strong>App / Tool:</strong> <a href="https://maps.google.com/" rel="noopener" target="_blank">Google Maps</a> search: “senior center near me” • patient portals and family <a href="https://www.whatsapp.com/" rel="noopener" target="_blank">WhatsApp</a> groups for caregiver coordination</li>
+</ul>
+</div>
+<div class="card" id="us-life-lgbtq-groups">
+<h3>🏳️‍⚧️ LGBTQ+ Groups &amp; Safe Community (U.S.)</h3>
+<ul class="small">
+<li><strong>Website / Locator:</strong> <a href="https://www.lgbtqcenters.org/LGBTCenters" rel="noopener" target="_blank">CenterLink community center directory</a> • <a href="https://pflag.org/findachapter/" rel="noopener" target="_blank">PFLAG chapter finder</a> • <a href="https://www.sageusa.org/" rel="noopener" target="_blank">SAGE</a></li>
+<li><strong>Phone / Text / Chat:</strong> The Trevor Project — call <a href="tel:18664887386">1-866-488-7386</a> • text <a href="sms:678678">START to 678678</a> • LGBT National Hotline <a href="tel:18888434564">888-843-4564</a> • LGBT Youth Talkline <a href="tel:18002467743">800-246-7743</a></li>
+<li><strong>Address / Office:</strong> Trans Lifeline, 548 Market St., PMB 15337, San Francisco, CA 94104-5401 • U.S. hotline <a href="tel:18775658860">877-565-8860</a> • <a href="https://translifeline.org/" rel="noopener" target="_blank">translifeline.org</a></li>
+<li><strong>App / Tool:</strong> <a href="https://signal.org/" rel="noopener" target="_blank">Signal</a> for more private support chats • <a href="https://pflag.org/pflag-connects/" rel="noopener" target="_blank">PFLAG Connects</a> for virtual community</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>💝 Give • 🙏 Prayer • 💡 Suggestions (Repeated)</h3>
+<p class="small"><strong>Prayer Requests:</strong> <a href="mailto:8chamber8ofhope8@gmail.com?subject=Prayer%20Request">Email a prayer request</a></p>
+<p class="small"><strong>Suggestions / Corrections:</strong> <a href="mailto:8chamber8ofhope8@gmail.com?subject=Directory%20Correction%20or%20Suggestion">Email updates</a> to keep this directory accurate.</p>
+<p class="small"><strong>Give &amp; Support:</strong> If this directory helped you, consider supporting upkeep and verification (see the Give/Support prompts throughout).</p>
+<p class="small"><strong>Disclaimer:</strong> Informational only — call ahead to confirm hours, eligibility, and availability. In emergencies, contact local emergency services.</p>
+<p class="small"><strong>Scripture:</strong> “Let us not love in word or talk but in deed and in truth.” — 1 John 3:18</p>
+</div>
+<div class="card">
+<h3>📞 U.S. National Hotlines (Available from Any State)</h3>
+<ul class="small">
+<li><strong>Life-Threatening Emergency:</strong> Call <a href="tel:911">911</a></li>
+<li><strong>211 Community Help:</strong> Call <a href="tel:211">211</a> • <a href="https://www.211.org/" rel="noopener" target="_blank">211.org</a></li>
+<li><strong>988 Suicide &amp; Crisis Lifeline:</strong> Call or text <a href="tel:988">988</a> • <a href="https://988lifeline.org/" rel="noopener" target="_blank">988lifeline.org</a></li>
+<li><strong>Veterans Crisis Line:</strong> Call <a href="tel:988">988</a> then Press 1 • Text <a href="sms:838255">838255</a> • <a href="https://www.veteranscrisisline.net/" rel="noopener" target="_blank">veteranscrisisline.net</a></li>
+<li><strong>National Domestic Violence Hotline:</strong> <a href="tel:18007997233">1-800-799-7233</a> • Text START to <a href="sms:88788">88788</a> • <a href="https://www.thehotline.org/get-help/" rel="noopener" target="_blank">thehotline.org</a></li>
+<li><strong>National Sexual Assault Hotline (RAINN):</strong> <a href="tel:18006564673">1-800-656-HOPE (4673)</a> • Text HOPE to <a href="sms:64673">64673</a> • <a href="https://rainn.org/help-and-healing/hotline/" rel="noopener" target="_blank">rainn.org</a></li>
+<li><strong>National Human Trafficking Hotline:</strong> <a href="tel:18883737888">1-888-373-7888</a> • Text HELP or INFO to <a href="sms:233733">233733</a> • <a href="https://humantraffickinghotline.org/en" rel="noopener" target="_blank">humantraffickinghotline.org</a></li>
+<li><strong>Childhelp National Child Abuse Hotline:</strong> call or text <a href="tel:18004224453">1-800-422-4453</a> • <a href="https://childhelphotline.org/" rel="noopener" target="_blank">childhelphotline.org</a></li>
+<li><strong>National Runaway Safeline:</strong> call or text <a href="tel:18007862929">1-800-786-2929</a> • <a href="https://www.1800runaway.org/" rel="noopener" target="_blank">1800runaway.org</a></li>
+<li><strong>Poison Control (U.S.):</strong> <a href="tel:18002221222">1-800-222-1222</a></li>
+</ul>
+</div>
+<div class="card" id="us-connectivity">
+<h3>📶 Affordable Phone &amp; Internet (U.S.)</h3>
+<p class="small">
+If you need low-cost connectivity, start here. <strong>Note:</strong> The FCC says the <strong>Affordable Connectivity Program (ACP) ended for now</strong>
+effective <strong>June 1, 2024</strong> due to a lack of funding. Use <strong>Lifeline</strong> and provider programs below as alternatives.
+</p>
+<ul class="small">
+<li><strong>Lifeline (phone/internet discount):</strong> <a href="https://www.lifelinesupport.org/" rel="noopener" target="_blank">lifelinesupport.org</a> •
+<a href="https://www.fcc.gov/general/lifeline-program-low-income-consumers" rel="noopener" target="_blank">FCC Lifeline overview</a> •
+<a href="https://www.usac.org/lifeline/" rel="noopener" target="_blank">USAC Lifeline</a></li>
+<li><strong>ACP (ended for now):</strong> <a href="https://www.fcc.gov/acp" rel="noopener" target="_blank">FCC ACP notice</a> •
+<a href="https://www.fcc.gov/affordable-connectivity-program-consumer-faq" rel="noopener" target="_blank">Consumer FAQ</a></li>
+<li><strong>Internet Essentials (Xfinity/Comcast):</strong> <a href="https://www.xfinity.com/learn/internet-service/internet-essentials" rel="noopener" target="_blank">Program info</a> •
+<a href="https://apply.internetessentials.com/" rel="noopener" target="_blank">Apply / upload docs</a></li>
+<li><strong>Spectrum Internet Assist:</strong> <a href="https://www.spectrum.com/internet/spectrum-internet-assist" rel="noopener" target="_blank">spectrum.com</a></li>
+<li><strong>Access from AT&amp;T:</strong> <a href="https://www.att.com/internet/access/" rel="noopener" target="_blank">att.com/internet/access</a></li>
+<li><strong>Free Wi‑Fi &amp; devices:</strong> Public libraries + community centers • check your city’s <strong>Category 6</strong> and <strong>Category 27</strong> sections.</li>
+</ul>
+</div>
+<div class="card" id="us-legal">
+<h3>⚖️ U.S. Legal Aid &amp; Rights Information</h3>
+<p class="small">
+ These tools help you find <strong>civil legal aid</strong> (evictions, benefits, family law, etc.) and rights information.
+ Always confirm that any lawyer, clinic, or representative is properly licensed or accredited.
+ </p>
+<ul class="small">
+<li><strong>Legal Services Corporation (Find Legal Aid):</strong> <a href="https://www.lsc.gov/about-lsc/what-legal-aid/find-legal-aid" rel="noopener" target="_blank">Find Legal Aid</a></li>
+<li><strong>State &amp; Local Bar Associations:</strong> Search <a href="https://www.google.com/search?q=Bar%20Association%20%2B%20%3Cem%3Eyour%20state%3C/em%3E" rel="noopener" target="_blank">“Bar Association + <em>your state</em>”</a> for lawyer referral services.</li>
+<li><strong>Immigration Help (DOJ Recognized &amp; Accredited):</strong> Use the official DOJ/EOIR Recognition &amp; Accreditation roster reports (recognized organizations + accredited representatives) • <a href="https://www.justice.gov/eoir/recognition-accreditation-roster-reports" rel="noopener" target="_blank">DOJ/EOIR R&amp;A roster reports</a>. To avoid scams, see <a href="https://www.uscis.gov/scams-fraud-and-misconduct/avoid-scams/find-legal-services" rel="noopener" target="_blank">USCIS: Find Legal Services</a>.</li>
+</ul>
+</div>
+<div class="card" id="us-disaster-emergency">
+<h3>🌀 Disaster &amp; Emergency Help (U.S.)</h3>
+<p class="small">For hurricanes, floods, fires, winter storms, heat emergencies, and other major events, start here for verified help and alerts.</p>
+<ul class="small">
+<li><strong>DisasterAssistance.gov:</strong> <a href="https://www.disasterassistance.gov/" rel="noopener" target="_blank">Apply for federal disaster help</a> (online)</li>
+<li><strong>Apply by phone / get help:</strong> Call FEMA at <a href="tel:18006213362">1‑800‑621‑3362</a> <span class="muted">(7 a.m.–11 p.m. ET, 7 days/week; hours may vary during major events)</span>.</li>
+<li><strong>In‑person help:</strong> Visit a <a href="https://egateway.fema.gov/ESF6/DRCLocator" rel="noopener" target="_blank">FEMA Disaster Recovery Center (DRC)</a> near you.</li>
+<li><strong>Plain‑language guide:</strong> <a href="https://www.usa.gov/disaster-assistance" rel="noopener" target="_blank">USA.gov — disaster assistance</a> (online, phone, app, and in‑person options).</li>
+<li><strong>FEMA:</strong> <a href="https://www.fema.gov/" rel="noopener" target="_blank">fema.gov</a> • Preparedness: <a href="https://www.ready.gov/" rel="noopener" target="_blank">ready.gov</a></li>
+<li><strong>American Red Cross:</strong> <a href="https://www.redcross.org/" rel="noopener" target="_blank">redcross.org</a> • <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html" rel="noopener" target="_blank">Find an open shelter</a></li>
+<li><strong>Avoid scams:</strong> <a href="https://www.fema.gov/press-release/20250807/protect-your-identity-be-alert-fraud-and-scams-after-disaster" rel="noopener" target="_blank">FEMA tips to spot fraud after a disaster</a> (verify calls/emails before sharing information).</li>
+<li><strong>Weather Alerts (NWS):</strong> <a href="https://www.weather.gov/" rel="noopener" target="_blank">weather.gov</a></li>
+<li><strong>Power / water outages:</strong> Contact your utility + check your state/city <strong>Category 1</strong> (Utilities &amp; Bills).</li>
+</ul>
+</div>
+<div class="card" id="us-benefits">
+<h3>🧾 Benefits, Cash Help &amp; Food (U.S.)</h3>
+<p class="small">Use these official tools to find benefits, food help, cash support, and bill help available in your area.</p>
+<ul class="small">
+<li><strong>USA.gov Benefits:</strong> <a href="https://www.usa.gov/benefits" rel="noopener" target="_blank">Government benefits by topic</a></li>
+<li><strong>Benefits.gov:</strong> <a href="https://www.usa.gov/benefit-finder" rel="noopener" target="_blank">Benefit Finder</a></li>
+<li><strong>SNAP:</strong> <a href="https://www.benefits.gov/benefit/361" rel="noopener" target="_blank">How to apply for SNAP</a></li>
+<li><strong>WIC:</strong> <a href="https://www.fns.usda.gov/wic" rel="noopener" target="_blank">USDA WIC</a></li>
+<li><strong>TANF:</strong> <a href="https://www.benefits.gov/benefit/1679" rel="noopener" target="_blank">TANF basics</a></li>
+<li><strong>Energy / utility help:</strong> <a href="https://www.benefits.gov/benefit/1397" rel="noopener" target="_blank">LIHEAP</a></li>
+<li><strong>Social Security:</strong> <a href="https://www.ssa.gov/" rel="noopener" target="_blank">ssa.gov</a> • <a href="https://www.ssa.gov/apply/ssi" rel="noopener" target="_blank">Apply for SSI</a></li>
+<li><strong>Find a food bank:</strong> <a href="https://www.feedingamerica.org/find-your-local-foodbank" rel="noopener" target="_blank">Feeding America locator</a></li>
+</ul>
+</div>
+<div class="card" id="us-housing">
+<h3>🏠 Housing Help &amp; Homeless Support (U.S.)</h3>
+<p class="small">If you are facing eviction, homelessness, or unsafe housing, start with local access points and verified directories.</p>
+<ul class="small">
+<li><strong>Dial 211:</strong> Call <a href="tel:211">211</a> for local housing/shelter referrals (availability varies by area).</li>
+<li><strong>HUD Find Shelter:</strong> <a href="https://www.hud.gov/findshelter" rel="noopener" target="_blank">hud.gov/findshelter</a></li>
+<li><strong>HUD Homelessness resources:</strong> <a href="https://www.hud.gov/topics/homelessness" rel="noopener" target="_blank">hud.gov/topics/homelessness</a></li>
+<li><strong>USA.gov Housing Help:</strong> <a href="https://www.usa.gov/housing-help" rel="noopener" target="_blank">usa.gov/housing-help</a></li>
+<li><strong>Eviction help:</strong> Start with <a href="#us-legal">Legal Aid</a> + your state/city <strong>Category 14</strong> (Legal Help).</li>
+</ul>
+</div>
+<div class="card" id="us-health">
+<h3>🩺 Health Care, Clinics &amp; Treatment (U.S.)</h3>
+<p class="small">Find free / low-cost clinics, coverage options, treatment locators, and official state contacts.</p>
+<ul class="small">
+<li><strong>Find a Health Center (HRSA):</strong> <a href="https://findahealthcenter.hrsa.gov/" rel="noopener" target="_blank">findahealthcenter.hrsa.gov</a></li>
+<li><strong>HealthCare.gov:</strong> <a href="https://www.healthcare.gov/get-coverage/" rel="noopener" target="_blank">Get coverage</a></li>
+<li><strong>Medicaid / CHIP:</strong> <a href="https://www.medicaid.gov/about-us/where-can-people-get-help-medicaid-chip" rel="noopener" target="_blank">State Medicaid &amp; CHIP contacts</a></li>
+<li><strong>FindTreatment.gov:</strong> <a href="https://findtreatment.gov/" rel="noopener" target="_blank">Mental health &amp; substance use treatment locator</a></li>
+<li><strong>211 health referrals:</strong> <a href="https://www.211.org/" rel="noopener" target="_blank">211.org</a></li>
+<li><strong>Prescription price comparison:</strong> <a href="https://www.goodrx.com/" rel="noopener" target="_blank">goodrx.com</a> <span class="muted">(not a government site)</span></li>
+</ul>
+</div>
+<div class="card" id="us-jobs">
+<h3>💼 Jobs, Training &amp; Career Support (U.S.)</h3>
+<ul class="small">
+<li><strong>CareerOneStop:</strong> <a href="https://www.careeronestop.org/" rel="noopener" target="_blank">careeronestop.org</a></li>
+<li><strong>American Job Centers:</strong> <a href="https://www.careeronestop.org/LocalHelp/AmericanJobCenters/find-american-job-centers.aspx" rel="noopener" target="_blank">Find a nearby center</a></li>
+<li><strong>Unemployment benefits:</strong> <a href="https://www.careeronestop.org/LocalHelp/UnemploymentBenefits/Find-Unemployment-Benefits.aspx" rel="noopener" target="_blank">Find your state unemployment page</a></li>
+<li><strong>Job Corps:</strong> <a href="https://www.jobcorps.gov/" rel="noopener" target="_blank">jobcorps.gov</a></li>
+</ul>
+</div>
+<div class="card">
+<h3>🏳️‍⚧️ National LGBTQ+ &amp; Youth Safety (U.S.)</h3>
+<p class="small">
+ These resources serve LGBTQ+ youth and adults across the United States. Always confirm hours, eligibility,
+ and service areas on each site.
+ </p>
+<ul class="small">
+<li><strong>The Trevor Project:</strong> 24/7 crisis support for LGBTQ+ young people • <a href="https://www.thetrevorproject.org" rel="noopener" target="_blank">thetrevorproject.org</a></li>
+<li><strong>Trans Lifeline:</strong> Peer support hotline run by and for trans people • <a href="https://www.translifeline.org" rel="noopener" target="_blank">translifeline.org</a></li>
+<li><strong>National Runaway Safeline:</strong> Support for youth who are homeless, at risk, or in conflict • <a href="https://www.1800runaway.org" rel="noopener" target="_blank">1800runaway.org</a></li>
+<li><strong>Local LGBTQ+ centers &amp; shelters:</strong> Search <a href="https://www.google.com/search?q=LGBTQ%20center%20%2B%20your%20city" rel="noopener" target="_blank">“LGBTQ center + your city”</a> for affirming shelters, drop-in centers, and resource Cities.</li>
+</ul>
+</div>
+<div class="card">
+<h3>🏛️ U.S. Federal Benefits &amp; Information Portals</h3>
+<ul class="small">
+<li><strong>USA.gov (Main Federal Portal):</strong> <a href="https://www.usa.gov" rel="noopener" target="_blank">usa.gov</a></li>
+<li><strong>Benefits.gov (Find Federal &amp; State Programs):</strong> <a href="https://www.usa.gov/benefit-finder" rel="noopener" target="_blank">benefits.gov</a></li>
+<li><strong>HealthCare.gov (Marketplace Plans):</strong> <a href="https://www.healthcare.gov" rel="noopener" target="_blank">healthcare.gov</a></li>
+<li><strong>SNAP (Food Assistance) General Info:</strong> <a href="https://www.fns.usda.gov/snap/state-directory" rel="noopener" target="_blank">SNAP State Directory</a></li>
+<li><strong>Social Security:</strong> <a href="https://www.ssa.gov" rel="noopener" target="_blank">ssa.gov</a></li>
+<li><strong>U.S. Department of Veterans Affairs:</strong> <a href="https://www.va.gov" rel="noopener" target="_blank">va.gov</a></li>
+</ul>
+</div>
+<div class="card" id="us-dss">
+<h3>🏛️ Local DSS Offices (By State &amp; County)</h3>
+<p class="small">
+ In the United States, most states manage benefits like SNAP, TANF, and Medicaid through <strong>local Departments of Social Services (DSS)</strong>
+ or similar agencies (Human Services, Social/Human Services, etc.).
+ </p>
+<ul class="small">
+<li>Search <a href="https://www.google.com/search?q=Department%20of%20Social%20Services%20%2B%20%3Cem%3Eyour%20state%3C/em%3E" rel="noopener" target="_blank">“Department of Social Services + <em>your state</em>”</a> to find the official state portal.</li>
+<li>Use that portal to look up your <strong>local city or county office</strong> (addresses, phones, and applications).</li>
+<li>You can also dial <a href="tel:211">2-1-1</a> and ask for the nearest DSS or Human Services office.</li>
+</ul>
+</div>
+<div class="card" id="us-clinics">
+<span id="us-mental-health"></span>
+<h3>🩺 U.S. Health, Mental Health &amp; Treatment Locators</h3>
+<ul class="small">
+<li><strong>FindTreatment.gov (SAMHSA):</strong> <a href="https://findtreatment.gov" rel="noopener" target="_blank">findtreatment.gov</a></li>
+<li><strong>HRSA Health Center Finder:</strong> <a href="https://findahealthcenter.hrsa.gov" rel="noopener" target="_blank">findahealthcenter.hrsa.gov</a></li>
+<li><strong>National Alliance on Mental Illness (NAMI):</strong> <a href="https://www.nami.org" rel="noopener" target="_blank">nami.org</a></li>
+<li><strong>211 (U.S. Community Resources):</strong> <a href="https://www.211.org" rel="noopener" target="_blank">211.org</a> (enter your ZIP code)</li>
+</ul>
+</div>
+<div class="card" id="us-seniors">
+<h3>👵 Caregiver, Disability &amp; Respite Help (U.S.)</h3>
+<ul class="small">
+<li><strong>Eldercare Locator:</strong> local aging, meals, home care, transportation, caregiver training, and respite support • <a href="https://eldercare.acl.gov/home" rel="noopener" target="_blank">eldercare.acl.gov</a> • call or text <a href="tel:18006771116">1-800-677-1116</a></li>
+<li><strong>Disability Information and Access Locator (DIAL):</strong> independent-living, housing, transportation, disability-rights, and local organization finder • <a href="https://dial.acl.gov/home" rel="noopener" target="_blank">dial.acl.gov</a> • call or text <a href="tel:18886771199">1-888-677-1199</a></li>
+<li><strong>National Family Caregiver Support Program:</strong> information, access assistance, counseling, training, support groups, respite, and supplemental services • <a href="https://acl.gov/programs/support-caregivers/national-family-caregiver-support-program" rel="noopener" target="_blank">ACL caregiver program</a></li>
+<li><strong>Lifespan Respite Care:</strong> state systems supporting caregivers of children and adults of all ages, disabilities, and chronic conditions • <a href="https://acl.gov/programs/support-caregivers/lifespan-respite-care-program" rel="noopener" target="_blank">ACL respite program</a></li>
+</ul>
+<p class="small muted">Availability and eligibility vary by state. Use these national services to locate the correct state or community program.</p>
+</div>
+<div class="card">
+<h3>🎖 Veterans &amp; Military Families (U.S.)</h3>
+<ul class="small">
+<li><strong>VA.gov:</strong> Benefits, health care, housing &amp; more • <a href="https://www.va.gov" rel="noopener" target="_blank">va.gov</a></li>
+<li><strong>Veterans Crisis Line:</strong> Call <a href="tel:988">988</a> then Press 1 • Text <a href="sms:838255">838255</a> • <a href="https://www.veteranscrisisline.net" rel="noopener" target="_blank">veteranscrisisline.net</a></li>
+<li><strong>National Call Center for Homeless Veterans:</strong> 1-877-4AID-VET (1-877-424-3838)</li>
+</ul>
+</div>
+<div class="card">
+<h3>💼 Jobs, Training &amp; Education (U.S.)</h3>
+<ul class="small">
+<li><strong>CareerOneStop:</strong> Job search, training &amp; local help • <a href="https://www.careeronestop.org" rel="noopener" target="_blank">careeronestop.org</a></li>
+<li><strong>Job Corps:</strong> Education &amp; training for young adults • <a href="https://www.jobcorps.gov" rel="noopener" target="_blank">jobcorps.gov</a></li>
+<li><strong>Federal Student Aid:</strong> Grants, loans &amp; work-study • <a href="https://studentaid.gov" rel="noopener" target="_blank">studentaid.gov</a></li>
+</ul>
+</div>
+<div class="card">
+<h3>📲 Useful National Apps &amp; Portals (U.S.)</h3>
+<p class="small">
+ These examples can help U.S. neighbors manage mail, benefits, and basic life tasks. Always confirm any app is
+ the official version from a trusted source (app store or agency website).
+ </p>
+<ul class="small">
+<li><strong>USPS Informed Delivery:</strong> <a href="https://informeddelivery.usps.com" rel="noopener" target="_blank">Preview mail and manage deliveries</a>.</li>
+<li><strong>My Social Security:</strong> <a href="https://www.ssa.gov/myaccount" rel="noopener" target="_blank">Create an SSA account</a> to view benefits and statements.</li>
+<li><strong>State benefits apps:</strong> Many states offer their own apps or mobile-friendly portals for EBT, Medicaid, and child care.</li>
+<li><strong>Patient portals:</strong> Most clinics and hospitals use secure apps or websites to view test results and messages.</li>
+</ul>
+</div>
+<div class="card" id="us-disaster">
+<h3>🌪 Disaster, Weather &amp; Preparedness (United States)</h3>
+<ul class="small">
+<li><strong>FEMA Disaster Assistance:</strong> <a href="https://www.disasterassistance.gov" rel="noopener" target="_blank">disasterassistance.gov</a></li>
+<li><strong>Ready.gov Preparedness Guides:</strong> <a href="https://www.ready.gov" rel="noopener" target="_blank">ready.gov</a></li>
+<li><strong>National Weather Service:</strong> <a href="https://www.weather.gov" rel="noopener" target="_blank">weather.gov</a></li>
+</ul>
+</div>
+<div class="card">
+<h3>🧭 How to Use This U.S. Section with Each State</h3>
+<p class="small">
+ 1) Start with the <strong>Global</strong> section for spiritual context and worldwide tools.<br/>
+ 2) Use this <strong>U.S. National</strong> section for country-wide hotlines and portals.<br/>
+ 3) Then scroll to your specific <strong>state</strong> (Virginia, Maryland, West Virginia, etc.) for local offices,
+ clinics, shelters, and clear resource pathways.
+ </p>
+</div>
+<div class="page">
+<div class="layout">
+<div>
+<section id="misc-shared">
+<div class="card card-gold"><h2>🧩 Misc / Shared Resources</h2>
+<p class="small muted" style="margin-top:0;">Last reviewed: August 3, 2026</p>
+<div class="card card-soft">
+<h3>🚗 Women’s Auto Care / Basic Car Skills</h3>
+<p class="small">Looking for hands-on basics (changing a tire, checking oil/fluids, battery, wipers, emergency kit)? 
+This directory includes <strong>city-by-city “Women’s Auto Care / Basic Car Skills” links</strong> inside each city’s <strong>Category 6: Transportation &amp; Mobility</strong>. 
+Use the <em>Resource Finder links</em> to locate the closest free/low-cost class, clinic, or workshop near you.</p>
+<div class="card card-soft">
+<h3>✅ Category Map (1–30) • Where things live</h3>
+<p class="small">Some sections may be titled slightly differently (example: “Health &amp; Clinics” = “Health &amp; Wellness”). Use this map to find the closest help area in the directory:</p>
+<ul class="small">
+<li><strong>Health &amp; Wellness / Clinics</strong> • plus Mental Health, Dental/Vision, Special Needs</li>
+<li><strong>Food • Housing • Utilities</strong> (city + statewide anchors)</li>
+<li><strong>Employment &amp; Training</strong> • plus Grants &amp; Business Support</li>
+<li><strong>Education &amp; Scholarships</strong> • plus Libraries &amp; Adult Ed</li>
+<li><strong>Finance &amp; Banking</strong> • giving help + safe money tools</li>
+<li><strong>Legal &amp; Civic Help</strong> • includes voting &amp; government services</li>
+<li><strong>Technology &amp; Digital Access</strong> • devices, Wi‑Fi, low-cost internet, apps</li>
+<li><strong>Spiritual &amp; Ministry Resources</strong> • prayer rooms, churches, hotlines</li>
+<li><strong>Community &amp; Safety</strong> • DV, trafficking, crisis, non‑emergency contacts</li>
+<li><strong>Transportation &amp; Mobility</strong> • transit + delivery apps + travel basics</li>
+<li><strong>Special Needs &amp; Disability</strong> • waivers, CILs, autism, chronic illness anchors</li>
+<li><strong>Grief &amp; End‑of‑Life Care</strong> • funeral, bereavement, autopsy/OCME info</li>
+<li><strong>Media, Hot Topics &amp; Content Creators</strong> • includes “search for more” note</li>
+<li><strong>Global &amp; International Help</strong> • plus Global News / Awareness</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🩺 Health &amp; Clinics — Extended (Free / Low‑Cost + Public Health)</h3>
+<ul class="small">
+<li><strong>Virginia Association of Free &amp; Charitable Clinics (VAFCC):</strong> <a href="https://vafreeclinics.org" rel="noopener" target="_blank">vafreeclinics.org</a> — statewide support for free/charitable clinics.</li>
+<li><strong>Find a Free Clinic (VAFCC member clinics):</strong> <a href="https://freeclinicscare.org/find-a-clinic/" rel="noopener" target="_blank">freeclinicscare.org/find-a-clinic</a></li>
+<li><strong>VDH Local Health Districts:</strong> <a href="https://www.vdh.virginia.gov/local-health-districts/" rel="noopener" target="_blank">vdh.virginia.gov/local-health-districts</a> — WIC, immunizations, TB testing, clinics, public health.</li>
+<li><strong>CDC Travelers’ Health (shots/travel vaccines):</strong> <a href="https://wwwnc.cdc.gov/travel" rel="noopener" target="_blank">wwwnc.cdc.gov/travel</a> — bring shot records; ask your doctor/health dept about travel vaccines.</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🦷 Dental &amp; Vision — Special Needs Access (VA Anchors)</h3>
+<ul class="small">
+<li><strong>VDH Oral Health Program:</strong> <a href="https://www.vdh.virginia.gov/oral-health/" rel="noopener" target="_blank">vdh.virginia.gov/oral-health</a></li>
+<li><strong>Virginia Dental Association Foundation — Mission of Mercy (MOM):</strong> <a href="https://vdaf.org/our-programs/mission-of-mercy/" rel="noopener" target="_blank">vdaf.org • Mission of Mercy</a> — pop‑up clinics with free dental care (dates/locations vary).</li>
+<li><strong>DBHDS Dental Program (ID/DD):</strong> <a href="https://dbhds.virginia.gov/office-of-integrated-health/dental/" rel="noopener" target="_blank">DBHDS Dental Program</a> — dental evaluation/treatment support for eligible individuals.</li>
+<li><em>Regional examples to search:</em> VCU Health Special Care/Hospital Dentistry (Richmond) • CHKD Pediatric Dentistry (Hampton Roads) • “Center for Dental Anesthesia” (Alexandria area).</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>♿ Waivers &amp; Disability Support (VA)</h3>
+<ul class="small">
+<li><strong>Moms In Motion / At Home Your Way:</strong> <a href="tel:8004170908">800‑417‑0908</a> • <a href="mailto:info@momsinmotion.net">info@momsinmotion.net</a> • <a href="https://momsinmotion.net/" rel="noopener" target="_blank">momsinmotion.net</a> — waiver support coordination / service facilitation statewide.</li>
+<li><strong>Virginia Medicaid / DMAS:</strong> <a href="https://www.dmas.virginia.gov/" rel="noopener" target="_blank">dmas.virginia.gov</a> — look under “Long Term Services and Supports” for waiver info.</li>
+<li><strong>Virginia Association of Centers for Independent Living (VACIL):</strong> <a href="https://vacil.org/" rel="noopener" target="_blank">vacil.org</a> — connect to local Centers for Independent Living (CILs).</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🌍 Special Needs &amp; Chronic Illness — Key Anchors</h3>
+<ul class="small">
+<li><strong>Autism Society:</strong> <a href="https://autism-society.org/" rel="noopener" target="_blank">autism-society.org</a> (search for Virginia chapters)</li>
+<li><strong>The Arc (ID/DD):</strong> <a href="https://thearc.org/" rel="noopener" target="_blank">thearc.org</a> (find local chapters)</li>
+<li><strong>Muscular Dystrophy Association:</strong> <a href="https://www.mda.org/" rel="noopener" target="_blank">mda.org</a> (care centers &amp; support)</li>
+<li><strong>American Cancer Society:</strong> <a href="https://www.cancer.org/" rel="noopener" target="_blank">cancer.org</a> • <a href="tel:18002272345">1‑800‑227‑2345</a> (24/7)</li>
+<li><strong>Epilepsy Foundation:</strong> <a href="https://www.epilepsy.com/" rel="noopener" target="_blank">epilepsy.com</a></li>
+<li><strong>Alzheimer’s Association:</strong> <a href="https://www.alz.org/" rel="noopener" target="_blank">alz.org</a> • <a href="tel:18002723900">1‑800‑272‑3900</a> (24/7)</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🗣️ Language &amp; Accessibility Help (VA)</h3>
+<ul class="small">
+<li><strong>2‑1‑1 Virginia:</strong> Dial 211 • 24/7 • interpretation service for 150+ languages (ask for an interpreter).</li>
+<li><strong>CoverVA / DMAS “Help in any language”:</strong> <a href="https://coverva.dmas.virginia.gov/help-in-any-language/" rel="noopener" target="_blank">CoverVA language help</a> • <a href="tel:18552428282">1‑855‑242‑8282</a> (TTY: <a href="tel:18882211590">1‑888‑221‑1590</a>)</li>
+<li><strong>VDDHH (sign language interpreters):</strong> <a href="https://www.vddhh.virginia.gov/interpreters-find_an_interpreter.htm" rel="noopener" target="_blank">Find an interpreter</a> • also see <a href="https://www.vddhh.virginia.gov/interpreters.htm" rel="noopener" target="_blank">VDDHH Interpreter Services</a></li>
+<li class="small"><em>Your rights:</em> many agencies must provide free language assistance—ask for a qualified interpreter (free), not a family member.</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🧾 Professional &amp; Everyday Services</h3>
+<ul class="small">
+<li><strong>Virginia DMV:</strong> <a href="https://www.dmv.virginia.gov/" rel="noopener" target="_blank">dmv.virginia.gov</a> — IDs, licenses, registration.</li>
+<li><strong>Social Security:</strong> <a href="https://www.ssa.gov/" rel="noopener" target="_blank">ssa.gov</a> — SSI/SSDI, replacement cards, benefits.</li>
+<li><strong>USPS:</strong> <a href="https://www.usps.com/" rel="noopener" target="_blank">usps.com</a> — mail forwarding, PO boxes, certified mail.</li>
+<li><strong>Virginia Employment Commission (VEC):</strong> <a href="https://www.vec.virginia.gov/" rel="noopener" target="_blank">vec.virginia.gov</a> • <a href="tel:18668322363">866‑832‑2363</a></li>
+<li><strong>Notary:</strong> check your bank, UPS Store, libraries, or search “online notary Virginia” for approved remote online notaries (RON).</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🧳 Travel, ID &amp; Immigration (Safe + Verified)</h3>
+<ul class="small">
+<li><strong>REAL ID:</strong> <a href="https://www.dhs.gov/real-id" rel="noopener" target="_blank">dhs.gov/real-id</a> • <strong>TSA:</strong> <a href="https://www.tsa.gov/" rel="noopener" target="_blank">tsa.gov</a> • <strong>Passports:</strong> <a href="https://travel.state.gov/" rel="noopener" target="_blank">travel.state.gov</a></li>
+<li><strong>USCIS:</strong> <a href="https://www.uscis.gov/" rel="noopener" target="_blank">uscis.gov</a> • <a href="tel:18003755283">800‑375‑5283</a></li>
+<li><em>Important:</em> use only licensed attorneys or DOJ‑accredited reps — avoid unlicensed “immigration consultants.”</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>💡 Technology &amp; Digital Access</h3>
+<ul class="small">
+<li><strong>Lifeline (phone/internet discount):</strong> <a href="https://www.lifelinesupport.org/" rel="noopener" target="_blank">lifelinesupport.org</a> (check eligibility &amp; providers).</li>
+<li><strong>Public Libraries:</strong> computers + Wi‑Fi + sometimes hotspots. (See each city’s library links.)</li>
+<li><strong>Common apps:</strong> Zoom • Microsoft Teams • WhatsApp • Google Meet (tools only).</li>
+<li><strong>AI Platforms (tools only):</strong> <a href="https://chatgpt.com/" rel="noopener" target="_blank">ChatGPT</a> • <a href="https://claude.ai/" rel="noopener" target="_blank">Claude</a> • <a href="https://gemini.google.com/" rel="noopener" target="_blank">Gemini</a> • <a href="https://copilot.microsoft.com/" rel="noopener" target="_blank">Microsoft Copilot</a> • <a href="https://www.perplexity.ai/" rel="noopener" target="_blank">Perplexity</a> • <a href="https://www.canva.com/" rel="noopener" target="_blank">Canva</a> • <a href="https://firefly.adobe.com/" rel="noopener" target="_blank">Adobe Firefly</a> • <a href="https://www.midjourney.com/" rel="noopener" target="_blank">Midjourney</a> • <a href="https://runwayml.com/" rel="noopener" target="_blank">Runway</a>. <span class="muted">Most offer free/low‑cost tiers; higher tiers can cost more.</span></li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>📚 Education &amp; Growth — Learn &amp; Level Up</h3>
+<ul class="small">
+<li><strong>Adult Ed &amp; GED/HSE:</strong> check your local school district or community college adult‑ed pages (city sections include starters).</li>
+<li><strong>Libraries:</strong> free classes + online learning (city sections).</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🗳 Civic Help</h3>
+<ul class="small">
+<li><strong>Virginia Dept. of Elections:</strong> <a href="https://vote.virginia.gov/" rel="noopener" target="_blank">vote.virginia.gov</a> — register/update/check status &amp; find polling place (deadlines change—always verify inside the portal).</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>💰 Finance &amp; Income (Tools + Safety Notes)</h3>
+<ul class="small">
+<li><strong>Jobs/Unemployment:</strong> VEC <a href="https://www.vec.virginia.gov/" rel="noopener" target="_blank">vec.virginia.gov</a> • <a href="tel:18668322363">866‑832‑2363</a></li>
+<li><strong>Job Corps:</strong> <a href="https://www.jobcorps.gov/" rel="noopener" target="_blank">jobcorps.gov</a> • <a href="tel:18007335627">800‑733‑5627</a></li>
+<li><strong>Remote work examples:</strong> <a href="https://www.ttecjobs.com/" rel="noopener" target="_blank">TTEC</a> • <a href="https://www.sutherlandglobal.com/" rel="noopener" target="_blank">Sutherland</a> • <a href="https://www.flexjobs.com/" rel="noopener" target="_blank">FlexJobs</a> (always research—watch for scams).</li>
+<li><strong>Money apps (tools only):</strong> Cash App • Venmo • PayPal • Robinhood • Coinbase — learn risks/fees before using.</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>💼 Small Business &amp; Entrepreneurs</h3>
+<ul class="small">
+<li><strong>IRS (EIN + basics):</strong> <a href="https://www.irs.gov/" rel="noopener" target="_blank">irs.gov</a></li>
+<li><strong>Virginia SCC (business registration):</strong> <a href="https://cis.scc.virginia.gov/" rel="noopener" target="_blank">cis.scc.virginia.gov</a></li>
+<li><strong>SBA:</strong> <a href="https://www.sba.gov/" rel="noopener" target="_blank">sba.gov</a> — counseling, capital, learning.</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🌪 Disaster Relief</h3>
+<ul class="small">
+<li><strong>FEMA:</strong> <a href="https://www.disasterassistance.gov/" rel="noopener" target="_blank">disasterassistance.gov</a></li>
+<li><strong>American Red Cross:</strong> <a href="https://www.redcross.org/" rel="noopener" target="_blank">redcross.org</a></li>
+<li class="small"><em>Use discernment:</em> verify what’s current for your location.</li>
+<li class="small">“Preach the word; be ready in season and out of season.” — <strong>2 Timothy 4:2</strong></li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>😄 Laughter &amp; Uplift — Joy Helps</h3>
+<ul class="small">
+<li>Pluto TV: <a href="https://pluto.tv/" rel="noopener" target="_blank">pluto.tv</a> • Tubi: <a href="https://tubitv.com/" rel="noopener" target="_blank">tubitv.com</a> • Peacock: <a href="https://www.peacocktv.com/" rel="noopener" target="_blank">peacocktv.com</a></li>
+<li>“A cheerful heart is good medicine.” — <strong>Proverbs 17:22</strong></li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🎶 Worship, Soaking &amp; Atmosphere (Suggestions Only)</h3>
+<ul class="small">
+<li>Search YouTube or your music app for “instrumental soaking worship” / “soft worship piano” / “scripture audio” and choose what aligns with your convictions.</li>
+<li>Invite peace: “Lord, fill this space with Your presence, wisdom, and peace.”</li>
+<li>“You will keep in perfect peace those whose minds are stayed on You.” — <strong>Isaiah 26:3</strong></li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🧬🐘 Ancestry &amp; Holistic Context — Tools Only (Christ at the Center)</h3>
+<p class="small">We honor ancestry, lineage, and cultural memory as context for healing, not for worship. Christ remains the center.</p>
+<ul class="small">
+<li><strong>Tools:</strong> FamilySearch • Ancestry • local archives (genealogy &amp; history).</li>
+<li><strong>Holistic &amp; Symbolic tools (context only):</strong> “Tonight’s Sky” • Stellarium • astro.com — reflection tools, never replacements for God.</li>
+<li>“Let this mind be in you, which was also in Christ Jesus.” — <strong>Philippians 2:5</strong></li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🕯️ Funeral Prep, Bereavement &amp; Autopsy Help (Virginia)</h3>
+<p class="small"><strong>“Blessed are those who mourn, for they shall be comforted.” — Matthew 5:4</strong></p>
+<ul class="small">
+<li><strong>Virginia OCME — District Offices (Medical Examiner):</strong> <a href="https://www.vdh.virginia.gov/medical-examiner/district-offices-contact-us/" rel="noopener" target="_blank">VDH Medical Examiner • District Offices</a></li>
+<li><strong>Central (Richmond):</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=400+East+Jackson+Street%2C+Richmond%2C+VA+23219" rel="noopener" target="_blank">400 E Jackson St, Richmond, VA 23219</a> • <a href="tel:8047863174">804‑786‑3174</a></li>
+<li><strong>Tidewater (Norfolk):</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=830+Southampton+Ave+Suite+100%2C+Norfolk%2C+VA+23510" rel="noopener" target="_blank">830 Southampton Ave, Suite 100, Norfolk, VA 23510</a> • <a href="tel:7576838366">757‑683‑8366</a></li>
+<li><strong>Northern (Manassas):</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=10850+Pyramid+Place+Suite+121%2C+Manassas%2C+VA+20110" rel="noopener" target="_blank">10850 Pyramid Pl, Suite 121, Manassas, VA 20110</a> • <a href="tel:7035302600">703‑530‑2600</a></li>
+<li><strong>Western (Roanoke):</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=6600+Northside+High+School+Road%2C+Roanoke%2C+VA+24019" rel="noopener" target="_blank">6600 Northside High School Rd, Roanoke, VA 24019</a> • <a href="tel:5405616615">540‑561‑6615</a></li>
+<li><strong>First 48‑hours (starter checklist):</strong> notify close family • secure important papers • contact funeral home • request multiple certified death certificates • if sudden/unexpected, ask if the case is with OCME.</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>🚚 Transportation Apps &amp; Delivery (Tools Only)</h3>
+<ul class="small">
+<li>Uber: <a href="https://www.uber.com/" rel="noopener" target="_blank">uber.com</a> • Lyft: <a href="https://www.lyft.com/" rel="noopener" target="_blank">lyft.com</a></li>
+<li>DoorDash: <a href="https://www.doordash.com/" rel="noopener" target="_blank">doordash.com</a> • Uber Eats: <a href="https://www.ubereats.com/" rel="noopener" target="_blank">ubereats.com</a> • Instacart: <a href="https://www.instacart.com/" rel="noopener" target="_blank">instacart.com</a></li>
+<li class="small">Tip: use your local transit agency’s official trip planner (example: Hampton Roads Transit at <a href="https://gohrt.com/" rel="noopener" target="_blank">gohrt.com</a>).</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>📞 Non‑Emergency Starter Numbers (extra)</h3>
+<ul class="small">
+<li><strong>Portsmouth (VA):</strong> Police (dispatch non‑emergency) <a href="tel:7574852778">757-485-2778</a> • Portsmouth Public Utilities (billing) <a href="tel:7573938524">757-393-8524</a>.</li>
+<li><strong>Washington, DC (starter):</strong> City services <strong>311</strong> • Metro/Transit: <a href="https://www.wmata.com/" rel="noopener" target="_blank">wmata.com</a> • info line <a href="tel:2024666387">202-GO-METRO</a>.</li>
+</ul>
+</div>
+<div class="card card-soft">
+<h3>💸 Raising Funds &amp; Community Support (Discernment + Verification)</h3>
+<ul class="small">
+<li>GoFundMe: <a href="https://www.gofundme.com/" rel="noopener" target="_blank">gofundme.com</a> (use transparency; verify needs).</li>
+<li>Community foundations: search “community foundation + your city.”</li>
+<li>Faith partners: ask churches about benevolence funds, pantries, emergency help ministries.</li>
+<li>Mutual aid: search “mutual aid + your city.”</li>
+</ul>
+</div>
+</div>
+<div class="card card-soft" data-donate-pointer="true" style="max-width:920px;margin:10px auto 0;"><p class="medium"><strong>💝 Support this directory:</strong> If you feel led, you can give to help keep resources updated. Tap <a href="give_support.html">💝 Donate</a>. <em>“Each one must give as he has decided in his heart” (2 Corinthians 9:7)</em></p></div><p class="small">Shared tools, how-to, media/apps, FAQs, and items that are not tied to one state. (No state listings live here.)</p></div>
+<div id="media"></div>
+<div class="card" id="media-creators-org">
+<h3>🦚 Media, News &amp; Content Creators</h3>
+<h4>Featured Creator (Example)</h4>
+<ul class="small">
+<li><strong>The Queen Po</strong> — content creator, holistic wellness practitioner, poet, motivational speaker, empowerment coach.<br/>
+ 🔗 <a href="https://thequeenpo.com" rel="noopener" target="_blank">thequeenpo.com</a> • Instagram: <strong>@thequeenpo</strong>
+</li>
+</ul>
+<p class="small"><em>Note: This is just a small sample. For more voices, search YouTube, podcasts, and social media using the creator/ministry’s full name.</em></p>
+<h4>Breaking / General News</h4>
+<ul class="small">
+<li><strong>AP News (Associated Press):</strong> <a href="https://apnews.com/" rel="noopener" target="_blank">apnews.com</a></li>
+<li><strong>Reuters:</strong> <a href="https://www.reuters.com/" rel="noopener" target="_blank">reuters.com</a></li>
+<li><strong>BBC News:</strong> <a href="https://www.bbc.com/news" rel="noopener" target="_blank">bbc.com/news</a></li>
+<li><strong>NPR News:</strong> <a href="https://www.npr.org/" rel="noopener" target="_blank">npr.org</a></li>
+</ul>
+<p class="small"><em>Compare multiple sources for balance and pray for discernment.</em></p>
+<h4>Media Voices / Shows</h4>
+<ul class="small">
+<li><strong>The Official Tyesse Report:</strong> <a href="https://www.youtube.com/results?search_query=The+Official+Tyesse+Report" rel="noopener" target="_blank">YouTube search</a></li>
+<li><strong>The Don Lemon Show:</strong> <a href="https://www.youtube.com/results?search_query=The+Don+Lemon+Show" rel="noopener" target="_blank">YouTube search</a></li>
+<li><strong>The ReidOut with Joy Reid (MSNBC):</strong> <a href="https://www.msnbc.com/the-reidout" rel="noopener" target="_blank">msnbc.com/the-reidout</a></li>
+<li><strong>Roland Martin Unfiltered:</strong> <a href="https://rolandsmartin.com/" rel="noopener" target="_blank">rolandsmartin.com</a></li>
+<li><strong>SYMONE (Symone Sanders-Townsend):</strong> <a href="https://www.msnbc.com/symone" rel="noopener" target="_blank">msnbc.com/symone</a></li>
+</ul>
+<h4>Faith &amp; Creators</h4>
+<ul class="small">
+<li><strong>IHIP News — Jennifer Welch &amp; Angie “Pumps” Sullivan:</strong> <a href="https://art19.com/shows/ihip-news" rel="noopener" target="_blank">art19.com/shows/ihip-news</a> • Listen on: <a href="https://podcasts.apple.com/" rel="noopener" target="_blank">Apple Podcasts</a> • <a href="https://open.spotify.com/" rel="noopener" target="_blank">Spotify</a></li>
+<li><strong>Larry D. Reid Live (MBN Network):</strong> <a href="https://www.youtube.com/@LarryReidLive" rel="noopener" target="_blank">youtube.com/@LarryReidLive</a></li>
+<li><strong>Bishop George Bloomer / Warfarecology:</strong> <a href="https://bishopbloomer.com/" rel="noopener" target="_blank">bishopbloomer.com</a> • <a href="https://www.youtube.com/results?search_query=Warfarecology" rel="noopener" target="_blank">YouTube search “Warfarecology”</a></li>
+<li><strong>Bishop E. Bernard Jordan / Zoe Ministries:</strong> <a href="https://zoeministries.com/" rel="noopener" target="_blank">zoeministries.com</a> • <a href="https://www.youtube.com/results?search_query=Bishop+E.+Bernard+Jordan" rel="noopener" target="_blank">YouTube search</a></li>
+<li><strong>Prophet Lovy (Lovy Elias):</strong> <a href="https://prophetlovy.com/" rel="noopener" target="_blank">prophetlovy.com</a> • <a href="https://www.youtube.com/@ProphetLovy" rel="noopener" target="_blank">youtube.com/@ProphetLovy</a></li>
+<li><strong>Pastor R.C. Blakes Jr.:</strong> <a href="https://rcblakes.com/" rel="noopener" target="_blank">rcblakes.com</a> • <a href="https://www.youtube.com/@RCBlakesJr" rel="noopener" target="_blank">youtube.com/@RCBlakesJr</a><br/>
+<span class="small">Ministry office: 1605 Robert C Blakes Sr Dr, New Orleans, LA 70130 • Office: <a href="tel:+15045698205">504-569-8205</a></span>
+</li>
+<li><strong>Iyanla Vanzant:</strong> <a href="https://iyanla.com/" rel="noopener" target="_blank">iyanla.com</a> • <a href="https://iyanla.net/" rel="noopener" target="_blank">iyanla.net</a> • <a href="https://www.youtube.com/results?search_query=Iyanla+Vanzant" rel="noopener" target="_blank">YouTube search</a></li>
+<li><strong>Kristian A. Smith:</strong> <a href="https://kristianasmith.com/" rel="noopener" target="_blank">kristianasmith.com</a></li>
+<li><strong>Rev. John Scott:</strong> <a href="https://jonscottonline.com/" rel="noopener" target="_blank">jonscottonline.com</a> • <a href="https://www.youtube.com/results?search_query=Jon+Scott+spiritual+leader" rel="noopener" target="_blank">YouTube search</a></li>
+<li><strong>The Queen Po:</strong> <a href="https://instagram.com/thequeenpo" rel="noopener" target="_blank">instagram.com/thequeenpo</a></li>
+<li><strong>Patty Jackson (WDAS):</strong> <a href="https://www.youtube.com/results?search_query=WDAS+Patty+Jackson" rel="noopener" target="_blank">YouTube search</a></li>
+<li><strong>William McCary III &amp; Isaac Carree:</strong> <a href="https://www.youtube.com/results?search_query=William+McCary+III" rel="noopener" target="_blank">William McCary III (YouTube search)</a> • <a href="https://www.youtube.com/results?search_query=Isaac+Carree" rel="noopener" target="_blank">Isaac Carree (YouTube search)</a></li>
+<li><strong>Bishop S. Janine Hyman, Ph.D.:</strong> <a href="https://www.facebook.com/BishopSJHyman" rel="noopener" target="_blank">Facebook @BishopSJHyman</a> • <a href="https://www.youtube.com/@Bishop4Real" rel="noopener" target="_blank">youtube.com/@Bishop4Real</a> • <a href="https://about.me/Dr.SJHyman" rel="noopener" target="_blank">about.me/Dr.SJHyman</a></li>
+</ul>
+<p class="small"><em>Use discernment; verify content for your audience.</em><br/>
+<strong>“Preach the word; be ready in season and out of season.”</strong> — 2 Timothy 4:2</p>
+<h4>Laughter &amp; Uplift — Joy Helps</h4>
+<p class="small">Free TV apps for uplifting content:</p>
+<ul class="small">
+<li><strong>Pluto TV:</strong> <a href="https://pluto.tv/" rel="noopener" target="_blank">pluto.tv</a></li>
+<li><strong>Tubi:</strong> <a href="https://tubitv.com/" rel="noopener" target="_blank">tubitv.com</a></li>
+<li><strong>Peacock:</strong> <a href="https://www.peacocktv.com/" rel="noopener" target="_blank">peacocktv.com</a></li>
+</ul>
+<p class="small">Look for local comedy clubs and “clean comedy nights” in your city for safe laughter and joy.<br/>
+<strong>“A cheerful heart is good medicine.”</strong> — Proverbs 17:22</p>
+</div>
+</section>
+<section id="help-categories">
+<div class="card">
+<h2>📚 Find the Type of Help You Need</h2>
+<div class="card card-soft" data-donate-pointer="true" style="max-width:920px;margin:10px auto 0;"><p class="medium"><strong>💝 Support this directory:</strong> If you feel led, you can give to help keep resources updated. Tap <a href="give_support.html">💝 Donate</a>. <em>“Each one must give as he has decided in his heart” (2 Corinthians 9:7)</em></p></div>
+<p class="small">Use this list to choose the closest help area, then open the matching state, territory, country, or local page for resources near the person needing help.</p>
+<div class="category-grid">
+<div><strong>1.</strong> Housing &amp; Shelter.</div>
+<div><strong>2.</strong> Food &amp; Nutrition.</div>
+<div><strong>3.</strong> Health &amp; Wellness.</div>
+<div><strong>4.</strong> Mental Health, Crisis &amp; Recovery.</div>
+<div><strong>5.</strong> Utilities &amp; Energy Assistance.</div>
+<div><strong>6.</strong> Transportation &amp; Mobility.</div>
+<div><strong>7.</strong> Jobs, Workforce &amp; Training.</div>
+<div><strong>8.</strong> Education (K–12, College, Adult Learning).</div>
+<div><strong>9.</strong> Childcare, Parenting &amp; Family Support.</div>
+<div><strong>10.</strong> Domestic Violence &amp; Safe Escape.</div>
+<div><strong>11.</strong> Legal Aid &amp; Civil Rights.</div>
+<div><strong>12.</strong> Disability, DD/ID &amp; Accessibility.</div>
+<div><strong>13.</strong> Senior Resources / Aging Adults.</div>
+<div><strong>14.</strong> Veterans &amp; Military Family Support.</div>
+<div><strong>15.</strong> Benefits (SNAP, Medicaid, Cash, Child Support).</div>
+<div><strong>16.</strong> Financial Help, Debt, Banking &amp; Credit.</div>
+<div><strong>17.</strong> Eviction, Foreclosure &amp; Tenant Help.</div>
+<div><strong>18.</strong> Reentry, Returning Citizens &amp; Court Support.</div>
+<div><strong>19.</strong> Foster Care, Adoption &amp; Kinship.</div>
+<div><strong>20.</strong> Homeless Outreach &amp; Street Support.</div>
+<div><strong>21.</strong> Disaster Help &amp; Emergency Preparedness.</div>
+<div><strong>22.</strong> Home &amp; Life Basics (Clothing, Hygiene, Furniture).</div>
+<div><strong>23.</strong> Community Centers, Libraries &amp; Free Learning.</div>
+<div><strong>24.</strong> Immigration Help &amp; ID Support.</div>
+<div><strong>25.</strong> LGBTQ+ Safe Housing &amp; Support.</div>
+<div><strong>26.</strong> Youth Safety / Runaway &amp; Family Crisis.</div>
+<div><strong>27.</strong> Essential Apps &amp; Tools.</div>
+<div><strong>28.</strong> Media, News &amp; Community Voices.</div>
+<div><strong>29.</strong> Spiritual &amp; Ministry Support.</div>
+<div><strong>30.</strong> Prayer Requests, Suggestions &amp; Support.</div>
+</div>
+<div class="inset">
+<p><strong>Choose the closest category to begin.</strong></p>
+<p class="small">Essential apps, community information, spiritual support, and prayer or suggestion pathways are included to help people find practical and encouraging support without confusion.</p>
+<p class="small">
+ For U.S.-wide starters, begin with <a href="https://www.211.org/" rel="noopener" target="_blank">211</a>, <a href="https://www.usa.gov/benefits" rel="noopener" target="_blank">USA.gov</a>, <a href="https://www.usa.gov/benefit-finder" rel="noopener" target="_blank">USAGov Benefit Finder</a>, and your official state or county human-services portal. Then move into the matching state, territory, or country page for local clickables.
+ </p>
+</div>
+</div>
+</section>
+<section id="expanded-category-reference">
+<div class="card">
+<h2>Additional Help Topics</h2>
+
+<p class="small">Use these starting points for more specific needs. Confirm details with the official agency, provider, or local resource before applying or visiting.</p>
+<h3>9. Children, Youth &amp; Childcare</h3>
+<ul class="small">
+<li>Virginia Child Care Subsidy Program — help paying for childcare so adults can work or go to school:<br/>
+<a href="https://www.dss.virginia.gov/family/cc/index.cgi" rel="noopener" target="_blank">dss.virginia.gov/family/cc</a>
+</li>
+<li>Head Start / Early Head Start center locator:<br/>
+<a href="https://eclkc.ohs.acf.hhs.gov/center-locator" rel="noopener" target="_blank">eclkc.ohs.acf.hhs.gov/center-locator</a>
+</li>
+<li>Boys &amp; Girls Clubs (after-school and youth programs):<br/>
+<a href="https://www.bgca.org" rel="noopener" target="_blank">bgca.org</a>
+</li>
+<li>Also check your city’s Parks &amp; Recreation website and 2-1-1 Virginia for local youth programs.</li>
+</ul>
+<h3>10. Seniors &amp; Disability Services</h3>
+<ul class="small">
+<li>Virginia Department for Aging &amp; Rehabilitative Services (DARS):<br/>
+<a href="https://www.dars.virginia.gov" rel="noopener" target="_blank">dars.virginia.gov</a>
+</li>
+<li>Area Agencies on Aging (AAA) — meals, case management, caregiver help:<br/>
+ Call <a href="tel:211">2-1-1 Virginia</a> or visit <a href="https://www.211virginia.org" rel="noopener" target="_blank">211virginia.org</a> and search “aging/senior services.”
+ </li>
+<li>Virginia Association of Centers for Independent Living (VACIL):<br/>
+<a href="https://www.vacil.org" rel="noopener" target="_blank">vacil.org</a>
+</li>
+</ul>
+<h3>11. Immigration &amp; Refugee Help</h3>
+<ul class="small">
+<li>U.S. Citizenship and Immigration Services (USCIS) — official immigration information and forms:<br/>
+<a href="https://www.uscis.gov" rel="noopener" target="_blank">uscis.gov</a>
+</li>
+<li>Use ONLY DOJ-recognized organizations and accredited representatives for immigration legal help:<br/>
+<a href="https://www.justice.gov/eoir/recognized-organizations-and-accredited-representatives-roster-state-and-city" rel="noopener" target="_blank">justice.gov/eoir/recognized-organizations-and-accredited-representatives-roster-state-and-city</a>
+</li>
+<li>Call <a href="tel:211">2-1-1</a> and ask for immigrant/refugee resettlement agencies in your city.</li>
+</ul>
+<h3>12. Legal Aid &amp; Re-entry</h3>
+<ul class="small">
+<li>Virginia Legal Aid — find free/low-cost civil legal help:<br/>
+<a href="https://www.valegalaid.org" rel="noopener" target="_blank">valegalaid.org</a>
+</li>
+<li>Virginia Department of Corrections — re-entry information and resources:<br/>
+<a href="https://vadoc.virginia.gov" rel="noopener" target="_blank">vadoc.virginia.gov</a>
+</li>
+</ul>
+<h3>13. Churches, Prayer Rooms &amp; Ministries</h3>
+<ul class="small">
+<li>Use each city City to list trusted churches, prayer rooms, and ministries that offer both spiritual care and practical outreach (food, clothing, visitation, etc.).</li>
+<li>Include service times, prayer call lines, livestream links, and outreach contacts where possible.</li>
+</ul>
+<h3>14. Domestic Violence, Trafficking &amp; Family Safety</h3>
+<ul class="small">
+<li>Virginia Statewide Sexual &amp; Domestic Violence Hotline (24/7, calls &amp; text):<br/>
+<a href="tel:18008388238">1-800-838-8238</a>
+</li>
+<li>National Domestic Violence Hotline (24/7):<br/>
+<a href="tel:18007997233">1-800-799-7233</a> • <a href="https://www.thehotline.org" rel="noopener" target="_blank">thehotline.org</a>
+</li>
+<li>Call <a href="tel:211">2-1-1</a> and ask for your local domestic violence shelter and crisis center.</li>
+</ul>
+<h3>15. Veterans &amp; Military Families</h3>
+<ul class="small">
+<li>U.S. Department of Veterans Affairs:<br/>
+<a href="https://www.va.gov" rel="noopener" target="_blank">va.gov</a>
+</li>
+<li>Vet Centers (readjustment counseling for combat veterans and families):<br/>
+<a href="https://www.vetcenter.va.gov" rel="noopener" target="_blank">vetcenter.va.gov</a>
+</li>
+<li>Call 2-1-1 or your local DSS for veteran-specific housing and employment programs.</li>
+</ul>
+<h3>16. Financial Literacy &amp; Giving Help</h3>
+<ul class="small">
+<li>Consumer Financial Protection Bureau — guides on budgeting, credit, debt, and scams:<br/>
+<a href="https://www.consumerfinance.gov" rel="noopener" target="_blank">consumerfinance.gov</a>
+</li>
+<li>FDIC Money Smart — free financial education tools:<br/>
+<a href="https://www.fdic.gov/resources/consumers/money-smart" rel="noopener" target="_blank">fdic.gov/resources/consumers/money-smart</a>
+</li>
+</ul>
+<h3>17. Media, Hot Topics &amp; Content Creators</h3>
+<ul class="small">
+<li>See the <a href="usa.html#media">Media, News &amp; Content Creators</a> section for specific examples and links.</li>
+<li>Add city-based radio shows, podcasts, and content creators into each City as needed.</li>
+</ul>
+<h3>18. Arts, Creative &amp; Restorative Spaces</h3>
+<ul class="small">
+<li>Virginia Commission for the Arts — grants and statewide arts info:<br/>
+<a href="https://www.arts.virginia.gov" rel="noopener" target="_blank">arts.virginia.gov</a>
+</li>
+<li>Use city websites and 2-1-1 to find community art centers, museums, open studios, and healing arts programs.</li>
+</ul>
+<h3>19. Funeral, Grief &amp; Bereavement Prep</h3>
+<ul class="small">
+<li>State Board of Funeral Directors &amp; Embalmers (licensing &amp; regulations):<br/>
+<a href="https://www.dhp.virginia.gov/Boards/Funeral/" rel="noopener" target="_blank">dhp.virginia.gov/Boards/Funeral</a>
+</li>
+<li>Combine local funeral homes, hospice programs, church grief ministries, and support groups in each City.</li>
+</ul>
+<h3>20. Tech, Apps &amp; Communication</h3>
+<ul class="small">
+<li>Public Library Directory:<br/>
+<a href="https://www.lva.virginia.gov/public/libraries.asp" rel="noopener" target="_blank">lva.virginia.gov/public/libraries.asp</a>
+</li>
+<li>Encourage use of Zoom, Microsoft Teams, WhatsApp, and Google Meet for remote appointments and family connection.</li>
+</ul>
+<h3>21. National &amp; Global Resources</h3>
+<ul class="small">
+<li>American Red Cross:<br/>
+<a href="https://www.redcross.org" rel="noopener" target="_blank">redcross.org</a>
+</li>
+<li>FEMA — federal disaster assistance:<br/>
+<a href="https://www.fema.gov" rel="noopener" target="_blank">fema.gov</a>
+</li>
+</ul>
+<h3>22. Business, Ministry &amp; Nonprofit Tools</h3>
+<ul class="small">
+<li>Virginia State Corporation Commission (business registration):<br/>
+<a href="https://cis.scc.virginia.gov" rel="noopener" target="_blank">cis.scc.virginia.gov</a>
+</li>
+<li>IRS (EIN numbers and charities):<br/>
+<a href="https://www.irs.gov" rel="noopener" target="_blank">irs.gov</a>
+</li>
+<li>Small Business Administration (SBA):<br/>
+<a href="https://www.sba.gov" rel="noopener" target="_blank">sba.gov</a>
+</li>
+</ul>
+<h3>23. Transportation Apps &amp; Delivery</h3>
+<ul class="small">
+<li>Ride-share: Uber — <a href="https://www.uber.com" rel="noopener" target="_blank">uber.com</a>; Lyft — <a href="https://www.lyft.com" rel="noopener" target="_blank">lyft.com</a>.</li>
+<li>Delivery: DoorDash — <a href="https://www.doordash.com" rel="noopener" target="_blank">doordash.com</a>; Uber Eats — <a href="https://www.ubereats.com" rel="noopener" target="_blank">ubereats.com</a>; Instacart — <a href="https://www.instacart.com" rel="noopener" target="_blank">instacart.com</a>.</li>
+</ul>
+<h3>24. Recreation, Rest &amp; Joy</h3>
+<ul class="small">
+<li>Virginia State Parks:<br/>
+<a href="https://www.dcr.virginia.gov/state-parks" rel="noopener" target="_blank">dcr.virginia.gov/state-parks</a>
+</li>
+<li>City Parks &amp; Recreation sites — walking trails, recreation centers, pools, and classes.</li>
+</ul>
+<h3>25. Ancestral, Cultural &amp; Lineage-Safe Resources</h3>
+<ul class="small">
+<li>Library of Virginia — genealogy and archives:<br/>
+<a href="https://www.lva.virginia.gov" rel="noopener" target="_blank">lva.virginia.gov</a>
+</li>
+<li>Ancestry / DNA / cultural tools used as <strong>context only</strong>, not for worship. Keep Christ at the center.</li>
+</ul>
+<h3>26. Women, Men &amp; Family Support</h3>
+<ul class="small">
+<li>Local DSS, churches, counseling centers, and community non-profits that serve women, men, couples, and families.</li>
+<li>Use city Cities to list specific programs (support groups, mentoring, retreats, fatherhood/motherhood programs, etc.).</li>
+</ul>
+<h3>27. Crisis Preparedness &amp; Safety</h3>
+<ul class="small">
+<li>Virginia Department of Emergency Management:<br/>
+<a href="https://www.vaemergency.gov" rel="noopener" target="_blank">vaemergency.gov</a>
+</li>
+<li>City emergency management offices, local storm alerts, and FEMA/Red Cross guides.</li>
+</ul>
+<h3>28. Suggestion / Feedback / Testimony</h3>
+<ul class="small">
+<li>To suggest a resource, share a testimony, or request prayer, email:<br/>
+<a href="mailto:8chamber8ofhope8@gmail.com">8chamber8ofhope8@gmail.com</a>
+</li>
+<li>All suggestions are prayed over and reviewed before adding to the directory.</li>
+</ul>
+<h3>29. Spiritual &amp; Ministry Support</h3>
+<ul class="small">
+<li>Use trusted local churches, prayer rooms, ministry hotlines, and verified livestream / prayer support in your area.</li>
+<li>Keep this category Christ-centered, practical, and connected to real local ministries whenever possible.</li>
+</ul>
+<h3>30. Prayer Requests, Suggestions &amp; Support</h3>
+<ul class="small">
+<li>Prayer request / suggestion email:<br/>
+<a href="mailto:8chamber8ofhope8@gmail.com?subject=Prayer%20Request">8chamber8ofhope8@gmail.com</a>
+</li>
+<li>Directory support / giving:<br/>
+<a href="give_support.html">Give &amp; Support</a> • Crisis / emotional support: <a href="tel:988">988</a> • <a href="https://988lifeline.org/" rel="noopener" target="_blank">988lifeline.org</a> • Emergency: <a href="tel:911">911</a>
+</li>
+</ul>
+</div>
+</section>
+<div id="usa-states"></div>
+<div class="card card-soft" style="max-width:1100px;margin:16px auto;"><h2>🗺 USA States &amp; DC — Quick Index</h2><p><a href="index.html">← Back to Home</a> | <a href="territories.html#territories-overview">Territories</a> | <a href="full_directory.html">Full Directory (heavy)</a></p><div class="grid" style="display:flex;flex-wrap:wrap;gap:8px;"><a class="pill" href="state_va.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">VA</a><a class="pill" href="state_md.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">MD</a><a class="pill" href="state_wv.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">WV</a><a class="pill" href="state_nc.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">NC</a><a class="pill" href="state_sc.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">SC</a><a class="pill" href="state_nj.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">NJ</a><a class="pill" href="state_pa.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">PA</a><a class="pill" href="state_ny.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">NY</a><a class="pill" href="state_ct.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">CT</a><a class="pill" href="state_ma.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">MA</a><a class="pill" href="state_vt.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">VT</a><a class="pill" href="state_nh.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">NH</a><a class="pill" href="state_me.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">ME</a><a class="pill" href="state_oh.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">OH</a><a class="pill" href="state_mi.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">MI</a><a class="pill" href="state_in.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">IN</a><a class="pill" href="state_ky.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">KY</a><a class="pill" href="state_tn.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">TN</a><a class="pill" href="state_de.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">DE</a><a class="pill" href="state_ri.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">RI</a><a class="pill" href="state_fl.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">FL</a><a class="pill" href="state_ga.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">GA</a><a class="pill" href="state_dc.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">DC</a><a class="pill" href="state_hi.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">HI</a><a class="pill" href="state_ak.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">AK</a><a class="pill" href="state_al.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">AL</a><a class="pill" href="state_ms.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">MS</a><a class="pill" href="state_wi.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">WI</a><a class="pill" href="state_mn.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">MN</a><a class="pill" href="state_il.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">IL</a><a class="pill" href="state_ar.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">AR</a><a class="pill" href="state_ia.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">IA</a><a class="pill" href="state_ks.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">KS</a><a class="pill" href="state_co.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">CO</a><a class="pill" href="state_nm.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">NM</a><a class="pill" href="state_id.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">ID</a><a class="pill" href="state_mt.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">MT</a><a class="pill" href="state_wy.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">WY</a><a class="pill" href="state_ne.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">NE</a><a class="pill" href="state_ok.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">OK</a><a class="pill" href="state_nv.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">NV</a><a class="pill" href="state_ca.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">CA</a><a class="pill" href="state_mo.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">MO</a><a class="pill" href="state_la.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">LA</a><a class="pill" href="state_nd.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">ND</a><a class="pill" href="state_sd.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">SD</a><a class="pill" href="state_tx.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">TX</a><a class="pill" href="state_ut.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">UT</a><a class="pill" href="state_az.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">AZ</a><a class="pill" href="state_wa.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">WA</a><a class="pill" href="state_or.html" style="padding:8px 10px;border:1px solid #ddd;border-radius:999px;text-decoration:none;">OR</a></div></div><div id="coh-global-footer"></div></div></div></div>
+<section class="card card-soft" id="us-education-records-transcripts">
+<h2>📘 U.S. Education Records, School Transcripts &amp; Credentials</h2>
+<p class="small">For elementary, middle, high school, GED/high school equivalency, special education records, trade school, college/university transcripts, graduate records, closed school records, or credential verification, start with the school, school district, registrar, state education agency, state higher education agency, adult education office, licensing agency, or official records custodian.</p>
+<p class="small"><a class="btn" href="education_records.html#us-national-pathway">Open U.S. Education Records &amp; Transcript Guide</a></p>
+<p class="small muted">The U.S. Department of Education does not hold every school transcript. Contact the school/district or the state/territory agency where the school was located.</p>
+</section>
+
+<section class="card" id="us-personal-medical-legal-property-service-records">
+<h2>Personal, Medical, Student Clinic, Legal, Property &amp; Service Records</h2>
+<p>For U.S. records such as medical records, patient files, student clinic records, SOAP notes, electronic health records, dental charts, immunization records, legal/court records, criminal records, background checks, incarceration records, auto/DMV records, rental/tenant records, mortgage records, property records, utilities, phone, cable, internet, and service records, begin with the provider, clinic, school/program, court, agency, company, county/city office, state office, or official account that created the record.</p>
+<p><a class="btn" href="personal_records.html">Open Personal &amp; Service Records Help</a></p>
+</section>
+
+<section class="card" id="money-housing-benefits-life-wellness-link">
+<h2>Money, Housing, Benefits &amp; Life Wellness Help</h2>
+<p>Find verified official starting points for housing, homeownership, retirement, Social Security, Medicare, Medicaid, long-term care, consumer rights, credit, debt collection, taxes, estate planning, veterans, education, career, travel, and worldwide life-stage help.</p>
+<p><a class="btn" href="money_housing_consumer_help.html">Open Money, Housing, Benefits &amp; Life Wellness Help</a></p>
+</section>
+
+</body>
+</html>

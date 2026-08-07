@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>International — Chamber of Hope Worldwide HELPS Ministry Directory</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Chamber of Hope is a Worldwide HELPS Ministry Directory with free, clickable resources organized by Global, USA National, State, City Hub, and help categories (housing, food, utilities, legal, health, jobs, crisis support, and more)." name="description"/>
+<meta content="index,follow" name="robots"/>
+<meta content="Chamber of Hope – Worldwide HELPS Ministry Directory" property="og:title"/>
+<meta content="Free, clickable help resources organized by Global, USA National, State, City Hub, and help categories (housing, food, utilities, legal, health, jobs, crisis support, and more)." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Chamber of Hope – Worldwide HELPS Ministry Directory" name="twitter:title"/>
+<meta content="Free, clickable help resources organized by Global, USA National, State, City Hub, and help categories." name="twitter:description"/>
+<meta content="#4b2c63" name="theme-color"/>
+<style>
+ /* Accessibility: skip link */
+.skip-link{
+ position:absolute; left:-999px; top:10px;
+ background:#ffffff; color:#2a1e16;
+ border:2px solid var(--deep-gold);
+ padding:0.4rem 0.7rem; border-radius:0.6rem;
+ z-index:9999;
+}
+.skip-link:focus{ left:10px; }
+
+:root {
+ --cream: #f9f3e8;
+ --gold: #d1a94a;
+ --soft-gold: #f3e0b6;
+ --deep-gold: #b5852c;
+ --purple: #4b2c63;
+ --teal: #138a8a;
+ --turquoise: #2aa6b8;
+ --soft-gray: #f1f1f5;
+ --border-soft: #e1d5c5;
+ --danger: #b3261e;
+ --link: #0b63a7;
+ }
+
+ * {
+ box-sizing: border-box;
+ }
+
+ body {
+ margin: 0;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+ background: radial-gradient(circle at top left, #fffaf3 0, #f9f3e8 40%, #f5eee0 100%);
+ color: #2a1e16;
+ line-height: 1.55;
+ }
+
+ a {
+ color: var(--link);
+ text-decoration: none;
+ }
+ a:hover {
+ text-decoration: underline;
+ }
+
+ .page {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 1.5rem 1rem 3rem;
+ }
+
+ header.hero {
+ background: linear-gradient(135deg, #fffaf3, #f5e6c8);
+ border-radius: 1.75rem;
+ padding: 1.75rem 1.75rem 1.5rem;
+ border: 1px solid var(--border-soft);
+ box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+ display: grid;
+ grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+ gap: 1.25rem;
+ align-items: center;
+ }
+
+ @media (max-width: 900px) {
+ header.hero {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .hero-title {
+ font-size: 1.9rem;
+ font-weight: 800;
+ color: var(--purple);
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ margin-bottom: 0.4rem;
+ }
+
+ .hero-sub {
+ font-size: 0.98rem;
+ color: #5b4630;
+ margin-bottom: 0.4rem;
+ }
+
+ .hero-sub strong {
+ color: var(--deep-gold);
+ }
+
+ .hero-tags {
+ font-size: 0.9rem;
+ color: #6b563e;
+ margin-bottom: 0.5rem;
+ }
+
+ .hero-badges {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.4rem;
+ margin: 0.4rem 0 0.7rem;
+ }
+
+ .badge {
+ font-size: 0.78rem;
+ padding: 0.18rem 0.55rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.06);
+ background: rgba(255,255,255,0.75);
+ backdrop-filter: blur(4px);
+ display: inline-flex;
+ align-items: center;
+ gap: 0.25rem;
+ white-space: nowrap;
+ }
+
+ .badge.peacock { border-color: var(--teal); color: var(--teal); }
+ .badge.elephant { border-color: var(--purple); color: var(--purple); }
+ .badge.panther { border-color: var(--deep-gold); color: var(--deep-gold); }
+
+ .hero-logo-wrap {
+ text-align: center;
+ }
+
+ .hero-logo {
+ display: inline-flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 0.5rem;
+ padding: 1rem;
+ border-radius: 1.5rem;
+ background: radial-gradient(circle at top, #ffffff, #f3e1bd);
+ box-shadow:
+ 0 12px 30px rgba(0,0,0,0.12),
+ 0 0 0 1px rgba(255,255,255,0.8) inset;
+ }
+
+ .hero-logo img {
+ max-width: 460px;
+ max-height: 375px;
+ object-fit: contain;
+ display: block;
+ filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
+ }
+
+ .hero-logo-caption {
+ font-size: 0.8rem;
+ color: #6b563e;
+ }
+
+ .hero-cta-row {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+ margin-top: 0.4rem;
+ }
+
+ .btn {
+ border-radius: 999px;
+ padding: 0.45rem 0.9rem;
+ font-size: 0.86rem;
+ font-weight: 600;
+ border: 1px solid transparent;
+ display: inline-flex;
+ align-items: center;
+ gap: 0.3rem;
+ cursor: pointer;
+ text-decoration: none;
+ }
+
+ .btn-primary {
+ background: radial-gradient(circle at top left, #fef6e7, #d1a94a);
+ border-color: var(--deep-gold);
+ color: #3b260e;
+ box-shadow: 0 8px 18px rgba(134, 88, 19, 0.35);
+ }
+
+ .btn-outline {
+ background: rgba(255,255,255,0.7);
+ border-color: rgba(0,0,0,0.08);
+ color: #4b341a;
+ }
+
+ .layout {
+ margin-top: 1.5rem;
+ display: grid;
+ grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+ gap: 1.5rem;
+ }
+
+ @media (max-width: 1000px) {
+ .layout {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ section {
+ margin-bottom: 1.25rem;
+ }
+
+ .card {
+ background: #fffdf9;
+ border-radius: 1.3rem;
+ border: 1px solid var(--border-soft);
+ box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+ padding: 1.1rem 1.2rem;
+ margin-bottom: 0.95rem;
+ }
+
+ .card-gold {
+ background: linear-gradient(135deg, #fffaf1, #f3e0b6);
+ }
+
+ .card-soft {
+ background: var(--soft-gray);
+ }
+
+ .card h2, .card h3, .card h4 {
+ margin-top: 0;
+ margin-bottom: 0.55rem;
+ color: var(--purple);
+ letter-spacing: 0.02em;
+ }
+
+ .card h2 { font-size: 1.15rem; }
+ .card h3 { font-size: 1.05rem; }
+ .card h4 { font-size: 0.95rem; }
+
+ .tagline {
+ font-style: italic;
+ font-size: 0.9rem;
+ color: #5a4632;
+ margin-top: 0.2rem;
+ margin-bottom: 0.3rem;
+ }
+
+ .mini-pill {
+ display: inline-block;
+ background: rgba(255,255,255,0.8);
+ border-radius: 999px;
+ padding: 0.15rem 0.6rem;
+ font-size: 0.75rem;
+ color: #6b5640;
+ border: 1px solid rgba(0,0,0,0.06);
+ margin-right: 0.3rem;
+ margin-top: 0.25rem;
+ }
+
+ .pill-urgent {
+ background: #fff5f4;
+ border-color: #f2bfbb;
+ color: var(--danger);
+ }
+
+ .pill-scripture {
+ background: #efe8ff;
+ border-color: #d3c4ff;
+ color: var(--purple);
+ }
+
+ ul, ol {
+ padding-left: 1.1rem;
+ margin-top: 0.25rem;
+ margin-bottom: 0.55rem;
+ }
+
+ li {
+ margin-bottom: 0.28rem;
+ }
+
+ .two-col {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0,1fr));
+ gap: 0.6rem 1.2rem;
+ }
+
+ @media (max-width: 800px) {
+ .two-col {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .small {
+ font-size: 0.85rem;
+ }
+
+ .disclaimer {
+ font-size: 0.78rem;
+ color: #6b5b47;
+ }
+
+ .footer {
+ margin-top: 1.5rem;
+ padding-top: 1rem;
+ border-top: 1px dashed #d9c7aa;
+ font-size: 0.82rem;
+ color: #6b5b47;
+ text-align: center;
+ }
+
+ .highlight-bar {
+ font-size: 0.82rem;
+ padding: 0.4rem 0.7rem;
+ border-radius: 999px;
+ background: linear-gradient(90deg, rgba(209,169,74,0.13), rgba(75,44,99,0.07));
+ display: inline-flex;
+ align-items: center;
+ gap: 0.4rem;
+ color: #4b2c63;
+ margin-top: 0.2rem;
+ }
+
+ .category-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+ gap: 0.35rem 1.4rem;
+ font-size: 0.88rem;
+ }
+
+ .category-grid div {
+ padding-left: 0.2rem;
+ }
+
+ .section-label {
+ text-transform: uppercase;
+ font-size: 0.78rem;
+ letter-spacing: 0.08em;
+ color: #8c6f47;
+ margin-bottom: 0.25rem;
+ }
+
+ .strong-label {
+ font-weight: 600;
+ color: #3b2916;
+ }
+
+ .inset {
+ border-left: 3px solid var(--gold);
+ padding-left: 0.7rem;
+ margin-top: 0.4rem;
+ margin-bottom: 0.4rem;
+ font-size: 0.9rem;
+ }
+
+ .pill-animals {
+ background: #f1e6ff;
+ border-color: #d4bfff;
+ color: var(--purple);
+ }
+
+ .pill-african {
+ background: #e8f4f1;
+ border-color: #b4ddd0;
+ color: #20574b;
+ }
+ 
+
+/* Highlighted spiritual/identity/celestial sections */
+.card.highlight-celestial {
+ border: 2px solid #c9a7ff;
+ box-shadow: 0 0 18px rgba(137, 88, 255, 0.25);
+ background: radial-gradient(circle at top left, #fff7ff, #fdfbff);
+}
+.card.highlight-lgbtq {
+ border: 2px solid #ffb3d9;
+ box-shadow: 0 0 18px rgba(255, 140, 199, 0.25);
+ background: radial-gradient(circle at top left, #fff5fa, #fff9ff);
+}
+.card.highlight-spiritual {
+ border: 2px solid #f7d58a;
+ box-shadow: 0 0 18px rgba(247, 191, 104, 0.28);
+ background: radial-gradient(circle at top left, #fff9f0, #fffdf7);
+}
+
+/* Quick ribbon at very top */
+.quick-ribbon {
+ position: sticky;
+ top: 0;
+ z-index: 999;
+ background: linear-gradient(90deg, #fff7e0, #fdf3ff);
+ border-bottom: 1px solid rgba(0,0,0,0.05);
+ padding: 8px 14px;
+ font-size: 0.9rem;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ align-items: center;
+}
+.quick-ribbon span.label {
+ font-weight: 600;
+ margin-right: 6px;
+}
+.quick-ribbon a {
+ text-decoration: none;
+ padding: 4px 9px;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.06);
+ background: rgba(255,255,255,0.8);
+ box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.quick-ribbon a:hover {
+ background: #fff;
+}
+
+/* Back-to-top link */
+.back-to-top {
+ margin-top: 8px;
+ font-size: 0.8rem;
+ text-align: right;
+}
+.back-to-top a {
+ text-decoration: none;
+ opacity: 0.75;
+}
+.back-to-top a:hover {
+ opacity: 1;
+ text-decoration: underline;
+}
+
+/* Emergency bar & safety tools */
+.emergency-bar {
+ position: sticky;
+ top: 0;
+ z-index: 999;
+ background: linear-gradient(90deg, #b00020, #d32f2f);
+ color: #ffffff;
+ padding: 6px 14px;
+ font-size: 0.9rem;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 8px;
+}
+.emergency-bar a {
+ color: #ffffff;
+ text-decoration: underline;
+}
+.emergency-bar a:hover {
+ text-decoration: none;
+}
+.btn-exit {
+ background: #ffffff;
+ color: #b00020;
+ border-radius: 999px;
+ border: none;
+ padding: 4px 12px;
+ font-size: 0.8rem;
+ font-weight: 600;
+ cursor: pointer;
+ box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+}
+.btn-exit:hover {
+ background: #ffe5e5;
+}
+
+/* Top tools: accessibility, search, share */
+.top-tools {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 10px;
+ padding: 8px 14px 4px;
+ background: rgba(255, 255, 255, 0.8);
+ backdrop-filter: blur(4px);
+ border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+.accessibility-tools button {
+ margin-right: 4px;
+ padding: 2px 8px;
+ font-size: 0.75rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.15);
+ background: #ffffff;
+ cursor: pointer;
+}
+.accessibility-tools button:hover {
+ background: #f3f0ea;
+}
+.search-share-wrap {
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ flex: 1;
+ justify-content: flex-end;
+}
+#directory-search {
+ flex: 1;
+ min-width: 180px;
+ max-width: 280px;
+ padding: 4px 8px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.18);
+}
+.share-buttons button {
+ padding: 4px 10px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.15);
+ background: #ffffff;
+ cursor: pointer;
+}
+.share-buttons button:hover {
+ background: #f3f0ea;
+}
+@media (max-width: 720px) {
+ .search-share-wrap {
+ justify-content: flex-start;
+ }
+}
+
+/* High contrast mode */
+body.high-contrast {
+ background: #000000;
+ color: #ffffff;
+}
+body.high-contrast .card {
+ background: #101010;
+ color: #ffffff;
+ border-color: #ffffff;
+}
+body.high-contrast a {
+ color: #ffec80;
+}
+body.high-contrast .hero-inner {
+ background: #181818;
+}
+body.high-contrast .emergency-bar {
+ background: #000000;
+ border-bottom: 1px solid #ffffff;
+}
+body.high-contrast .btn-exit {
+ background: #ffffff;
+ color: #000000;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+ position: fixed;
+ right: 12px;
+ bottom: 12px;
+ padding: 6px 10px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: none;
+ background: rgba(75, 44, 99, 0.9);
+ color: #ffffff;
+ cursor: pointer;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+#scrollTopBtn:hover {
+ background: rgba(49, 27, 74, 0.95);
+}
+
+ .state-flag {
+ font-size: 0.8rem;
+ margin-left: 0.35rem;
+ vertical-align: middle;
+ }
+
+
+ /* === Global visual polish adjustments (Option 1: mix of B & C) === */
+
+ /* Make small text more readable and evenly spaced */
+ .small {
+ font-size: 0.86rem;
+ line-height: 1.5;
+ }
+
+ /* Give small lists consistent breathing room and bullets */
+ ul.small {
+ margin: 0.4rem 0 0.8rem 1.1rem;
+ padding-left: 0;
+ list-style: disc;
+ }
+
+ ul.small > li {
+ margin-bottom: 0.45rem;
+ }
+
+ /* Maryland hero heading: align visually with VA City header size */
+ #md-overview header.hero h1 {
+ font-size: 1.25rem;
+ line-height: 1.35;
+ letter-spacing: 0.01em;
+ font-weight: 800;
+ color: var(--purple);
+ margin-bottom: 0.35rem;
+ text-wrap: balance;
+ }
+
+ /* Ensure state flag inline span stays small and aligned */
+ .state-flag {
+ font-size: 0.9rem;
+ margin-left: 0.35rem;
+ vertical-align: middle;
+ }
+
+ /* Slightly increase spacing between major sections for flow */
+ section.section-block {
+ margin-top: 2.25rem;
+ margin-bottom: 2.25rem;
+ }
+
+ /* Optional: unify page title blocks (VA + MD overview cards) */
+ #va-overview .card h2,
+ #md-overview .card h2 {
+ font-size: 1.15rem;
+ letter-spacing: 0.02em;
+ }
+
+
+ .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+ @media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+
+ .medium{font-size:15px;line-height:1.55;}
+
+.state-hr{border:0;border-top:4px solid rgba(0,0,0,.12);margin:26px auto;max-width:1100px;}
+[id]{scroll-margin-top:90px;}
+
+/* Ministry-first tone (soft + strong) */
+.ministry-voice{margin:10px 0 14px 0;padding:10px 12px;border:1px solid rgba(0,0,0,.12);border-radius:14px;background:rgba(255,255,255,.35);}
+.ministry-voice p{margin:6px 0;}
+
+.details-body{margin-top:10px;}
+details.card-soft summary{cursor:pointer; padding:8px 0;}
+details.card-soft[open]{padding-bottom:10px;}
+
+
+/* Clear layer */
+.card-Clear{
+ border: 1px solid rgba(0,0,0,.08);
+ background: rgba(255,255,255,.65);
+ padding: 10px 12px;
+ border-radius: 14px;
+ margin: 10px 0 12px 0;
+}
+.card-Clear .small{ margin: 0 0 8px 0; }
+.card-Clear ul{ margin: 0; padding-left: 18px; }
+
+/* Anchor hardening: improves in-page jump reliability (esp. state/city links) */
+:target { scroll-margin-top: 90px; }
+section[id], div[id], a[id] { scroll-margin-top: 90px; }
+
+/* Search highlight */
+.search-hit{ outline: 3px solid #ffcc00; outline-offset: 4px; }
+</style>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Chamber of Hope – Worldwide HELPS Ministry Directory",
+ "description":"Worldwide HELPS Ministry Directory with free, clickable resources organized by Global, USA National, State, City Hub, and help categories."
+}
+</script>
+<link href="site-enhancements-july13-final.css" rel="stylesheet"/><script defer="" src="site-enhancements-july13-final.js"></script></head>
+<body>
+
+<div class="card card-soft" id="international-holidays-awareness">
+<h3>🌍 Global Holidays &amp; Awareness Days</h3>
+<p class="mini">For selected holidays, remembrance days, awareness days, and country-related observances, use the Global Holidays &amp; Awareness Days page. This is not a full holiday calendar for every country; check official local sources for current dates.</p>
+<p><a class="btn" href="holidays.html">Open Global Holidays &amp; Awareness Days</a></p>
+</div>
+<div id="coh-global-tools"></div>
+<div class="card card-soft" id="international-records-archives-family-history" style="max-width:1100px;margin:16px auto;">
+<h3>📚 International Records, Archives &amp; Family History Help</h3>
+<p class="small">For country records such as birth, death, marriage, divorce, adoption, cemetery/burial, obituary, court, probate, military, immigration/naturalization, property/land, genealogy, archives, and historical records, start with that country’s official civil registry, national archives, local municipality, court, land registry, health ministry, justice ministry, embassy, consulate, or official government records portal.</p>
+<p class="small"><a class="btn" href="records_archives.html#international-country-records">Open International / Country Records Guide</a> <a class="btn" href="records_archives.html#quick-pathway">Quick Records Pathway</a></p>
+<p class="small muted">Do not assume U.S. record offices or U.S. document names apply in every country. Each country sets its own access rules, privacy rules, fees, forms, languages, and certification requirements.</p>
+</div>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div id="top"></div>
+<div class="page">
+<div class="card card-gold" style="margin-top:18px;">
+<h1 style="margin:0 0 6px 0;">🌍 International Countries</h1>
+<p class="small muted" style="margin:0 0 10px 0;">Part of the Chamber of Hope Worldwide HELPS Ministry Directory • Last reviewed: August 3, 2026</p>
+<p class="mini" style="margin:0 0 10px 0;">Mobile-friendly international help pages with official and community resource links where available.</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;">
+<a class="btn" href="index.html">⬅ Back to Quick Links</a>
+<a class="btn" href="usa.html">🇺🇸 USA</a>
+<a class="btn" href="territories.html">🏝 Territories</a> <a class="btn" href="us_territories_guidance.html">U.S. Territories Guidance</a>
+<a class="btn" href="full_directory_help.html">Open Full Directory Help</a>
+<a class="btn" href="life_stages.html#global-country-benefits">Global Benefits / Pension Help</a>
+</div>
+<p class="mini muted" style="margin-top:10px;">Tip: If a page freezes inside Instagram/Facebook, copy the link and open in Safari/Chrome.</p>
+</div>
+<main id="main">
+
+
+<div class="card card-soft" id="international-country-guidance">
+<h3>🌍 International &amp; Global Country Guidance</h3>
+<p class="small"><strong>International & Global Country Guidance:</strong> For help outside the United States, start with the country’s official government offices, ministries, courts, civil registries, health systems, national disaster agencies, legal aid, insurance regulators, embassies, consulates, or recognized humanitarian organizations. Do not assume U.S. terms or programs apply in every country.</p>
+<p class="small"><a class="btn" href="global_country_guidance.html">Open International &amp; Global Country Guidance</a></p>
+<p class="small muted">Use this guide for benefits, pensions, disability, child/family support, health coverage, civil records, legal aid, disaster help, refugee/asylum support, and consular starting points.</p>
+</div>
+<div class="card card-soft" id="country-life-stages-benefits-planning">
+<h3>🧭 Retirement, Pension, Disability, Child & Health Coverage Help</h3>
+<p class="small">Benefit systems are different in every country. For pensions, disability benefits, child/family benefits, survivor benefits, health coverage, insurance, and long-term planning, start with the country’s official government benefit office, social security/pension agency, health ministry, insurance regulator, legal aid, or embassy/consulate if relevant.</p>
+<p class="small"><a class="btn" href="life_stages.html#global-country-benefits">Open Global / Country Benefits Guide</a></p>
+</div>
+
+<a id="international-countries"></a>
+<section class="state" id="international-overview">
+<div class="state-header">
+<h2>🌍 Chamber of Hope Worldwide HELPS Ministry Directory — International Countries</h2>
+<p class="mini">International help pages offer country-level and local starting points with official and community resource links where available.</p>
+<div class="callout small" style="margin-top:10px"><strong>International help pathways:</strong> Use this section to begin with country-level and local help pathways. If a country or city is not listed, use the Suggest a Resource page to request a review.</div>
+</div>
+<div class="card card-soft" style="margin-top:12px">
+<h3 style="margin-top:0">✅ Available Countries</h3>
+<p class="mini">Tap a country below to open its help page.</p>
+<div class="mini" style="margin-top:10px">
+<strong>Quick links:</strong>
+<a class="pill" href="intl_canada.html">Canada</a>
+<a class="pill" href="intl_mexico.html">Mexico</a>
+<a class="pill" href="intl_bahamas.html">The Bahamas</a>
+<a class="pill" href="intl_bahrain.html">Bahrain</a>
+<a class="pill" href="intl_cuba.html">Cuba</a>
+<a class="pill" href="intl_dominican_republic.html">Dominican Republic</a>
+<a class="pill" href="intl_haiti.html">Haiti</a>
+<a class="pill" href="intl_jamaica.html">Jamaica</a>
+<a class="pill" href="intl_trinidad_tobago.html">Trinidad &amp; Tobago</a>
+<a class="pill" href="intl_belize.html">Belize</a>
+<a class="pill" href="intl_costa_rica.html">Costa Rica</a>
+<a class="pill" href="intl_el_salvador.html">El Salvador</a>
+<a class="pill" href="intl_guatemala.html">Guatemala</a>
+<a class="pill" href="intl_honduras.html">Honduras</a>
+<a class="pill" href="intl_panama.html">Panama</a>
+<a class="pill" href="intl_colombia.html">Colombia</a>
+<a class="pill" href="intl_ecuador.html">Ecuador</a>
+<a class="pill" href="intl_peru.html">Peru</a>
+<a class="pill" href="intl_venezuela.html">Venezuela</a>
+<a class="pill" href="intl_brazil.html">Brazil</a>
+<a class="pill" href="intl_argentina.html">Argentina</a>
+<a class="pill" href="intl_chile.html">Chile</a>
+<a class="pill" href="intl_uruguay.html">Uruguay</a>
+<a class="pill" href="intl_italy.html">Italy</a>
+<a class="pill" href="intl_spain.html">Spain</a>
+<a class="pill" href="intl_netherlands.html">Netherlands</a>
+<a class="pill" href="intl_portugal.html">Portugal</a>
+<a class="pill" href="intl_poland.html">Poland</a>
+<a class="pill" href="intl_sweden.html">Sweden</a>
+<a class="pill" href="intl_saudi_arabia.html">Saudi Arabia</a>
+<a class="pill" href="intl_israel.html">Israel</a>
+<a class="pill" href="intl_jordan.html">Jordan</a>
+<a class="pill" href="intl_lebanon.html">Lebanon</a>
+<a class="pill" href="intl_india.html">India</a>
+<a class="pill" href="intl_china.html">China</a>
+<a class="pill" href="intl_pakistan.html">Pakistan</a>
+<a class="pill" href="intl_philippines.html">Philippines</a>
+<a class="pill" href="intl_vietnam.html">Vietnam</a>
+<a class="pill" href="intl_japan.html">Japan</a>
+<a class="pill" href="intl_south_korea.html">South Korea</a>
+<a class="pill" href="intl_australia.html">Australia</a>
+<a class="pill" href="intl_new_zealand.html">New Zealand</a>
+<a class="pill" href="intl_kuwait.html">Kuwait</a>
+<a class="pill" href="intl_oman.html">Oman</a>
+<a class="pill" href="intl_finland.html">Finland</a>
+<a class="pill" href="intl_greece.html">Greece</a>
+<a class="pill" href="intl_belgium.html">Belgium</a>
+<a class="pill" href="intl_qatar.html">Qatar</a>
+<a class="pill" href="intl_nigeria.html">Nigeria</a>
+<a class="pill" href="intl_kenya.html">Kenya</a>
+<a class="pill" href="intl_south_africa.html">South Africa</a>
+<a class="pill" href="intl_barbados.html">Barbados</a>
+<a class="pill" href="intl_united_kingdom.html">United Kingdom</a>
+<a class="pill" href="intl_ireland.html">Ireland</a>
+<a class="pill" href="intl_france.html">France</a>
+<a class="pill" href="intl_germany.html">Germany</a>
+<a class="pill" href="intl_norway.html">Norway</a>
+<a class="pill" href="intl_denmark.html">Denmark</a>
+<a class="pill" href="intl_ghana.html">Ghana</a>
+<a class="pill" href="intl_ethiopia.html">Ethiopia</a>
+<a class="pill" href="intl_egypt.html">Egypt</a>
+<a class="pill" href="intl_morocco.html">Morocco</a>
+<a class="pill" href="intl_united_arab_emirates.html">United Arab Emirates</a>
+<a class="pill" href="intl_indonesia.html">Indonesia</a>
+<a class="pill" href="intl_turkey.html">Turkey</a>
+<a class="pill" href="intl_thailand.html">Thailand</a>
+<a class="pill" href="intl_malaysia.html">Malaysia</a>
+<a class="pill" href="intl_singapore.html">Singapore</a>
+<a class="pill" href="intl_taiwan.html">Taiwan</a>
+<a class="pill" href="intl_switzerland.html">Switzerland</a>
+</div>
+</div>
+<div class="note small">
+<strong>International help pathways:</strong> Choose a country below to begin with official, local, and community resource pathways where available.
+ <div class="mini muted" style="margin-top:6px;">Countries are organized with helpful starting points and official links where available.</div>
+</div>
+<p class="mini"><a class="btn" href="suggest_resource.html">Submit a country request</a> (country + city/region + category needed).</p>
+</section>
+
+<div class="card card-soft" id="suggestions" style="margin-top:16px;">
+<h3>🗳 Don’t see your country?</h3>
+<p class="small">
+ If you don’t see your country and you want it added, please submit a suggestion so we can review additional country requests.
+ Include: <strong>country</strong>, <strong>nearest major city/region</strong>, and the <strong>type of help</strong> (category).
+ </p>
+<p class="small">
+ 📩 Email: <a href="mailto:8chamber8ofhope8@gmail.com?subject=International%20Country%20Request">8chamber8ofhope8@gmail.com</a>
+</p>
+<p class="small muted">Country requests are reviewed carefully so public links stay useful and clear.</p>
+</div>
+
+<section class="card" id="international-personal-medical-legal-property-service-records">
+<h2>Personal, Medical, Student Clinic, Legal, Property &amp; Service Records</h2>
+<p>For records outside the U.S., start with the country or territory office, provider, clinic, student clinic, school/program, court, health authority, justice agency, police/justice office, motor vehicle or transport agency, housing/rental authority, land registry, utility regulator, communications regulator, employer, embassy, consulate, or official portal connected to the record.</p>
+<p><a class="btn" href="personal_records.html">Open Personal &amp; Service Records Help</a></p>
+</section>
+</main>
+<div class="back-top"><a href="#top">⬆ Back to Top</a></div>
+</div>
+<script>
+function helpsToggleDetails(selector, openState){
+ try{
+ document.querySelectorAll(selector).forEach(function(d){
+ if(d && typeof d.open !== "undefined"){ d.open = !!openState; }
+ });
+ }catch(e){}
+}
+document.addEventListener("DOMContentLoaded", function(){ helpsToggleDetails("#va-overview details", true); });
+</script>
+<script>
+/* Font size controls */
+(function(){
+ const KEY_SCALE = "coh_fontScalePct";
+ const KEY_CONTRAST = "coh_highContrast";
+ function applyScale(pct){
+ try{
+ document.documentElement.style.fontSize = pct + "%";
+ }catch(e){}
+ }
+ function getScale(){
+ const raw = localStorage.getItem(KEY_SCALE);
+ const pct = raw ? parseInt(raw, 10) : 100;
+ return (isFinite(pct) ? pct : 100);
+ }
+ function setScale(pct){
+ const clamped = Math.max(80, Math.min(140, pct));
+ localStorage.setItem(KEY_SCALE, String(clamped));
+ applyScale(clamped);
+ }
+ window.changeFontSize = function(delta){
+ const next = getScale() + (delta > 0 ? 10 : -10);
+ setScale(next);
+ };
+ window.resetFontSize = function(){
+ localStorage.removeItem(KEY_SCALE);
+ applyScale(100);
+ };
+
+ /* High contrast toggle */
+ window.toggleContrast = function(){
+ try{
+ const on = document.body.classList.toggle("high-contrast");
+ localStorage.setItem(KEY_CONTRAST, on ? "1" : "0");
+ }catch(e){}
+ };
+
+ /* Expand/collapse all <details> inside a section */
+ window.toggleAllIn = function(rootSelector, openState){
+ try{
+ const root = document.querySelector(rootSelector);
+ if(!root) return;
+ root.querySelectorAll("details").forEach(function(d){
+ if(d && typeof d.open !== "undefined"){ d.open = !!openState; }
+ });
+ }catch(e){}
+ };
+
+ /* Search: scroll to first matching heading/summary */
+ window.directorySearch = function(){
+ try{
+ const input = document.getElementById("directory-search");
+ if(!input) return;
+ const q = (input.value || "").trim().toLowerCase();
+ if(q.length < 2) return;
+
+ // Only search headings & summaries for performance on a very large page.
+ const nodes = document.querySelectorAll("h2, h3, h4, summary");
+ let hit = null;
+ for(let i=0;i<nodes.length;i++){
+ const n = nodes[i];
+ const txt = (n.textContent || "").toLowerCase();
+ if(txt.includes(q)){ hit = n; break; }
+ }
+ if(!hit) return;
+
+ // Open the nearest <details> if the hit is inside one.
+ const parentDetails = hit.closest && hit.closest("details");
+ if(parentDetails && typeof parentDetails.open !== "undefined"){ parentDetails.open = true; }
+
+ hit.scrollIntoView({behavior:"smooth", block:"center"});
+ // Highlight briefly
+ document.querySelectorAll(".search-hit").forEach(function(el){ el.classList.remove("search-hit"); });
+ hit.classList.add("search-hit");
+ setTimeout(function(){ hit.classList.remove("search-hit"); }, 2500);
+ }catch(e){}
+ };
+
+ /* Share: native share if available; otherwise copy link */
+ window.shareDirectory = async function(){
+ const url = window.location.href;
+ const title = document.title || "Chamber of Hope HELPS Directory";
+ try{
+ if(navigator.share){
+ await navigator.share({title, url});
+ return;
+ }
+ }catch(e){}
+ try{
+ if(navigator.clipboard && navigator.clipboard.writeText){
+ await navigator.clipboard.writeText(url);
+ alert("Link copied!");
+ return;
+ }
+ }catch(e){}
+ try{
+ prompt("Copy this link:", url);
+ }catch(e){}
+ };
+
+ document.addEventListener("DOMContentLoaded", function(){
+ // Apply saved font scale
+ applyScale(getScale());
+ // Apply saved contrast
+ try{
+ const c = localStorage.getItem(KEY_CONTRAST);
+ if(c === "1"){ document.body.classList.add("high-contrast"); }
+ }catch(e){}
+ });
+})();
+</script>
+<div id="coh-global-footer"></div>
+
+<div class="card card-soft" id="international-education-records-transcripts">
+<h3>📘 International Education Records, Transcripts &amp; Credentials</h3>
+<p class="small">For international school records, diplomas, certificates, trade/vocational records, college or university transcripts, professional training, apprenticeships, or credential recognition, start with the school/university registrar, Ministry of Education, national qualifications authority, examination board, professional licensing board, embassy, consulate, or official country records office.</p>
+<p class="small"><a class="btn" href="education_records.html#international-country-education-records">Open International / Country Education Records Guide</a></p>
+<p class="small muted">Do not assume U.S. transcript, diploma, GED, or college-credit rules apply globally. The receiving school, employer, licensing board, immigration office, or credential evaluator should confirm what exact record format is accepted.</p>
+</div>
+
+<section class="card" id="money-housing-benefits-life-wellness-link">
+<h2>Money, Housing, Benefits &amp; Life Wellness Help</h2>
+<p>Find verified official starting points for housing, homeownership, retirement, Social Security, Medicare, Medicaid, long-term care, consumer rights, credit, debt collection, taxes, estate planning, veterans, education, career, travel, and worldwide life-stage help.</p>
+<p><a class="btn" href="money_housing_consumer_help.html">Open Money, Housing, Benefits &amp; Life Wellness Help</a></p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Chamber of Hope – Worldwide HELPS Ministry Directory</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="Chamber of Hope is a Worldwide HELPS Ministry Directory with free, clickable resources organized by Global, USA National, State, City Hub, and help categories (housing, food, utilities, legal, health, jobs, crisis support, and more)."/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:title" content="Chamber of Hope – Worldwide HELPS Ministry Directory"/>
+<meta property="og:description" content="Free, clickable help resources organized by Global, USA National, State, City Hub, and help categories (housing, food, utilities, legal, health, jobs, crisis support, and more)."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Chamber of Hope – Worldwide HELPS Ministry Directory"/>
+<meta name="twitter:description" content="Free, clickable help resources organized by Global, USA National, State, City Hub, and help categories."/>
+<meta name="theme-color" content="#4b2c63"/>
+<style>
+ /* Accessibility: skip link */
+.skip-link{
+ position:absolute; left:-999px; top:10px;
+ background:#ffffff; color:#2a1e16;
+ border:2px solid var(--deep-gold);
+ padding:0.4rem 0.7rem; border-radius:0.6rem;
+ z-index:9999;
+}
+.skip-link:focus{ left:10px; }
+
+:root {
+ --cream: #f9f3e8;
+ --gold: #d1a94a;
+ --soft-gold: #f3e0b6;
+ --deep-gold: #b5852c;
+ --purple: #4b2c63;
+ --teal: #138a8a;
+ --turquoise: #2aa6b8;
+ --soft-gray: #f1f1f5;
+ --border-soft: #e1d5c5;
+ --danger: #b3261e;
+ --link: #0b63a7;
+ }
+
+ * {
+ box-sizing: border-box;
+ }
+
+ body {
+ margin: 0;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+ background: radial-gradient(circle at top left, #fffaf3 0, #f9f3e8 40%, #f5eee0 100%);
+ color: #2a1e16;
+ line-height: 1.55;
+ }
+
+ a {
+ color: var(--link);
+ text-decoration: none;
+ }
+ a:hover {
+ text-decoration: underline;
+ }
+
+ .page {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 1.5rem 1rem 3rem;
+ }
+
+ header.hero {
+ background: linear-gradient(135deg, #fffaf3, #f5e6c8);
+ border-radius: 1.75rem;
+ padding: 1.75rem 1.75rem 1.5rem;
+ border: 1px solid var(--border-soft);
+ box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+ display: grid;
+ grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+ gap: 1.25rem;
+ align-items: center;
+ }
+
+ @media (max-width: 900px) {
+ header.hero {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .hero-title {
+ font-size: 1.9rem;
+ font-weight: 800;
+ color: var(--purple);
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ margin-bottom: 0.4rem;
+ }
+
+ .hero-sub {
+ font-size: 0.98rem;
+ color: #5b4630;
+ margin-bottom: 0.4rem;
+ }
+
+ .hero-sub strong {
+ color: var(--deep-gold);
+ }
+
+ .hero-tags {
+ font-size: 0.9rem;
+ color: #6b563e;
+ margin-bottom: 0.5rem;
+ }
+
+ .hero-badges {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.4rem;
+ margin: 0.4rem 0 0.7rem;
+ }
+
+ .badge {
+ font-size: 0.78rem;
+ padding: 0.18rem 0.55rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.06);
+ background: rgba(255,255,255,0.75);
+ backdrop-filter: blur(4px);
+ display: inline-flex;
+ align-items: center;
+ gap: 0.25rem;
+ white-space: nowrap;
+ }
+
+ .badge.peacock { border-color: var(--teal); color: var(--teal); }
+ .badge.elephant { border-color: var(--purple); color: var(--purple); }
+ .badge.panther { border-color: var(--deep-gold); color: var(--deep-gold); }
+
+ .hero-logo-wrap {
+ text-align: center;
+ }
+
+ .hero-logo {
+ display: inline-flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 0.5rem;
+ padding: 1rem;
+ border-radius: 1.5rem;
+ background: radial-gradient(circle at top, #ffffff, #f3e1bd);
+ box-shadow:
+ 0 12px 30px rgba(0,0,0,0.12),
+ 0 0 0 1px rgba(255,255,255,0.8) inset;
+ }
+
+ .hero-logo img {
+ max-width: 460px;
+ max-height: 375px;
+ object-fit: contain;
+ display: block;
+ filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
+ }
+
+ .hero-logo-caption {
+ font-size: 0.8rem;
+ color: #6b563e;
+ }
+
+ .hero-cta-row {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+ margin-top: 0.4rem;
+ }
+
+ .btn {
+ border-radius: 999px;
+ padding: 0.45rem 0.9rem;
+ font-size: 0.86rem;
+ font-weight: 600;
+ border: 1px solid transparent;
+ display: inline-flex;
+ align-items: center;
+ gap: 0.3rem;
+ cursor: pointer;
+ text-decoration: none;
+ }
+
+ .btn-primary {
+ background: radial-gradient(circle at top left, #fef6e7, #d1a94a);
+ border-color: var(--deep-gold);
+ color: #3b260e;
+ box-shadow: 0 8px 18px rgba(134, 88, 19, 0.35);
+ }
+
+ .btn-outline {
+ background: rgba(255,255,255,0.7);
+ border-color: rgba(0,0,0,0.08);
+ color: #4b341a;
+ }
+
+ .layout {
+ margin-top: 1.5rem;
+ display: grid;
+ grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+ gap: 1.5rem;
+ }
+
+ @media (max-width: 1000px) {
+ .layout {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ section {
+ margin-bottom: 1.25rem;
+ }
+
+ .card {
+ background: #fffdf9;
+ border-radius: 1.3rem;
+ border: 1px solid var(--border-soft);
+ box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+ padding: 1.1rem 1.2rem;
+ margin-bottom: 0.95rem;
+ }
+
+ .card-gold {
+ background: linear-gradient(135deg, #fffaf1, #f3e0b6);
+ }
+
+ .card-soft {
+ background: var(--soft-gray);
+ }
+
+ .card h2, .card h3, .card h4 {
+ margin-top: 0;
+ margin-bottom: 0.55rem;
+ color: var(--purple);
+ letter-spacing: 0.02em;
+ }
+
+ .card h2 { font-size: 1.15rem; }
+ .card h3 { font-size: 1.05rem; }
+ .card h4 { font-size: 0.95rem; }
+
+ .tagline {
+ font-style: italic;
+ font-size: 0.9rem;
+ color: #5a4632;
+ margin-top: 0.2rem;
+ margin-bottom: 0.3rem;
+ }
+
+ .mini-pill {
+ display: inline-block;
+ background: rgba(255,255,255,0.8);
+ border-radius: 999px;
+ padding: 0.15rem 0.6rem;
+ font-size: 0.75rem;
+ color: #6b5640;
+ border: 1px solid rgba(0,0,0,0.06);
+ margin-right: 0.3rem;
+ margin-top: 0.25rem;
+ }
+
+ .pill-urgent {
+ background: #fff5f4;
+ border-color: #f2bfbb;
+ color: var(--danger);
+ }
+
+ .pill-scripture {
+ background: #efe8ff;
+ border-color: #d3c4ff;
+ color: var(--purple);
+ }
+
+ ul, ol {
+ padding-left: 1.1rem;
+ margin-top: 0.25rem;
+ margin-bottom: 0.55rem;
+ }
+
+ li {
+ margin-bottom: 0.28rem;
+ }
+
+ .two-col {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0,1fr));
+ gap: 0.6rem 1.2rem;
+ }
+
+ @media (max-width: 800px) {
+ .two-col {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .small {
+ font-size: 0.85rem;
+ }
+
+ .disclaimer {
+ font-size: 0.78rem;
+ color: #6b5b47;
+ }
+
+ .footer {
+ margin-top: 1.5rem;
+ padding-top: 1rem;
+ border-top: 1px dashed #d9c7aa;
+ font-size: 0.82rem;
+ color: #6b5b47;
+ text-align: center;
+ }
+
+ .highlight-bar {
+ font-size: 0.82rem;
+ padding: 0.4rem 0.7rem;
+ border-radius: 999px;
+ background: linear-gradient(90deg, rgba(209,169,74,0.13), rgba(75,44,99,0.07));
+ display: inline-flex;
+ align-items: center;
+ gap: 0.4rem;
+ color: #4b2c63;
+ margin-top: 0.2rem;
+ }
+
+ .category-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+ gap: 0.35rem 1.4rem;
+ font-size: 0.88rem;
+ }
+
+ .category-grid div {
+ padding-left: 0.2rem;
+ }
+
+ .section-label {
+ text-transform: uppercase;
+ font-size: 0.78rem;
+ letter-spacing: 0.08em;
+ color: #8c6f47;
+ margin-bottom: 0.25rem;
+ }
+
+ .strong-label {
+ font-weight: 600;
+ color: #3b2916;
+ }
+
+ .inset {
+ border-left: 3px solid var(--gold);
+ padding-left: 0.7rem;
+ margin-top: 0.4rem;
+ margin-bottom: 0.4rem;
+ font-size: 0.9rem;
+ }
+
+ .pill-animals {
+ background: #f1e6ff;
+ border-color: #d4bfff;
+ color: var(--purple);
+ }
+
+ .pill-african {
+ background: #e8f4f1;
+ border-color: #b4ddd0;
+ color: #20574b;
+ }
+ 
+
+/* Highlighted spiritual/identity/celestial sections */
+.card.highlight-celestial {
+ border: 2px solid #c9a7ff;
+ box-shadow: 0 0 18px rgba(137, 88, 255, 0.25);
+ background: radial-gradient(circle at top left, #fff7ff, #fdfbff);
+}
+.card.highlight-lgbtq {
+ border: 2px solid #ffb3d9;
+ box-shadow: 0 0 18px rgba(255, 140, 199, 0.25);
+ background: radial-gradient(circle at top left, #fff5fa, #fff9ff);
+}
+.card.highlight-spiritual {
+ border: 2px solid #f7d58a;
+ box-shadow: 0 0 18px rgba(247, 191, 104, 0.28);
+ background: radial-gradient(circle at top left, #fff9f0, #fffdf7);
+}
+
+/* Quick ribbon at very top */
+.quick-ribbon {
+ position: sticky;
+ top: 0;
+ z-index: 999;
+ background: linear-gradient(90deg, #fff7e0, #fdf3ff);
+ border-bottom: 1px solid rgba(0,0,0,0.05);
+ padding: 8px 14px;
+ font-size: 0.9rem;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ align-items: center;
+}
+.quick-ribbon span.label {
+ font-weight: 600;
+ margin-right: 6px;
+}
+.quick-ribbon a {
+ text-decoration: none;
+ padding: 4px 9px;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.06);
+ background: rgba(255,255,255,0.8);
+ box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.quick-ribbon a:hover {
+ background: #fff;
+}
+
+/* Back-to-top link */
+.back-to-top {
+ margin-top: 8px;
+ font-size: 0.8rem;
+ text-align: right;
+}
+.back-to-top a {
+ text-decoration: none;
+ opacity: 0.75;
+}
+.back-to-top a:hover {
+ opacity: 1;
+ text-decoration: underline;
+}
+
+/* Emergency bar & safety tools */
+.emergency-bar {
+ position: sticky;
+ top: 0;
+ z-index: 999;
+ background: linear-gradient(90deg, #b00020, #d32f2f);
+ color: #ffffff;
+ padding: 6px 14px;
+ font-size: 0.9rem;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 8px;
+}
+.emergency-bar a {
+ color: #ffffff;
+ text-decoration: underline;
+}
+.emergency-bar a:hover {
+ text-decoration: none;
+}
+.btn-exit {
+ background: #ffffff;
+ color: #b00020;
+ border-radius: 999px;
+ border: none;
+ padding: 4px 12px;
+ font-size: 0.8rem;
+ font-weight: 600;
+ cursor: pointer;
+ box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+}
+.btn-exit:hover {
+ background: #ffe5e5;
+}
+
+/* Top tools: accessibility, search, share */
+.top-tools {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 10px;
+ padding: 8px 14px 4px;
+ background: rgba(255, 255, 255, 0.8);
+ backdrop-filter: blur(4px);
+ border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+.accessibility-tools button {
+ margin-right: 4px;
+ padding: 2px 8px;
+ font-size: 0.75rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.15);
+ background: #ffffff;
+ cursor: pointer;
+}
+.accessibility-tools button:hover {
+ background: #f3f0ea;
+}
+.search-share-wrap {
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ flex: 1;
+ justify-content: flex-end;
+}
+#directory-search {
+ flex: 1;
+ min-width: 180px;
+ max-width: 280px;
+ padding: 4px 8px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.18);
+}
+.share-buttons button {
+ padding: 4px 10px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.15);
+ background: #ffffff;
+ cursor: pointer;
+}
+.share-buttons button:hover {
+ background: #f3f0ea;
+}
+@media (max-width: 720px) {
+ .search-share-wrap {
+ justify-content: flex-start;
+ }
+}
+
+/* High contrast mode */
+body.high-contrast {
+ background: #000000;
+ color: #ffffff;
+}
+body.high-contrast .card {
+ background: #101010;
+ color: #ffffff;
+ border-color: #ffffff;
+}
+body.high-contrast a {
+ color: #ffec80;
+}
+body.high-contrast .hero-inner {
+ background: #181818;
+}
+body.high-contrast .emergency-bar {
+ background: #000000;
+ border-bottom: 1px solid #ffffff;
+}
+body.high-contrast .btn-exit {
+ background: #ffffff;
+ color: #000000;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+ position: fixed;
+ right: 12px;
+ bottom: 12px;
+ padding: 6px 10px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: none;
+ background: rgba(75, 44, 99, 0.9);
+ color: #ffffff;
+ cursor: pointer;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+#scrollTopBtn:hover {
+ background: rgba(49, 27, 74, 0.95);
+}
+
+ .state-flag {
+ font-size: 0.8rem;
+ margin-left: 0.35rem;
+ vertical-align: middle;
+ }
+
+
+ /* === Global visual polish adjustments (Option 1: mix of B & C) === */
+
+ /* Make small text more readable and evenly spaced */
+ .small {
+ font-size: 0.86rem;
+ line-height: 1.5;
+ }
+
+ /* Give small lists consistent breathing room and bullets */
+ ul.small {
+ margin: 0.4rem 0 0.8rem 1.1rem;
+ padding-left: 0;
+ list-style: disc;
+ }
+
+ ul.small > li {
+ margin-bottom: 0.45rem;
+ }
+
+ /* Maryland hero heading: align visually with VA City header size */
+ #md-overview header.hero h1 {
+ font-size: 1.25rem;
+ line-height: 1.35;
+ letter-spacing: 0.01em;
+ font-weight: 800;
+ color: var(--purple);
+ margin-bottom: 0.35rem;
+ text-wrap: balance;
+ }
+
+ /* Ensure state flag inline span stays small and aligned */
+ .state-flag {
+ font-size: 0.9rem;
+ margin-left: 0.35rem;
+ vertical-align: middle;
+ }
+
+ /* Slightly increase spacing between major sections for flow */
+ section.section-block {
+ margin-top: 2.25rem;
+ margin-bottom: 2.25rem;
+ }
+
+ /* Optional: unify page title blocks (VA + MD overview cards) */
+ #va-overview .card h2,
+ #md-overview .card h2 {
+ font-size: 1.15rem;
+ letter-spacing: 0.02em;
+ }
+
+
+ .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+ @media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+
+ .medium{font-size:15px;line-height:1.55;}
+
+.state-hr{border:0;border-top:4px solid rgba(0,0,0,.12);margin:26px auto;max-width:1100px;}
+[id]{scroll-margin-top:90px;}
+
+/* Ministry-first tone (soft + strong) */
+.ministry-voice{margin:10px 0 14px 0;padding:10px 12px;border:1px solid rgba(0,0,0,.12);border-radius:14px;background:rgba(255,255,255,.35);}
+.ministry-voice p{margin:6px 0;}
+
+.details-body{margin-top:10px;}
+details.card-soft summary{cursor:pointer; padding:8px 0;}
+details.card-soft[open]{padding-bottom:10px;}
+
+
+/* Clear layer */
+.card-Clear{
+ border: 1px solid rgba(0,0,0,.08);
+ background: rgba(255,255,255,.65);
+ padding: 10px 12px;
+ border-radius: 14px;
+ margin: 10px 0 12px 0;
+}
+.card-Clear .small{ margin: 0 0 8px 0; }
+.card-Clear ul{ margin: 0; padding-left: 18px; }
+
+/* Anchor hardening: improves in-page jump reliability (esp. state/city links) */
+:target { scroll-margin-top: 90px; }
+section[id], div[id], a[id] { scroll-margin-top: 90px; }
+
+/* Search highlight */
+.search-hit{ outline: 3px solid #ffcc00; outline-offset: 4px; }
+</style>
+
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Chamber of Hope – Worldwide HELPS Ministry Directory",
+ "description":"Worldwide HELPS Ministry Directory with free, clickable resources organized by Global, USA National, State, City Hub, and help categories."
+}
+</script>
+<link rel="stylesheet" href="site-enhancements-july13-final.css"><script defer src="site-enhancements-july13-final.js"></script></head>
+
+
+
+<body><div id="coh-global-tools"></div>
+<div class="card card-gold" style="max-width:1100px;margin:18px auto;">
+ <h1 style="margin:0 0 6px 0;">Chamber of Hope Worldwide HELPS Ministry Directory</h1>
+ <p class="mini" style="margin:0 0 10px 0;">Last reviewed: August 3, 2026</p>
+ <p style="margin:0 0 10px 0;"><strong>Fast links (works best in Instagram/Facebook):</strong></p>
+ <div style="display:flex;flex-wrap:wrap;gap:10px;">
+ <a href="usa.html#usa-states" style="padding:10px 12px;border-radius:10px;border:1px solid #d7c27a;text-decoration:none;">🇺🇸 USA States Fast</a>
+ <a href="territories.html#territories-overview" style="padding:10px 12px;border-radius:10px;border:1px solid #d7c27a;text-decoration:none;">🏝 U.S. Territories Fast</a>
+ 
+
+ 
+ <a href="international.html" style="padding:10px 12px;border-radius:10px;border:1px solid #d7c27a;text-decoration:none;">🌍 International</a>
+<a href="full_directory_help.html" style="padding:10px 12px;border-radius:10px;border:1px solid #d7c27a;text-decoration:none;">🌐 Full Directory (Best Viewed in Safari or Chrome)</a>
+ </div>
+ <hr style="margin:14px 0;border:none;border-top:1px solid #e1d5c5;">
+ <p style="margin:0 0 10px 0;"><strong>🧩 Misc / Shared Tools:</strong></p>
+ <div style="display:flex;flex-wrap:wrap;gap:10px;">
+ <a href="misc_language.html" style="padding:10px 12px;border-radius:10px;border:1px solid #d7c27a;text-decoration:none;">🗣️ Language & Communication Learning</a>
+ </div>
+ <hr style="margin:14px 0;border:none;border-top:1px solid #e1d5c5;">
+
+ <p style="margin:0 0 10px 0;"><strong>💛 Support the Mission (optional):</strong></p>
+ <div style="display:flex;flex-wrap:wrap;gap:10px;">
+ <a href="https://cash.app/$Chamberofhopehelps" target="_blank" rel="noopener" style="padding:10px 12px;border-radius:10px;border:1px solid #d7c27a;text-decoration:none;">Cash App: $Chamberofhopehelps</a>
+ <a class="btn" href="https://paypal.com/donate/?hosted_button_id=58ZPDM4CK9reviewN" target="_blank" rel="noopener">PayPal Donate</a>
+
+ <a href="https://venmo.com/u/chamberofhopehelps" target="_blank" rel="noopener" style="padding:10px 12px;border-radius:10px;border:1px solid #d7c27a;text-decoration:none;">Venmo: @chamberofhopehelps</a>
+ <a class="btn" href="mailto:8chamber8ofhope8@gmail.com?subject=Chamber%20of%20Hope%20HELPS%20Directory%20-%20Contact%20%2F%20Resource%20Suggestion">Contact / Submit a Resource</a>
+
+ <p style="margin-top:10px; max-width: 720px;">For resource suggestions, testimonies, prayer requests, corrections, country suggestions, or general inquiries.</p>
+
+ </div>
+ <p class="mini" style="margin-top:10px;">Chamber of Hope HELPS Directory is included and maintained independently. If this resource helped you or someone you love, thank you for supporting the mission.</p>
+
+ <p class="mini" style="margin-top:10px;">If a page freezes inside Instagram/Facebook, copy the link and open in Safari/Chrome. The “Fast” pages are split to load better on mobile.</p>
+</div>
+<div id="coh-global-footer"></div></body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Suggest a Resource | Chamber of Hope HELPS Directory</title>
+<style>
+ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f6e6a6;color:#1b1b1b}
+ header{padding:18px 16px;border-bottom:1px solid #e5d6a6;background:rgba(255,255,255,.92)}
+ main{padding:16px;max-width:980px;margin:0 auto}
+ .card{border:1px solid #d7c27a;border-radius:16px;background:rgba(255,255,255,.92);padding:14px 14px;margin:12px 0}
+ .btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+ .btn{display:inline-block;padding:10px 12px;border:1px solid #d7c27a;border-radius:12px;text-decoration:none;background:#fff;color:#1b1b1b}
+ label{display:block;margin-top:10px;font-weight:600}
+ input, textarea{width:100%;padding:10px;border-radius:12px;border:1px solid #cfcfcf;margin-top:6px;font:inherit}
+ textarea{min-height:120px}
+ .mini{font-size:13px;color:#5b5b5b}
+ .langs{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+ .lang{display:inline-block;padding:8px 10px;border-radius:999px;border:1px solid #d7c27a;text-decoration:none;background:#fff;color:#1b1b1b}
+ a{color:#0b4aa2}
+</style>
+<script>
+ function openTranslated(url, lang) {
+ try {
+ var target = new URL(url, window.location.href).href;
+ var gt = "https://translate.google.com/translate?sl=auto&tl=" + encodeURIComponent(lang) + "&u=" + encodeURIComponent(target);
+ window.open(gt, "_blank", "noopener");
+ return false;
+ } catch(e) {
+ return true;
+ }
+ }
+</script>
+<link rel="stylesheet" href="site-enhancements-july13-final.css"><script defer src="site-enhancements-july13-final.js"></script></head>
+<body><div id="coh-global-tools"></div>
+<header>
+ <strong>Chamber of Hope HELPS Directory</strong><br/>
+ <span class="mini">📝 Suggest a Resource (website form)</span>
+ <div class="btnrow">
+ <a class="btn" href="index.html">🏠 Back to Start Here</a>
+ <a class="btn" href="misc.html#misc-shared">📘 Back to Master (Misc)</a>
+ <a class="btn" href="language_access.html">🌐 Language Access</a>
+ <a class="btn" href="misc_language.html">🗣️ Language & Communication Learning</a>
+ </div>
+</header>
+<main>
+ <div class="card">
+ <h1 style="margin:0 0 6px 0;">Suggest a Resource</h1>
+ <p class="mini" style="margin:0;">Help us keep the directory clear. Share verified resources (website + phone + address if available).</p>
+
+ <div class="card" style="background:#fff">
+ <h2 style="margin:0 0 8px 0;">🌐 Read in your language</h2>
+ <div class="langs">
+ <a class="lang" href="#" onclick="return openTranslated('full_directory.html','en')">English</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','es')">Español</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','pt')">Português</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','fr')">Français</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','ht')">Kreyòl</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','ar')">العربية</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','he')">עברית</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','de')">Deutsch</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','it')">Italiano</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','nl')">Nederlands</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','pl')">Polski</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','sv')">Svenska</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','hi')">हिन्दी</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','zh-CN')">中文</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','ur')">اردو</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','fil')">Filipino</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','vi')">Tiếng Việt</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','ja')">日本語</a>
+<a class="lang" href="#" onclick="return openTranslated('full_directory.html','ko')">한국어</a>
+ </div>
+ <p class="mini" style="margin-top:8px;">These buttons open a Google Translate view of the <strong>Full Directory</strong>.</p>
+ </div>
+
+ <form name="suggest-resource" method="POST" data-directory="true">
+ <input type="hidden" name="form-name" value="suggest-resource"/>
+
+ <label>Your name (optional)</label>
+ <input name="name" placeholder="Your name"/>
+
+ <label>Your email (optional)</label>
+ <input type="email" name="email" placeholder="name@example.com"/>
+
+ <label>Country / State</label>
+ <input name="location" placeholder="Example: Switzerland / Zurich or USA / Virginia"/>
+
+ <label>Category</label>
+ <input name="category" placeholder="Example: Shelter • Food • Legal Aid • Clinics • Jobs"/>
+
+ <label>Resource name</label>
+ <input name="resource_name" placeholder="Organization / program name"/>
+
+ <label>Website</label>
+ <input name="website" placeholder="https://"/>
+
+ <label>Phone</label>
+ <input name="phone" placeholder="+1 555‑555‑5555"/>
+
+ <label>Address (if available)</label>
+ <input name="address" placeholder="Street, City, Postal code"/>
+
+ <label>Notes (hours, eligibility, what you found helpful)</label>
+ <textarea name="notes" placeholder="Any useful details…"></textarea>
+
+ <div class="btnrow">
+ <button class="btn" type="submit">Submit</button>
+ </div>
+
+ <p class="mini">After deploy, submissions appear in your website dashboard (Forms).</p>
+ </form>
+ </div>
+
+<section class="card card-soft"><h2>Not sure if this is the right request?</h2><p>Use the Shared Resources, Navigation &amp; Contact Guide to choose between suggesting a resource, reporting a problem, advertising or partnership requests, and support questions.</p><p><a class="btn" href="shared_navigation_contact.html">Open Navigation &amp; Contact Guide</a></p></section>
+</main>
+<div id="coh-global-footer"></div></body>
+</html>
