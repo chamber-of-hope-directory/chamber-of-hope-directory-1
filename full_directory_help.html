@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Open the Full Directory | Chamber of Hope HELPS Directory</title>
+<style>
+ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:18px;background:#faf7ef;color:#222}
+ .card{max-width:720px;margin:0 auto;background:#fff;border:1px solid #e7dcc0;border-radius:16px;padding:16px;box-shadow:0 8px 30px rgba(0,0,0,.05)}
+ h1{font-size:20px;margin:0 0 8px}
+ p{line-height:1.4;margin:10px 0}
+ .btns{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+ a.button,button.button{display:block;text-align:center;padding:12px 14px;border-radius:12px;border:1px solid #d7c27a;background:#fff;color:#222;text-decoration:none;font-weight:600}
+ .small{font-size:13px;color:#555}
+ code{background:#f3efe3;padding:2px 6px;border-radius:6px}
+</style>
+<link href="site-enhancements-july13-final.css" rel="stylesheet"/><script defer="" src="site-enhancements-july13-final.js"></script></head>
+<body><div id="coh-global-tools"></div>
+<div class="card">
+<h1>Open the Full Directory</h1>
+<p class="small" style="margin-top:0;">Part of the Chamber of Hope Worldwide HELPS Ministry Directory • Last reviewed: August 3, 2026</p>
+<p>For the complete expanded Chamber of Hope directory experience, please open this page in your device’s browser (Safari or Chrome). This ensures the full directory loads smoothly and completely.</p>
+
+<p class="small">Need help choosing a section instead? Use <a href="find_help.html">Find My Help</a>.</p><div class="btns">
+<a class="button" href="full_directory.html" rel="noopener" target="_blank">Try opening Full Directory</a>
+<button class="button" id="copyBtn" type="button">Copy Full Directory Link</button>
+<a class="button" href="international.html">🌍 International Countries</a>
+<a class="button" href="link.html">⬅ Back to Quick Links</a>
+</div>
+<p class="small" id="status"></p>
+<p class="small">If the Full Directory freezes in-app, open the directory in Safari, Chrome, Edge, or another browser. You can also share the main site link: <code>https://www.chamberofhopehelps.com</code></p>
+</div>
+<script>
+(function(){
+ const btn=document.getElementById('copyBtn');
+ const status=document.getElementById('status');
+ const url = new URL('full_directory.html', window.location.href).toString();
+ btn.addEventListener('click', async ()=>{
+ try{
+ await navigator.clipboard.writeText(url);
+ status.textContent = "✅ Copied! Now open Safari/Chrome and paste it in the address bar.";
+ }catch(e){
+ // fallback
+ const ta=document.createElement('textarea');
+ ta.value=url;
+ document.body.appendChild(ta);
+ ta.select();
+ try{ document.execCommand('copy'); status.textContent="✅ Copied! Now open Safari/Chrome and paste it."; }
+ catch(err){ status.textContent="Copy failed. Long-press the link above and choose Copy."; }
+ document.body.removeChild(ta);
+ }
+ });
+})();
+</script>
+<div id="coh-global-footer"></div>
+
+<section class="card" id="personal-service-records-link">
+<h2>Personal, Medical, Student Clinic, Legal, Property &amp; Service Records</h2>
+<p>Hospital, clinic, health department, patient files, student clinic records, SOAP notes, clinical encounter notes, dental charts, shot records, legal/court, criminal, juvenile, incarceration, background checks, auto/DMV, rental/tenant, mortgage, property, utility, phone, cable, internet, work, training, learner feedback, and service-record pathways.</p>
+<p><a class="btn" href="personal_records.html">Open Personal &amp; Service Records Help</a></p>
+</section>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Language Access — Chamber of Hope Worldwide HELPS Ministry Directory</title>
+<style>
+ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f6e6a6;color:#1b1b1b}
+ .card{max-width:1100px;margin:18px auto;padding:16px;border-radius:16px;background:rgba(255,255,255,.92);border:1px solid #d7c27a}
+ a{color:#0b4aa2}
+ .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+ .pill{padding:10px 12px;border-radius:10px;border:1px solid #d7c27a;text-decoration:none;background:#fff}
+ .mini{font-size:13px;color:#5b5b5b}
+</style>
+<link rel="stylesheet" href="site-enhancements-july13-final.css"><script defer src="site-enhancements-july13-final.js"></script></head>
+<body><div id="coh-global-tools"></div>
+ <div class="card">
+ <h1 style="margin:0 0 6px 0;">🗣️ Language Access</h1>
+ <p class="mini" style="margin:0 0 10px 0;">Part of the Chamber of Hope Worldwide HELPS Ministry Directory • Last reviewed: August 3, 2026</p>
+ <p class="mini">Quick tools to communicate, translate, and request interpretation. (Language & Communication Learning stays in <strong>Misc</strong> — but you can open it below.)</p>
+ <div class="pills">
+ <a class="pill" href="index.html">← Home</a>
+ <a class="pill" href="misc_language.html">Language & Communication Learning</a>
+ <a class="pill" href="misc.html#misc-shared">Misc (in Full Directory)</a>
+ <a class="pill" href="usa.html#us-national">US National Fast</a>
+ </div>
+
+ 
+ <h2>Read the Full Directory in Your Language</h2>
+ <p class="mini">Tap a language below to open a translated view of the full directory.</p>
+ <div class="pills">
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','en')">English</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','es')">Español</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','pt')">Português</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','fr')">Français</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','ht')">Kreyòl</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','ar')">العربية</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','he')">עברית</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','de')">Deutsch</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','it')">Italiano</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','nl')">Nederlands</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','pl')">Polski</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','sv')">Svenska</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','hi')">हिन्दी</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','zh-CN')">中文</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','ur')">اردو</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','fil')">Filipino</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','vi')">Tiếng Việt</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','ja')">日本語</a>
+ <a class="pill" href="#" onclick="return openTranslated('full_directory.html','ko')">한국어</a>
+ </div>
+
+ <h2>Instant Translation</h2>
+ <ul>
+ <li><a href='https://www.deepl.com/translator' target='_blank' rel='noopener'>DeepL Translator</a> (excellent for EN/DE/FR/IT)</li>
+ <li><a href='https://translate.google.com/' target='_blank' rel='noopener'>Google Translate</a> (text + camera mode)</li>
+ <li><a href='https://www.microsoft.com/en-us/translator' target='_blank' rel='noopener'>Microsoft Translator</a></li>
+ </ul>
+
+ <h2>Help Finding an Interpreter</h2>
+ <ul>
+ <li><strong>Hospitals/clinics:</strong> Ask for “<em>interpreter services</em>” / “<em>language access</em>” — many providers are required to offer interpretation in certain settings.</li>
+ <li><strong>Government/city services:</strong> Ask for language access or an interpreter at the public counter; use the city portal links in your hub pages.</li>
+ <li><strong>Community organizations:</strong> <a href='https://www.redcross.ch/en' target='_blank' rel='noopener'>Swiss Red Cross</a> • <a href='https://www.caritas.ch/en/' target='_blank' rel='noopener'>Caritas</a> often help connect people to local support.</li>
+ </ul>
+
+ <h2>Emergency Note</h2>
+ <p class="mini"><strong>If you are in danger:</strong> call your local emergency number. In Switzerland: 112 (emergency), 117 (police), 118 (fire), 144 (ambulance), 1414 (REGA).</p>
+ </div>
+
+<script>
+function openTranslated(url, lang) {
+ var target = new URL(url, window.location.href).href;
+ var gt = "https://translate.google.com/translate?sl=auto&tl=" + encodeURIComponent(lang) + "&u=" + encodeURIComponent(target);
+ window.location.href = gt;
+ return false;
+}
+</script>
+
+<section class="card card-soft" id="records-document-help-link">
+<h2>Records &amp; Document Help</h2>
+<p>Need medical, shot, school, legal, criminal, background-check, auto/DMV, rental, mortgage, property, utility, phone, cable, internet, work, training, or service records? Use the records help page to find the right office, provider, agency, company, territory office, country office, embassy, or consulate starting point.</p>
+<p><a class="btn" href="personal_records.html">Open Personal &amp; Service Records Help</a></p>
+</section>
+
+<div id="coh-global-footer"></div></body>
+</html>

@@ -1,0 +1,31 @@
+
+/global_helps/       /global_helps       301
+/usa_national/       /usa_national       301
+/usa/                /usa                301
+/territories/        /territories        301
+/international/      /international      301
+/give_support/       /give_support       301
+/give-support/       /give_support       301
+/donate/             /give_support       301
+
+/global_helps         /global_helps.html      200
+/usa_national        /usa_national.html      200
+/usa                /usa.html               200
+/territories         /territories.html       200
+/international       /international.html     200
+/give_support        /give_support.html      200
+/donate              /give_support.html      200
+/full_directory      /full_directory.html    200
+/full_directory_help /full_directory_help.html 200
+
+/intl_canada          /intl_canada.html       200
+/intl_mexico          /intl_mexico.html       200
+/intl_united_kingdom  /intl_united_kingdom.html 200
+/intl_ireland         /intl_ireland.html      200
+
+/*                    /index.html            404
+
+/records /records_archives.html 200
+/records-archives /records_archives.html 200
+/family-history /records_archives.html 200
+/genealogy /records_archives.html 200

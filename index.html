@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Chamber of Hope – Worldwide HELPS Ministry Directory</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Chamber of Hope is a Christ-centered Worldwide HELPS Ministry Directory with free, clickable resource pathways for food, housing, utilities, health, legal, crisis, language access, public health, disaster safety, life stages, records, personal records, and community support. It points visitors to starting places and does not replace professional advice or emergency services." name="description"/>
+<meta content="index,follow" name="robots"/>
+<meta content="Chamber of Hope – Worldwide HELPS Ministry Directory" property="og:title"/>
+<meta content="Free, clickable help pathways for local, national, U.S. territory, international, and global starting points, with Christ-centered compassion and clear no-advice guidance." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Chamber of Hope – Worldwide HELPS Ministry Directory" name="twitter:title"/>
+<meta content="Free, clickable help pathways for local, national, U.S. territory, international, and global starting points." name="twitter:description"/>
+<meta content="#4b2c63" name="theme-color"/>
+<style>
+ /* Accessibility: skip link */
+.skip-link{
+ position:absolute; left:-999px; top:10px;
+ background:#ffffff; color:#2a1e16;
+ border:2px solid var(--deep-gold);
+ padding:0.4rem 0.7rem; border-radius:0.6rem;
+ z-index:9999;
+}
+.skip-link:focus{ left:10px; }
+
+:root {
+ --cream: #f9f3e8;
+ --gold: #d1a94a;
+ --soft-gold: #f3e0b6;
+ --deep-gold: #b5852c;
+ --purple: #4b2c63;
+ --teal: #138a8a;
+ --turquoise: #2aa6b8;
+ --soft-gray: #f1f1f5;
+ --border-soft: #e1d5c5;
+ --danger: #b3261e;
+ --link: #0b63a7;
+ }
+
+ * {
+ box-sizing: border-box;
+ }
+
+ body {
+ margin: 0;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+ background: radial-gradient(circle at top left, #fffaf3 0, #f9f3e8 40%, #f5eee0 100%);
+ color: #2a1e16;
+ line-height: 1.55;
+ }
+
+ a {
+ color: var(--link);
+ text-decoration: none;
+ }
+ a:hover {
+ text-decoration: underline;
+ }
+
+ .page {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 1.5rem 1rem 3rem;
+ }
+
+ header.hero {
+ background: linear-gradient(135deg, #fffaf3, #f5e6c8);
+ border-radius: 1.75rem;
+ padding: 1.75rem 1.75rem 1.5rem;
+ border: 1px solid var(--border-soft);
+ box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+ display: grid;
+ grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+ gap: 1.25rem;
+ align-items: center;
+ }
+
+ @media (max-width: 900px) {
+ header.hero {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .hero-title {
+ font-size: 1.9rem;
+ font-weight: 800;
+ color: var(--purple);
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ margin-bottom: 0.4rem;
+ }
+
+ .hero-sub {
+ font-size: 0.98rem;
+ color: #5b4630;
+ margin-bottom: 0.4rem;
+ }
+
+ .hero-sub strong {
+ color: var(--deep-gold);
+ }
+
+ .hero-tags {
+ font-size: 0.9rem;
+ color: #6b563e;
+ margin-bottom: 0.5rem;
+ }
+
+ .hero-badges {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.4rem;
+ margin: 0.4rem 0 0.7rem;
+ }
+
+ .badge {
+ font-size: 0.78rem;
+ padding: 0.18rem 0.55rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.06);
+ background: rgba(255,255,255,0.75);
+ backdrop-filter: blur(4px);
+ display: inline-flex;
+ align-items: center;
+ gap: 0.25rem;
+ white-space: nowrap;
+ }
+
+ .badge.peacock { border-color: var(--teal); color: var(--teal); }
+ .badge.elephant { border-color: var(--purple); color: var(--purple); }
+ .badge.panther { border-color: var(--deep-gold); color: var(--deep-gold); }
+
+ .hero-logo-wrap {
+ text-align: center;
+ }
+
+ .hero-logo {
+ display: inline-flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 0.5rem;
+ padding: 1rem;
+ border-radius: 1.5rem;
+ background: radial-gradient(circle at top, #ffffff, #f3e1bd);
+ box-shadow:
+ 0 12px 30px rgba(0,0,0,0.12),
+ 0 0 0 1px rgba(255,255,255,0.8) inset;
+ }
+
+ .hero-logo img {
+ max-width: 460px;
+ max-height: 375px;
+ object-fit: contain;
+ display: block;
+ filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
+ }
+
+ .hero-logo-caption {
+ font-size: 0.8rem;
+ color: #6b563e;
+ }
+
+ .hero-cta-row {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+ margin-top: 0.4rem;
+ }
+
+ .btn {
+ border-radius: 999px;
+ padding: 0.45rem 0.9rem;
+ font-size: 0.86rem;
+ font-weight: 600;
+ border: 1px solid transparent;
+ display: inline-flex;
+ align-items: center;
+ gap: 0.3rem;
+ cursor: pointer;
+ text-decoration: none;
+ }
+
+ .btn-primary {
+ background: radial-gradient(circle at top left, #fef6e7, #d1a94a);
+ border-color: var(--deep-gold);
+ color: #3b260e;
+ box-shadow: 0 8px 18px rgba(134, 88, 19, 0.35);
+ }
+
+ .btn-outline {
+ background: rgba(255,255,255,0.7);
+ border-color: rgba(0,0,0,0.08);
+ color: #4b341a;
+ }
+
+ .layout {
+ margin-top: 1.5rem;
+ display: grid;
+ grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+ gap: 1.5rem;
+ }
+
+ @media (max-width: 1000px) {
+ .layout {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ section {
+ margin-bottom: 1.25rem;
+ }
+
+ .card {
+ background: #fffdf9;
+ border-radius: 1.3rem;
+ border: 1px solid var(--border-soft);
+ box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+ padding: 1.1rem 1.2rem;
+ margin-bottom: 0.95rem;
+ }
+
+ .card-gold {
+ background: linear-gradient(135deg, #fffaf1, #f3e0b6);
+ }
+
+ .card-soft {
+ background: var(--soft-gray);
+ }
+
+ .card h2, .card h3, .card h4 {
+ margin-top: 0;
+ margin-bottom: 0.55rem;
+ color: var(--purple);
+ letter-spacing: 0.02em;
+ }
+
+ .card h2 { font-size: 1.15rem; }
+ .card h3 { font-size: 1.05rem; }
+ .card h4 { font-size: 0.95rem; }
+
+ .tagline {
+ font-style: italic;
+ font-size: 0.9rem;
+ color: #5a4632;
+ margin-top: 0.2rem;
+ margin-bottom: 0.3rem;
+ }
+
+ .mini-pill {
+ display: inline-block;
+ background: rgba(255,255,255,0.8);
+ border-radius: 999px;
+ padding: 0.15rem 0.6rem;
+ font-size: 0.75rem;
+ color: #6b5640;
+ border: 1px solid rgba(0,0,0,0.06);
+ margin-right: 0.3rem;
+ margin-top: 0.25rem;
+ }
+
+ .pill-urgent {
+ background: #fff5f4;
+ border-color: #f2bfbb;
+ color: var(--danger);
+ }
+
+ .pill-scripture {
+ background: #efe8ff;
+ border-color: #d3c4ff;
+ color: var(--purple);
+ }
+
+ ul, ol {
+ padding-left: 1.1rem;
+ margin-top: 0.25rem;
+ margin-bottom: 0.55rem;
+ }
+
+ li {
+ margin-bottom: 0.28rem;
+ }
+
+ .two-col {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0,1fr));
+ gap: 0.6rem 1.2rem;
+ }
+
+ @media (max-width: 800px) {
+ .two-col {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .small {
+ font-size: 0.85rem;
+ }
+
+ .disclaimer {
+ font-size: 0.78rem;
+ color: #6b5b47;
+ }
+
+ .footer {
+ margin-top: 1.5rem;
+ padding-top: 1rem;
+ border-top: 1px dashed #d9c7aa;
+ font-size: 0.82rem;
+ color: #6b5b47;
+ text-align: center;
+ }
+
+ .highlight-bar {
+ font-size: 0.82rem;
+ padding: 0.4rem 0.7rem;
+ border-radius: 999px;
+ background: linear-gradient(90deg, rgba(209,169,74,0.13), rgba(75,44,99,0.07));
+ display: inline-flex;
+ align-items: center;
+ gap: 0.4rem;
+ color: #4b2c63;
+ margin-top: 0.2rem;
+ }
+
+ .category-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+ gap: 0.35rem 1.4rem;
+ font-size: 0.88rem;
+ }
+
+ .category-grid div {
+ padding-left: 0.2rem;
+ }
+
+ .section-label {
+ text-transform: uppercase;
+ font-size: 0.78rem;
+ letter-spacing: 0.08em;
+ color: #8c6f47;
+ margin-bottom: 0.25rem;
+ }
+
+ .strong-label {
+ font-weight: 600;
+ color: #3b2916;
+ }
+
+ .inset {
+ border-left: 3px solid var(--gold);
+ padding-left: 0.7rem;
+ margin-top: 0.4rem;
+ margin-bottom: 0.4rem;
+ font-size: 0.9rem;
+ }
+
+ .pill-animals {
+ background: #f1e6ff;
+ border-color: #d4bfff;
+ color: var(--purple);
+ }
+
+ .pill-african {
+ background: #e8f4f1;
+ border-color: #b4ddd0;
+ color: #20574b;
+ }
+ 
+
+/* Highlighted spiritual/identity/celestial sections */
+.card.highlight-celestial {
+ border: 2px solid #c9a7ff;
+ box-shadow: 0 0 18px rgba(137, 88, 255, 0.25);
+ background: radial-gradient(circle at top left, #fff7ff, #fdfbff);
+}
+.card.highlight-lgbtq {
+ border: 2px solid #ffb3d9;
+ box-shadow: 0 0 18px rgba(255, 140, 199, 0.25);
+ background: radial-gradient(circle at top left, #fff5fa, #fff9ff);
+}
+.card.highlight-spiritual {
+ border: 2px solid #f7d58a;
+ box-shadow: 0 0 18px rgba(247, 191, 104, 0.28);
+ background: radial-gradient(circle at top left, #fff9f0, #fffdf7);
+}
+
+/* Quick ribbon at very top */
+.quick-ribbon {
+ position: sticky;
+ top: 0;
+ z-index: 999;
+ background: linear-gradient(90deg, #fff7e0, #fdf3ff);
+ border-bottom: 1px solid rgba(0,0,0,0.05);
+ padding: 8px 14px;
+ font-size: 0.9rem;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ align-items: center;
+}
+.quick-ribbon span.label {
+ font-weight: 600;
+ margin-right: 6px;
+}
+.quick-ribbon a {
+ text-decoration: none;
+ padding: 4px 9px;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.06);
+ background: rgba(255,255,255,0.8);
+ box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.quick-ribbon a:hover {
+ background: #fff;
+}
+
+/* Back-to-top link */
+.back-to-top {
+ margin-top: 8px;
+ font-size: 0.8rem;
+ text-align: right;
+}
+.back-to-top a {
+ text-decoration: none;
+ opacity: 0.75;
+}
+.back-to-top a:hover {
+ opacity: 1;
+ text-decoration: underline;
+}
+
+/* Emergency bar & safety tools */
+.emergency-bar {
+ position: sticky;
+ top: 0;
+ z-index: 999;
+ background: linear-gradient(90deg, #b00020, #d32f2f);
+ color: #ffffff;
+ padding: 6px 14px;
+ font-size: 0.9rem;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 8px;
+}
+.emergency-bar a {
+ color: #ffffff;
+ text-decoration: underline;
+}
+.emergency-bar a:hover {
+ text-decoration: none;
+}
+.btn-exit {
+ background: #ffffff;
+ color: #b00020;
+ border-radius: 999px;
+ border: none;
+ padding: 4px 12px;
+ font-size: 0.8rem;
+ font-weight: 600;
+ cursor: pointer;
+ box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+}
+.btn-exit:hover {
+ background: #ffe5e5;
+}
+
+/* Top tools: accessibility, search, share */
+.top-tools {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 10px;
+ padding: 8px 14px 4px;
+ background: rgba(255, 255, 255, 0.8);
+ backdrop-filter: blur(4px);
+ border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+.accessibility-tools button {
+ margin-right: 4px;
+ padding: 2px 8px;
+ font-size: 0.75rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.15);
+ background: #ffffff;
+ cursor: pointer;
+}
+.accessibility-tools button:hover {
+ background: #f3f0ea;
+}
+.search-share-wrap {
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ flex: 1;
+ justify-content: flex-end;
+}
+#directory-search {
+ flex: 1;
+ min-width: 180px;
+ max-width: 280px;
+ padding: 4px 8px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.18);
+}
+.share-buttons button {
+ padding: 4px 10px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: 1px solid rgba(0,0,0,0.15);
+ background: #ffffff;
+ cursor: pointer;
+}
+.share-buttons button:hover {
+ background: #f3f0ea;
+}
+@media (max-width: 720px) {
+ .search-share-wrap {
+ justify-content: flex-start;
+ }
+}
+
+/* High contrast mode */
+body.high-contrast {
+ background: #000000;
+ color: #ffffff;
+}
+body.high-contrast .card {
+ background: #101010;
+ color: #ffffff;
+ border-color: #ffffff;
+}
+body.high-contrast a {
+ color: #ffec80;
+}
+body.high-contrast .hero-inner {
+ background: #181818;
+}
+body.high-contrast .emergency-bar {
+ background: #000000;
+ border-bottom: 1px solid #ffffff;
+}
+body.high-contrast .btn-exit {
+ background: #ffffff;
+ color: #000000;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+ position: fixed;
+ right: 12px;
+ bottom: 12px;
+ padding: 6px 10px;
+ font-size: 0.8rem;
+ border-radius: 999px;
+ border: none;
+ background: rgba(75, 44, 99, 0.9);
+ color: #ffffff;
+ cursor: pointer;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+#scrollTopBtn:hover {
+ background: rgba(49, 27, 74, 0.95);
+}
+
+ .state-flag {
+ font-size: 0.8rem;
+ margin-left: 0.35rem;
+ vertical-align: middle;
+ }
+
+
+ /* === Global visual polish adjustments (Option 1: mix of B & C) === */
+
+ /* Make small text more readable and evenly spaced */
+ .small {
+ font-size: 0.86rem;
+ line-height: 1.5;
+ }
+
+ /* Give small lists consistent breathing room and bullets */
+ ul.small {
+ margin: 0.4rem 0 0.8rem 1.1rem;
+ padding-left: 0;
+ list-style: disc;
+ }
+
+ ul.small > li {
+ margin-bottom: 0.45rem;
+ }
+
+ /* Maryland hero heading: align visually with VA City header size */
+ #md-overview header.hero h1 {
+ font-size: 1.25rem;
+ line-height: 1.35;
+ letter-spacing: 0.01em;
+ font-weight: 800;
+ color: var(--purple);
+ margin-bottom: 0.35rem;
+ text-wrap: balance;
+ }
+
+ /* Ensure state flag inline span stays small and aligned */
+ .state-flag {
+ font-size: 0.9rem;
+ margin-left: 0.35rem;
+ vertical-align: middle;
+ }
+
+ /* Slightly increase spacing between major sections for flow */
+ section.section-block {
+ margin-top: 2.25rem;
+ margin-bottom: 2.25rem;
+ }
+
+ /* Optional: unify page title blocks (VA + MD overview cards) */
+ #va-overview .card h2,
+ #md-overview .card h2 {
+ font-size: 1.15rem;
+ letter-spacing: 0.02em;
+ }
+
+
+ .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+ @media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+
+ .medium{font-size:15px;line-height:1.55;}
+
+.state-hr{border:0;border-top:4px solid rgba(0,0,0,.12);margin:26px auto;max-width:1100px;}
+[id]{scroll-margin-top:90px;}
+
+/* Ministry-first tone (soft + strong) */
+.ministry-voice{margin:10px 0 14px 0;padding:10px 12px;border:1px solid rgba(0,0,0,.12);border-radius:14px;background:rgba(255,255,255,.35);}
+.ministry-voice p{margin:6px 0;}
+
+.details-body{margin-top:10px;}
+details.card-soft summary{cursor:pointer; padding:8px 0;}
+details.card-soft[open]{padding-bottom:10px;}
+
+
+/* Clear layer */
+.card-Clear{
+ border: 1px solid rgba(0,0,0,.08);
+ background: rgba(255,255,255,.65);
+ padding: 10px 12px;
+ border-radius: 14px;
+ margin: 10px 0 12px 0;
+}
+.card-Clear .small{ margin: 0 0 8px 0; }
+.card-Clear ul{ margin: 0; padding-left: 18px; }
+
+/* Anchor hardening: improves in-page jump reliability (esp. state/city links) */
+:target { scroll-margin-top: 90px; }
+section[id], div[id], a[id] { scroll-margin-top: 90px; }
+
+/* Search highlight */
+.search-hit{ outline: 3px solid #ffcc00; outline-offset: 4px; }
+/* Weekly encouragement pop */
+@keyframes cohGlow {
+ 0% { box-shadow: 0 0 0 rgba(255,215,88,.0), 0 22px 44px rgba(39,18,60,.36); }
+ 50% { box-shadow: 0 0 28px rgba(255,215,88,.45), 0 26px 56px rgba(39,18,60,.42); }
+ 100% { box-shadow: 0 0 0 rgba(255,215,88,.0), 0 22px 44px rgba(39,18,60,.36); }
+}
+@keyframes cohShimmer {
+ 0% { background-position: 0% 50%; }
+ 50% { background-position: 100% 50%; }
+ 100% { background-position: 0% 50%; }
+}
+@keyframes cohFloat {
+ 0%,100% { transform: translateY(0px) scale(1); opacity:.9; }
+ 50% { transform: translateY(-8px) scale(1.08); opacity:1; }
+}
+.weekly-pop {
+ margin:14px 0 22px 0;
+ padding:28px 26px 24px 26px;
+ border-radius:28px;
+ background: linear-gradient(135deg,#fff6cf 0%,#ffd86a 16%,#8f69d2 44%,#20152d 100%);
+ background-size: 220% 220%;
+ border:4px solid #ffe89b;
+ box-shadow:0 22px 44px rgba(39,18,60,.36), 0 0 0 4px rgba(255,255,255,.14) inset;
+ position:relative;
+ overflow:hidden;
+ animation: cohGlow 4s ease-in-out infinite, cohShimmer 12s ease-in-out infinite;
+}
+.weekly-pop:before, .weekly-pop:after {
+ content:"✦";
+ position:absolute;
+ color:#fff5b8;
+ font-size:1.6rem;
+ text-shadow:0 0 14px rgba(255,255,255,.9),0 0 18px rgba(255,215,88,.85);
+ animation: cohFloat 3.8s ease-in-out infinite;
+}
+.weekly-pop:before { top:18px; left:18px; }
+.weekly-pop:after { top:18px; right:82px; animation-delay:1s; }
+.weekly-pop .sparkle {
+ position:absolute; color:#fff5b8; font-size:1.15rem; text-shadow:0 0 10px rgba(255,255,255,.95),0 0 14px rgba(255,215,88,.75); animation: cohFloat 3.2s ease-in-out infinite; }
+.weekly-pop .sparkle.s1{ top:72px; right:18px; animation-delay:.3s;}
+.weekly-pop .sparkle.s2{ bottom:18px; right:24px; animation-delay:1.1s;}
+.weekly-pop .sparkle.s3{ bottom:26px; left:26px; animation-delay:.7s;}
+.weekly-pop .weekly-label {
+ display:table; margin:0 auto 14px auto; padding:11px 22px; background:#20152d; color:#fff; font-size:1rem; font-weight:900;
+ border-radius:999px; letter-spacing:.13em; border:2px solid #ffe89b; text-align:center;
+ box-shadow:0 10px 18px rgba(0,0,0,.18);
+}
+.weekly-pop .animal-row { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:0 0 14px 0; position:relative; z-index:1;}
+.weekly-pop .animal-chip { display:inline-block; padding:8px 14px; border-radius:999px; font-weight:900; box-shadow:0 8px 18px rgba(0,0,0,.16); }
+.weekly-pop .animal-chip.ele{ background:#fff7ef; border:2px solid #f1c14f; color:#6a4a00;}
+.weekly-pop .animal-chip.pea{ background:#efffff; border:2px solid #50d5dc; color:#065a66;}
+.weekly-pop .animal-chip.pan{ background:#faf8ff; border:2px solid #b2a9ff; color:#271f45;}
+.weekly-pop .weekly-title {
+ margin:0 0 14px 0; font-size:2rem; font-weight:900; line-height:1.1; position:relative; z-index:1;
+ background: linear-gradient(90deg,#ffffff 0%, #ffd2e1 22%, #ff6b8f 40%, #ffffff 62%, #ff9fb6 82%, #ffe889 100%);
+ -webkit-background-clip:text; background-clip:text; color:transparent; text-shadow:0 0 24px rgba(255,255,255,.22), 0 2px 14px rgba(0,0,0,.34), 0 0 12px rgba(255,106,143,.22);
+}
+.weekly-pop .quote-box {
+ margin:0 0 14px 0; padding:16px 18px; border-radius:18px; background:rgba(255,255,255,.95); color:#2d2300;
+ box-shadow:0 10px 24px rgba(0,0,0,.18); font-size:1.16rem; line-height:1.72; position:relative; z-index:1; border:2px solid rgba(255,216,106,.7); box-shadow:0 10px 24px rgba(0,0,0,.18), 0 0 0 2px rgba(255,133,167,.18) inset;
+}
+.weekly-pop .quote-box strong { font-size:1.18rem; color:#9a163b; text-shadow: 0 1px 0 rgba(255,255,255,.65), 0 0 10px rgba(255,166,191,.25); }
+.weekly-pop .info-box {
+ margin:0; padding:14px 16px; border-radius:16px; line-height:1.7; position:relative; z-index:1; font-size:1.03rem; box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+.weekly-pop .why-box { background:rgba(255,255,255,.92); }
+.weekly-pop .step-box { background:#fff5cb; border:2px dashed #d7a625; }
+.weekly-pop .section-head { font-weight:900; }
+
+</style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Chamber of Hope – Worldwide HELPS Ministry Directory",
+ "description":"Worldwide HELPS Ministry Directory with free, clickable resources organized by Global, USA National, State, City Hub, and help categories."
+}
+</script>
+<link href="site-enhancements-july13-final.css" rel="stylesheet"/><script defer="" src="site-enhancements-july13-final.js"></script></head>
+<body><div id="coh-global-tools"></div>
+<div class="card card-gold" style="max-width:1100px;margin:18px auto;"><div class="weekly-pop" id="monday-encouragement">
+<div style="display:flex;justify-content:center;align-items:center;margin:0 0 12px;position:relative;z-index:1;">
+<img alt="Chamber of Hope logo" src="chamber-of-hope-logo.png" style="width:min(220px,72vw);height:auto;display:block;border-radius:18px;box-shadow:0 10px 24px rgba(39,18,60,.18);background:#fff;padding:6px;"/>
+</div>
+<div class="weekly-label">MONDAY HOPE NOTE — AUGUST 3, 2026</div>
+<p class="quote-box"><strong>A new week can begin with renewed strength, clearer direction, and one hopeful next step.</strong></p>
+<div style="margin:0 0 12px 0;display:grid;gap:8px;position:relative;z-index:1;">
+<p class="info-box" style="margin:0;background:rgba(255,255,255,.88);border-color:rgba(255,255,255,.95);"><span class="section-head" style="color:#6a4fb3;">Encouragement quote:</span> “However long the night, the dawn will break.” <em>African proverb</em></p>
+<p class="info-box" style="margin:0;background:rgba(255,255,255,.88);border-color:rgba(255,255,255,.95);"><span class="section-head" style="color:#7a5310;">Scripture:</span> “Fear thou not; for I am with thee: be not dismayed; for I am thy God.” <em>Isaiah 41:10 (KJV)</em></p>
+<p class="info-box" style="margin:0;background:rgba(255,255,255,.86);border-color:rgba(255,255,255,.94);"><span class="section-head" style="color:#20574b;">Wisdom reflection:</span> Hard seasons do not last forever. Even when the way forward feels uncertain, hope can return through steady faith, trustworthy information, and compassionate support. You are not required to solve everything at once.</p>
+<p class="info-box" style="margin:0;background:rgba(255,255,255,.82);border-color:rgba(255,255,255,.92);"><span class="section-head" style="color:#6a4fb3;">Encouraging reminder:</span> Pause, breathe, and begin again. The need in front of you may be important, but it does not define your whole story. Help may begin with one clear question and one reliable starting point.</p>
+<p class="info-box" style="margin:0;background:rgba(255,255,255,.82);border-color:rgba(255,255,255,.92);"><span class="section-head" style="color:#7a5310;">Hold onto this:</span> You are still worthy of care, dignity, and hope while you are searching for answers. A difficult chapter is not the end of the story.</p>
+</div>
+<div style="display:grid;grid-template-columns:1fr;gap:12px;position:relative;z-index:1;">
+<p class="info-box why-box"><span class="section-head" style="color:#c2185b;">Why it matters:</span> People may arrive here carrying several needs at once—food, housing, healthcare, safety, benefits, records, or support for someone they love. A calm, trustworthy starting point can make the search feel less confusing.</p>
+<p class="info-box step-box"><span class="section-head" style="color:#c62828;">This week's step:</span> Name the one need that feels most urgent. Use the directory to locate the appropriate official resource, save the contact information, and note the next step the organization provides.</p>
+<p class="info-box" style="margin:0;background:rgba(255,255,255,.88);border-color:rgba(255,255,255,.95);"><span class="section-head" style="color:#6a4fb3;">Come back next Monday:</span> Return next Monday for a new message of hope, wisdom, encouragement, and practical direction.</p>
+</div>
+</div><div class="coh-home-heading"><h1 style="margin:0 0 6px 0;">Chamber of Hope Worldwide HELPS Ministry Directory</h1><p class="mini" style="margin:0 0 12px 0;color:#6b5b47;">Last updated: August 3, 2026</p></div>
+</div>
+<section class="coh-upgrade-panel" id="directory-mission-identity" style="border:2px solid #cdb3e8;background:linear-gradient(135deg,#fbf8ff 0%,#fffaf0 100%);box-shadow:0 8px 24px rgba(74,45,111,.10);">
+<h2 style="margin-bottom:6px;">What This Directory Helps You Do</h2>
+<p style="margin-top:0;"><strong>Chamber of Hope is a Worldwide HELPS Ministry Directory</strong> created to help people, families, caregivers, churches, organizations, and communities find clearer starting points for help. It is Christ-centered, service-focused, and welcoming to people from all backgrounds.</p>
+<div class="coh-action-grid">
+<div class="coh-action-card" style="cursor:default;"><strong>Find a clearer starting point</strong><small>Use the directory to begin looking for food, housing, utilities, health care, legal support, crisis help, language access, public health updates, emergency safety, records, personal records, life-stage planning, and community resources.</small></div>
+<div class="coh-action-card" style="cursor:default;"><strong>Choose the right pathway</strong><small>Start with your city, state, U.S. territory, country, or a global help pathway when local information is not clear yet.</small></div>
+<div class="coh-action-card" style="cursor:default;"><strong>Come back for fresh guidance</strong><small>Return for Monday encouragement, Weekly Global Help Watch, public health and food safety updates, emergency weather and disaster safety reminders, and help pathways and updates.</small></div>
+</div>
+<p class="mini" style="margin:12px 0 0;color:#6b5b47;"><strong>Important:</strong> Chamber of Hope shares resource pathways and official starting points. It does not provide emergency response, legal advice, medical advice, financial advice, insurance advice, tax advice, counseling, case management, professional approval, or guaranteed services. Contact the appropriate provider, agency, hotline, or emergency service directly when help is urgent.</p>
+<p class="mini" style="margin:8px 0 0;color:#6b5b47;"><strong>Mission reminder:</strong> Find help. Share hope.</p>
+</section><section class="card"><h2>Life Resource Center</h2><p>Verified help for digital safety, immigration, careers, consumer protection, pets, veterans, housing, disaster recovery, end-of-life planning, and life checklists.</p><a href="life_resource_center.html">Open the Life Resource Center</a></section>
+<section class="coh-upgrade-panel" id="help-available-now" style="border:2px solid #d7c27a;background:linear-gradient(135deg,#fffaf0 0%,#f4ecff 100%);box-shadow:0 8px 24px rgba(74,45,111,.12);">
+<h2 style="margin-bottom:6px;">Help Available Now</h2>
+<p style="margin-top:0;">Choose the need that feels most urgent. Each button opens a clear directory pathway.</p>
+<div class="coh-action-grid">
+<a class="coh-action-card" href="search.html?q=food">I Need Food Today<small>Find food pantries, same-day meals, and emergency food starting points.</small></a>
+<a class="coh-action-card" href="search.html?q=shelter">I Need a Safe Place Tonight<small>Look for emergency shelter, safe housing, and crisis-support sections.</small></a>
+<a class="coh-action-card" href="search.html?q=eviction">I May Lose My Housing<small>Search rent assistance, eviction prevention, housing help, and legal support.</small></a>
+<a class="coh-action-card" href="search.html?q=utilities">My Utilities May Be Disconnected<small>Search electricity, gas, water, heating, cooling, and shutoff-prevention help.</small></a>
+<a class="coh-action-card" href="search.html?q=prescription">I Need Medication or Medical Supplies<small>Find clinics, prescription assistance, pharmacies, and medical-support starting points.</small></a>
+<a class="coh-action-card" href="misc.html#avoid-scams">I Was Scammed or My Identity Was Stolen<small>Open scam-prevention, fraud-reporting, and identity-theft recovery starting points.</small></a>
+<a class="coh-action-card" href="search.html?q=caregiver">I Need Caregiver or Family Support<small>Search respite, disability, caregiver, and family-support resources.</small></a>
+<a class="coh-action-card" href="misc.html#how-to-ask-for-help">I Was Denied or Put on a Waiting List<small>See what to ask next, including appeals, waitlists, alternate programs, and referrals.</small></a>
+</div>
+<p class="mini" style="margin:12px 0 0;color:#6b5b47;"><strong>Immediate danger:</strong> contact the emergency service for your current location. For additional crisis and personal-safety guidance, open <a href="safety.html">Emergency &amp; Safety</a>.</p>
+</section>
+<div class="coh-upgrade-panel" id="start-here">
+<h2>Start Here</h2>
+<p>Choose the easiest way to begin. You only need one starting point.</p>
+<div class="coh-action-grid">
+<a class="coh-action-card" href="find_help.html">Find My Help<small>Answer three simple questions for guided starting points.</small></a>
+<a class="coh-action-card" href="search.html">Search the Directory<small>Search by city, state, country, need, or resource name.</small></a>
+<a class="coh-action-card" href="usa.html#usa-states">USA State &amp; City Help<small>Choose a state, then open the closest city hub.</small></a>
+<a class="coh-action-card" href="international.html">International Help<small>Choose a country and the closest available city hub.</small></a>
+<a class="coh-action-card" href="global_country_guidance.html">International &amp; Global Country Guidance<small>Use country-safe starting points for benefits, health coverage, records, legal aid, emergencies, consulates, refugees, and official agencies outside the U.S.</small></a>
+<a class="coh-action-card" href="us_territories_guidance.html">U.S. Territories Guidance<small>Puerto Rico, U.S. Virgin Islands, Guam, CNMI, and American Samoa: benefits, health coverage, records, disasters, insurance, legal aid, and official territory starting points.</small></a>
+<a class="coh-action-card" href="global_helps.html">Global HELPS<small>Use worldwide starting points when location-specific help is unavailable.</small></a>
+<a class="coh-action-card" href="global_helps.html#weekly-global-help-watch">Weekly Global Help Watch<small>Check calm, official-source pathways for major global help issues, outbreaks, recalls, disasters, and humanitarian needs.</small></a>
+<a class="coh-action-card" href="health_weather_watch.html">Official Alert &amp; Help Watch<small>See how public health, food safety, emergency weather, disaster, WMO/SWIC, GDACS, ReliefWeb/OCHA, IFRC, and official-source checks fit together.</small></a>
+<a class="coh-action-card" href="life_stages.html">Life Stages, Benefits, Insurance &amp; Future Planning<small>Children, disability, retirement, Social Security, Medicare, Medicaid, insurance, pensions, survivor benefits, territories, and global country benefit systems.</small></a>
+<a class="coh-action-card" href="records_archives.html">Records, Archives &amp; Family History Help<small>Birth, death, marriage, divorce, adoption, cemetery, obituary, court, probate, military, immigration, naturalization, property, land, genealogy, territory, tribal, and international record pathways.</small></a>
+<a class="coh-action-card" href="education_records.html">Education Records, Transcripts &amp; Credentials<small>K-12 school records, GED/HSE, trade school, college/university transcripts, closed school records, special education records, U.S. territories, and international credential pathways.</small></a>
+<a class="coh-action-card" href="personal_records.html">Personal, Medical, Student Clinic, Legal, Property &amp; Service Records<small>Hospital, clinic, health department, patient files, student clinic records, SOAP notes, clinical encounter notes, dental charts, shot records, legal/court, criminal, juvenile, incarceration, background checks, auto/DMV, rental/tenant, mortgage, property, utility, phone, cable, internet, work, training, learner feedback, and service-record pathways.</small></a>
+<a class="coh-action-card" href="full_directory.html">Full Directory<small>Browse every major section from one clean navigation page.</small></a>
+<a class="coh-action-card" href="safety.html">Emergency &amp; Safety<small>Start here for urgent danger, crisis, severe weather, disaster safety, or personal-safety guidance.</small></a>
+<a class="coh-action-card" href="public_health.html">Public Health &amp; Food Safety Updates<small>Check official illness alerts, food recalls, virus updates, stomach illness concerns, and prevention steps.</small></a> <a class="coh-action-card" href="safety.html#emergency-weather-disaster-safety">Emergency Weather &amp; Disaster Safety Updates<small>Check official sources for severe weather, disasters, outages, evacuations, shelter information, and preparedness.</small></a>
+<a class="coh-action-card" href="holidays.html">Global Holidays &amp; Awareness Days<small>Selected holidays, remembrance days, and awareness days connected to help, hope, safety, family, and community care.</small></a>
+<a class="coh-action-card" href="language_access.html">Language Access<small>Find interpretation, translation, and communication support.</small></a>
+</div>
+<p class="mini" style="margin:12px 0 0;color:#6b5b47;">If your city is not listed, begin with your state or country page. If a large page freezes inside Facebook or Instagram, open it in Safari or Chrome.</p>
+</div>
+<div class="coh-upgrade-panel" id="help-tools">
+<h2>Helpful Directory Tools</h2>
+<p>Use these only when they help with your next step.</p>
+<div class="coh-action-grid">
+<a class="coh-action-card" href="my_help_list.html">My Help List<small>Save useful pages, add private notes, and print a personal list.</small></a>
+<a class="coh-action-card" href="chamber_helper.html">Chamber of Hope Helper<small>Ask where to start or which section fits your need.</small></a>
+<a class="coh-action-card" href="shared_navigation_contact.html">Shared Resources, Navigation &amp; Contact Guide<small>Choose the right section and contact path without getting overwhelmed.</small></a>
+<a class="coh-action-card" href="report_problem.html">Report Incorrect Information<small>Tell us about a broken, outdated, or incorrect listing.</small></a>
+<a class="coh-action-card" href="verification_policy.html">Resource Guide<small>Understand the small labels beside outside links.</small></a>
+<a class="coh-action-card" href="updates.html">Directory Updates<small>See meaningful public changes and newly improved areas.</small></a>
+<a class="coh-action-card" href="suggest_resource.html">Suggest a Resource<small>Recommend a helpful organization or request more coverage.</small></a>
+</div>
+</div>
+<div style="margin:14px 0;padding:16px 18px;border-radius:18px;border:1px solid #d7c27a;background:linear-gradient(135deg,#fffaf0 0,#fff1cf 100%);box-shadow:0 4px 16px rgba(122,83,16,0.10);">
+<p style="margin:0 0 8px;font-weight:800;color:#6b4e16;">Support Chamber of Hope</p>
+<p style="margin:0 0 10px;color:#5f4b1a;">This directory is free to use. Donations help keep resources updated, improve categories, and expand practical help.</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+<a href="give_support.html#donate" style="padding:9px 12px;border-radius:999px;border:1px solid #d7c27a;background:#fff;color:#6b4e16;font-weight:700;text-decoration:none;">Give Support</a>
+<a href="https://cash.app/$Chamberofhopehelps" rel="noopener" style="padding:9px 12px;border-radius:999px;border:1px solid #d7c27a;background:#fff;color:#6b4e16;font-weight:700;text-decoration:none;" target="_blank">Cash App</a>
+<a href="https://www.paypal.com/donate/?hosted_button_id=58ZPDM4CK9reviewN" rel="noopener" style="padding:9px 12px;border-radius:999px;border:1px solid #d7c27a;background:#fff;color:#6b4e16;font-weight:700;text-decoration:none;" target="_blank">PayPal</a>
+<a href="https://venmo.com/chamberofhopehelps" rel="noopener" style="padding:9px 12px;border-radius:999px;border:1px solid #d7c27a;background:#fff;color:#6b4e16;font-weight:700;text-decoration:none;" target="_blank">Venmo</a>
+</div>
+<p class="mini" style="margin:10px 0 0;color:#6b5b47;">If possible, a gift of $5 or more is appreciated, but every visit, share, and gift helps this work continue.</p>
+</div>
+<div style="margin:14px 0;padding:14px 16px;border-radius:14px;border:1px solid #d7c27a;background:#fffaf0;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+<p style="margin:0 0 8px;font-weight:700;color:#6b4e16;">About This Directory</p>
+<p style="margin:0 0 8px;color:#5f4b1a;line-height:1.6;">The full directory contains more locations, categories, and clear starting points than can fit into a social-media post.</p>
+<p style="margin:0;color:#5f4b1a;line-height:1.6;">It is an informational guide and does not replace emergency services, medical care, legal advice, shelters, hotlines, or government agencies. Contact the appropriate provider directly when help is urgent.</p>
+</div>
+<div style="margin:14px 0;padding:14px 16px;border-radius:14px;border:1px solid #cdb3e8;background:#fbf8ff;box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+<p style="margin:0 0 8px;font-weight:700;color:#4b2c63;">Faith &amp; Mission Foundation</p>
+<p style="margin:0 0 8px;color:#4b3b5a;line-height:1.6;">Chamber of Hope is Christ-centered, shaped by African spiritual wisdom, and welcoming with interfaith respect. People from all backgrounds are welcome to use this directory and begin with one clear next step.</p>
+<p style="margin:0;color:#4b3b5a;line-height:1.6;"><a href="global_helps.html#faith-mission-foundation">Read the Faith &amp; Mission Foundation</a></p>
+</div>
+<div style="margin:14px 0;padding:14px 16px;border-radius:14px;border:1px solid #d7c27a;background:#fffaf0;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+<p style="margin:0 0 8px;font-weight:700;color:#6b4e16;">Directory Care</p>
+<p style="margin:0 0 10px;color:#5f4b1a;line-height:1.6;">Use listings as starting points and confirm details with the provider, agency, hotline, or official website. Visitors may report broken links or outdated information for review.</p>
+</div>
+<div id="help-request-tools-home" style="margin:20px 0;padding:18px 20px;border-radius:22px;border:1px solid #d7c27a;background:linear-gradient(135deg,#fffaf3,#fff5d6,#f2e6ff);box-shadow:0 10px 24px rgba(75,44,99,0.10);">
+<p style="margin:0 0 8px;font-weight:900;color:#4b2c63;font-size:1.15rem;">Help Request Tools &amp; Next-Step Checklists</p>
+<p style="margin:0 0 10px;color:#5f4b1a;line-height:1.6;">Use simple checklists and scripts before calling, emailing, or visiting a resource. Includes what to gather, what to say, how to track next steps, what to ask after a denial or waitlist, caregiver notes, language/disability access reminders, and scam-safety tips.</p>
+<a href="help_request_tools.html" style="display:inline-block;padding:10px 14px;border-radius:999px;border:1px solid #cdb3e8;background:#fff;color:#4b2c63;font-weight:900;text-decoration:none;">Open Help Request Tools</a>
+</div>
+<div id="advertise-with-us-home" style="margin:20px 0;padding:22px 22px;border-radius:24px;border:2px solid #d4ad52;background:linear-gradient(135deg,#4b2c63 0%,#6d3f88 40%,#d4ad52 78%,#f3f4f8 100%);box-shadow:0 16px 34px rgba(75,44,99,0.26),0 6px 18px rgba(212,173,82,0.24);color:#fff;position:relative;overflow:hidden;">
+<div style="position:absolute;right:-48px;top:-48px;width:165px;height:165px;border-radius:50%;background:rgba(243,244,248,0.45);border:1px solid rgba(255,255,255,0.45);"></div>
+<div style="position:absolute;right:30px;bottom:-60px;width:140px;height:140px;border-radius:50%;background:rgba(212,173,82,0.22);"></div>
+<p style="margin:0 0 8px;font-weight:900;color:#fff;font-size:1.22rem;letter-spacing:.01em;">Advertise &amp; Partner With Chamber of Hope</p>
+<p style="margin:0 0 10px;color:#fff8e8;line-height:1.65;max-width:930px;font-weight:600;">Large nonprofits, organizations, churches, community programs, family programs, small businesses, and practical local services may request clearly marked sponsored visibility or partnership consideration. Sponsored information stays separate from urgent/free help resources and does not mean endorsement, advice, or guaranteed services.</p>
+<p style="margin:0 0 12px;color:#fffdf6;line-height:1.55;max-width:900px;">Partnership consideration means a request to connect, support, share resources, sponsor visibility, or discuss community collaboration. It is not automatic approval or a formal legal partnership.</p>
+<p style="margin:0 0 12px;color:#fff;font-weight:900;">Email: <a href="mailto:8chamber8ofhope8@gmail.com?subject=Advertising%20or%20Partnership%20Request%20-%20Chamber%20of%20Hope" style="color:#fff;text-decoration:underline;">8chamber8ofhope8@gmail.com</a></p>
+<a href="advertise.html#advertise-top" style="display:inline-block;padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.9);background:linear-gradient(135deg,#ffffff,#f3f4f8);color:#4b2c63;font-weight:900;text-decoration:none;box-shadow:0 5px 14px rgba(0,0,0,.16);">Advertising &amp; Partnership Information</a>
+</div>
+<div id="coh-global-footer"></div>
+<section class="card" id="money-housing-benefits-life-wellness-link">
+<h2>Money, Housing, Benefits &amp; Life Wellness Help</h2>
+<p>Find verified official starting points for housing, homeownership, retirement, Social Security, Medicare, Medicaid, long-term care, consumer rights, credit, debt collection, taxes, estate planning, veterans, education, career, travel, and worldwide life-stage help.</p>
+<p><a class="btn" href="money_housing_consumer_help.html">Open Money, Housing, Benefits &amp; Life Wellness Help</a></p>
+</section>
+</body>
+</html>
